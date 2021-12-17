@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Costura.Fody.4.1.0\build\Costura.Fody.props" Condition="Exists('..\packages\Costura.Fody.4.1.0\build\Costura.Fody.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8FA94C15-36D4-4EA4-A625-9D40E26FD82D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ScriptKidAntiCheat</RootNamespace>
+    <AssemblyName>SteamWrapper</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>2</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>Internet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>6A4F08D69077FE1CC9072E287B06D15C16FBE87F</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>scriptkid.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.WMPLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WMPLib.1.0.0\lib\AxInterop.WMPLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Costura, Version=4.1.0.0, Culture=neutral, PublicKeyToken=9919ef960d84173d, processorArchitecture=MSIL">
+      <HintPath>..\packages\Costura.Fody.4.1.0\lib\net40\Costura.dll</HintPath>
+    </Reference>
+    <Reference Include="Gma.System.MouseKeyHook">
+      <HintPath>..\Misc\Gma.System.MouseKeyHook.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis, Version=1.45.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.1.45.0\lib\net45\Google.Apis.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Auth, Version=1.45.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Auth.1.45.0\lib\net45\Google.Apis.Auth.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Auth.PlatformServices, Version=1.45.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Auth.1.45.0\lib\net45\Google.Apis.Auth.PlatformServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Core, Version=1.45.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Core.1.45.0\lib\net45\Google.Apis.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Drive.v3, Version=1.45.0.1951, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Drive.v3.1.45.0.1951\lib\net45\Google.Apis.Drive.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.PlatformServices, Version=1.45.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.1.45.0\lib\net45\Google.Apis.PlatformServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.WMPLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WMPLib.1.0.0\lib\Interop.WMPLib.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.4.2.0\lib\net45\SharpDX.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Mathematics, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.Mathematics.4.2.0\lib\net45\SharpDX.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.IO.Compression.ZipFile, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Compression.ZipFile.4.3.0\lib\net46\System.IO.Compression.ZipFile.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\FakeCheat.cs" />
+    <Compile Include="Classes\GameData.cs" />
+    <Compile Include="Classes\Internal\Raw\PlayerInfo.cs" />
+    <Compile Include="Classes\Internal\Raw\RoundResults.cs" />
+    <Compile Include="Classes\Utils\Offsets.cs" />
+    <Compile Include="Classes\ReplayLogger.cs" />
+    <Compile Include="Classes\GoogleDriveUploader.cs" />
+    <Compile Include="Classes\Internal\Entity.cs" />
+    <Compile Include="Classes\Internal\EntityBase.cs" />
+    <Compile Include="Classes\Internal\MatchInfo.cs" />
+    <Compile Include="Classes\Internal\Player.cs" />
+    <Compile Include="Classes\Internal\Raw\GlobalVars.cs" />
+    <Compile Include="Classes\GameProcess.cs" />
+    <Compile Include="Classes\Map.cs" />
+    <Compile Include="Classes\ReplayMonitor.cs" />
+    <Compile Include="Classes\GameConsole.cs" />
+    <Compile Include="Classes\Utils\Debug.cs" />
+    <Compile Include="Classes\Utils\KeyCodes.cs" />
+    <Compile Include="Classes\Utils\Maps.cs" />
+    <Compile Include="Classes\Utils\Helper.cs" />
+    <Compile Include="Classes\Punishment.cs" />
+    <Compile Include="Classes\TripWire.cs" />
+    <Compile Include="Classes\Utils\MemoryRead.cs" />
+    <Compile Include="Classes\Utils\Module.cs" />
+    <Compile Include="Classes\Utils\MouseHook.cs" />
+    <Compile Include="Classes\Utils\PlayerConfig.cs" />
+    <Compile Include="Classes\Utils\SendInput.cs" />
+    <Compile Include="Classes\Utils\ThreadedComponent.cs" />
+    <Compile Include="Classes\Utils\Weapons.cs" />
+    <Compile Include="Classes\Utils\Team.cs" />
+    <Compile Include="Classes\Win32\Data\HardwareInput.cs" />
+    <Compile Include="Classes\Win32\Data\Input.cs" />
+    <Compile Include="Classes\Win32\Data\KeybdInput.cs" />
+    <Compile Include="Classes\Win32\Data\KeyboardEventFlags.cs" />
+    <Compile Include="Classes\Win32\Data\MouseEventFlags.cs" />
+    <Compile Include="Classes\Win32\Data\MouseInput.cs" />
+    <Compile Include="Classes\Win32\Data\Point.cs" />
+    <Compile Include="Classes\Win32\Data\Rect.cs" />
+    <Compile Include="Classes\Win32\Data\SendInputEventType.cs" />
+    <Compile Include="Classes\Win32\Data\WindowsVirtualKey.cs" />
+    <Compile Include="Classes\Win32\Kernel32.cs" />
+    <Compile Include="Classes\Win32\User32.cs" />
+    <Compile Include="Forms\Fake_UI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Fake_UI.Designer.cs">
+      <DependentUpon>Fake_UI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Conditions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Conditions.Designer.cs">
+      <DependentUpon>Conditions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Hidden.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Hidden.Designer.cs">
+      <DependentUpon>Hidden.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Maps\de_chlorine.cs" />
+    <Compile Include="Maps\de_shortnuke.cs" />
+    <Compile Include="Maps\de_train.cs" />
+    <Compile Include="Maps\de_cache.cs" />
+    <Compile Include="Maps\de_anubis.cs" />
+    <Compile Include="Maps\de_nuke.cs" />
+    <Compile Include="Maps\de_inferno.cs" />
+    <Compile Include="Maps\de_dust2.cs" />
+    <Compile Include="Maps\de_overpass.cs" />
+    <Compile Include="Maps\de_mirage.cs" />
+    <Compile Include="Maps\GenericMap.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Punishments\BigSpender.cs" />
+    <Compile Include="Punishments\BloodBrothers.cs" />
+    <Compile Include="Punishments\KnockKnockWhosThere.cs" />
+    <Compile Include="Punishments\BurningMan.cs" />
+    <Compile Include="Punishments\Yeeeeeeeet.cs" />
+    <Compile Include="Punishments\ButterFingers.cs" />
+    <Compile Include="Punishments\InvertMouseAds.cs" />
+    <Compile Include="Punishments\NoCrosshairChallenge.cs" />
+    <Compile Include="Punishments\FlashInYourFace.cs" />
+    <Compile Include="Punishments\NoPlantOrDefuse.cs" />
+    <Compile Include="Punishments\NoSilentWalk.cs" />
+    <Compile Include="Punishments\NoSpray4U.cs" />
+    <Compile Include="Punishments\DoYouEvenAimBro.cs" />
+    <Compile Include="Punishments\ViolenceSpeedMomentum.cs" />
+    <EmbeddedResource Include="Forms\Conditions.resx">
+      <DependentUpon>Conditions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Fake_UI.resx">
+      <DependentUpon>Fake_UI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Hidden.resx">
+      <DependentUpon>Hidden.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Fody.6.0.0\build\Fody.targets" Condition="Exists('..\packages\Fody.6.0.0\build\Fody.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Fody.6.0.0\build\Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Fody.6.0.0\build\Fody.targets'))" />
+    <Error Condition="!Exists('..\packages\Costura.Fody.4.1.0\build\Costura.Fody.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Costura.Fody.4.1.0\build\Costura.Fody.props'))" />
+  </Target>
+</Project>

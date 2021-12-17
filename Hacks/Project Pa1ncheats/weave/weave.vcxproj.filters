@@ -1,0 +1,578 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="hack">
+      <UniqueIdentifier>{40962329-d52e-4a61-863f-e87221d64852}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hack\bytes">
+      <UniqueIdentifier>{759131fc-a5ec-4e49-9983-b16ee37023ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hack\Features">
+      <UniqueIdentifier>{ce88d2a0-8fff-45b0-a609-7a3e27ffeb33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hack\Hooks">
+      <UniqueIdentifier>{5c103d2a-f538-4287-bd6f-64e3a946117a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hack\Features\Headers">
+      <UniqueIdentifier>{0d8be913-6938-45eb-9458-bea8bd6db8ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hack\Enty point">
+      <UniqueIdentifier>{34cc7e92-458f-496b-a015-9fabc362c35d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hack\SDK">
+      <UniqueIdentifier>{33f01dc3-b312-48b4-8fd1-3a58e83fd345}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="aes256">
+      <UniqueIdentifier>{38d906af-a39e-4bcc-9b88-c9e57d49d466}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ImGui">
+      <UniqueIdentifier>{a3fb0efa-6e5f-482b-9911-48286aa4665a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CustomGui">
+      <UniqueIdentifier>{f6be7214-f86a-40d5-b6b6-b87abbca21d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="json">
+      <UniqueIdentifier>{61f273fa-c877-4386-b3f6-42c11c5f8197}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protect">
+      <UniqueIdentifier>{b7da9420-0bbb-4b60-8aff-6c6e2fd59cc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CustomGui\headers">
+      <UniqueIdentifier>{14461a05-a2fe-4cf9-b8d9-70101949837e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protect\Anti Debug">
+      <UniqueIdentifier>{0ff52a1c-4f0a-400b-85e3-8a75e9722c9a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="alpha_slider_bg.h">
+      <Filter>hack\bytes</Filter>
+    </ClInclude>
+    <ClInclude Include="colorpicker_bg.h">
+      <Filter>hack\bytes</Filter>
+    </ClInclude>
+    <ClInclude Include="BeginFrame.h">
+      <Filter>hack\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="Bunnyhop.h">
+      <Filter>hack\Features</Filter>
+    </ClInclude>
+    <ClInclude Include="Createmove.h">
+      <Filter>hack\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="DoPostScreenEffects.h">
+      <Filter>hack\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawModelExecuted.h">
+      <Filter>hack\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="EndScene.h">
+      <Filter>hack\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="Features.h">
+      <Filter>hack\Features</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineHook.h">
+      <Filter>hack\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="FireEventClientSide.h">
+      <Filter>hack\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameStageNotify.h">
+      <Filter>hack\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationFix.h">
+      <Filter>hack\Features\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="AntiAims.h">
+      <Filter>hack\Features\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Autowall.h">
+      <Filter>hack\Features\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Chams.h">
+      <Filter>hack\Features\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="EnginePrediction.h">
+      <Filter>hack\Features\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="FakelagGraph.h">
+      <Filter>hack\Features\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Knifebot.h">
+      <Filter>hack\Features\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Legitbot.h">
+      <Filter>hack\Features\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu.h">
+      <Filter>hack\Features\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Resolver.h">
+      <Filter>hack\Features\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Tracer.h">
+      <Filter>hack\Features\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Visuals.h">
+      <Filter>hack\Features\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="RageBackTracking.h">
+      <Filter>hack\Features\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Ragebot.h">
+      <Filter>hack\Features\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="DLL_MAIN.h">
+      <Filter>hack\Enty point</Filter>
+    </ClInclude>
+    <ClInclude Include="common.h">
+      <Filter>hack\Enty point</Filter>
+    </ClInclude>
+    <ClInclude Include="Hooks.h">
+      <Filter>hack\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="bspflags.h">
+      <Filter>hack\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="c_movehelper.h">
+      <Filter>hack\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="c_trace.h">
+      <Filter>hack\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="c_usercmd.h">
+      <Filter>hack\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="checksum_crc.h">
+      <Filter>hack\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="checksum_md5.h">
+      <Filter>hack\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="colors.h">
+      <Filter>hack\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="cvar.h">
+      <Filter>hack\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="d3dfont.h">
+      <Filter>hack\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="debug_overlay.h">
+      <Filter>hack\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="engine.h">
+      <Filter>hack\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="engine_trace.h">
+      <Filter>hack\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="entlist.h">
+      <Filter>hack\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Eventlog.h">
+      <Filter>hack\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="game_event.h">
+      <Filter>hack\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="global_vars.h">
+      <Filter>hack\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="glow_manager.h">
+      <Filter>hack\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="i_base_player.h">
+      <Filter>hack\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="iBaseClientDLL.h">
+      <Filter>hack\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="input_system.h">
+      <Filter>hack\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="interfaces.h">
+      <Filter>hack\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="json.hpp">
+      <Filter>hack\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="License.h">
+      <Filter>hack\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="material_system.h">
+      <Filter>hack\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Math.h">
+      <Filter>hack\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="matrix.h">
+      <Filter>hack\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="md5.h">
+      <Filter>hack\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="memalloc.h">
+      <Filter>hack\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="model_info.h">
+      <Filter>hack\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="model_render.h">
+      <Filter>hack\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="netvar_manager.h">
+      <Filter>hack\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="physics_surface_props.h">
+      <Filter>hack\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="prediction.h">
+      <Filter>hack\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="RecvProps.h">
+      <Filter>hack\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="render.h">
+      <Filter>hack\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="render_view.h">
+      <Filter>hack\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>hack\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="studio_render.h">
+      <Filter>hack\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="surface.h">
+      <Filter>hack\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="TraceRay.h">
+      <Filter>hack\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h">
+      <Filter>hack\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Variables.h">
+      <Filter>hack\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector.h">
+      <Filter>hack\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="view_render_beams.h">
+      <Filter>hack\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="VMT_Manager.h">
+      <Filter>hack\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="vpanel.h">
+      <Filter>hack\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="cMainStruct.h">
+      <Filter>hack\Enty point</Filter>
+    </ClInclude>
+    <ClInclude Include="Hitmarker.h">
+      <Filter>hack\Features\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Glow.h">
+      <Filter>hack\Features\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="aes256\aes256.hpp">
+      <Filter>aes256</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_impl_dx9.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_impl_win32.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_internal.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_rectpack.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_textedit.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_truetype.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imconfig.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_freetype.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\element.h">
+      <Filter>CustomGui</Filter>
+    </ClInclude>
+    <ClInclude Include="json\json-forwards.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\json.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="SetupAnimation.h">
+      <Filter>hack\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="PaintTraverse.h">
+      <Filter>hack\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="OverRideView.h">
+      <Filter>hack\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneEnd.h">
+      <Filter>hack\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="WndProc.h">
+      <Filter>hack\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="NetChannelhook.h">
+      <Filter>hack\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="protect\mac.hpp">
+      <Filter>protect</Filter>
+    </ClInclude>
+    <ClInclude Include="protect\md5.hpp">
+      <Filter>protect</Filter>
+    </ClInclude>
+    <ClInclude Include="protect\hwid.hpp">
+      <Filter>protect</Filter>
+    </ClInclude>
+    <ClInclude Include="protect\encoding.hpp">
+      <Filter>protect</Filter>
+    </ClInclude>
+    <ClInclude Include="protect\VMProtectSDK.h">
+      <Filter>protect</Filter>
+    </ClInclude>
+    <ClInclude Include="protect\request.hpp">
+      <Filter>protect</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\button.h">
+      <Filter>CustomGui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\checkbox.h">
+      <Filter>CustomGui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\child.h">
+      <Filter>CustomGui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\colorpicker.h">
+      <Filter>CustomGui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\combo.h">
+      <Filter>CustomGui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\input_text.h">
+      <Filter>CustomGui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\keybind.h">
+      <Filter>CustomGui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\listbox.h">
+      <Filter>CustomGui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\multicombo.h">
+      <Filter>CustomGui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\slider.h">
+      <Filter>CustomGui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\tab.h">
+      <Filter>CustomGui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\text.h">
+      <Filter>CustomGui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\window.h">
+      <Filter>CustomGui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\bar.h">
+      <Filter>CustomGui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="protect\tcp_client.hpp">
+      <Filter>protect</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\gui.h">
+      <Filter>CustomGui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\dynamic_text.h">
+      <Filter>CustomGui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="protect\protect.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AnimationFix.cpp">
+      <Filter>hack\Features</Filter>
+    </ClCompile>
+    <ClCompile Include="AntiAims.cpp">
+      <Filter>hack\Features</Filter>
+    </ClCompile>
+    <ClCompile Include="Autowall.cpp">
+      <Filter>hack\Features</Filter>
+    </ClCompile>
+    <ClCompile Include="Chams.cpp">
+      <Filter>hack\Features</Filter>
+    </ClCompile>
+    <ClCompile Include="EnginePrediction.cpp">
+      <Filter>hack\Features</Filter>
+    </ClCompile>
+    <ClCompile Include="FakelagGraph.cpp">
+      <Filter>hack\Features</Filter>
+    </ClCompile>
+    <ClCompile Include="Knifebot.cpp">
+      <Filter>hack\Features</Filter>
+    </ClCompile>
+    <ClCompile Include="Legitbot.cpp">
+      <Filter>hack\Features</Filter>
+    </ClCompile>
+    <ClCompile Include="menu.cpp">
+      <Filter>hack\Features</Filter>
+    </ClCompile>
+    <ClCompile Include="Resolver.cpp">
+      <Filter>hack\Features</Filter>
+    </ClCompile>
+    <ClCompile Include="Tracer.cpp">
+      <Filter>hack\Features</Filter>
+    </ClCompile>
+    <ClCompile Include="Visuals.cpp">
+      <Filter>hack\Features</Filter>
+    </ClCompile>
+    <ClCompile Include="RageBackTracking.cpp">
+      <Filter>hack\Features</Filter>
+    </ClCompile>
+    <ClCompile Include="Ragebot.cpp">
+      <Filter>hack\Features</Filter>
+    </ClCompile>
+    <ClCompile Include="DLL_MAIN.cpp">
+      <Filter>hack\Enty point</Filter>
+    </ClCompile>
+    <ClCompile Include="Hooks.cpp">
+      <Filter>hack\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="checksum_crc.cpp">
+      <Filter>hack\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="checksum_md5.cpp">
+      <Filter>hack\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="d3dfont.cpp">
+      <Filter>hack\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="i_base_player.cpp">
+      <Filter>hack\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="ImRender.cpp">
+      <Filter>hack\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Math.cpp">
+      <Filter>hack\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="md5.cpp">
+      <Filter>hack\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="netvar_manager.cpp">
+      <Filter>hack\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="render.cpp">
+      <Filter>hack\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils.cpp">
+      <Filter>hack\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Variables.cpp">
+      <Filter>hack\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Glow.cpp">
+      <Filter>hack\Features</Filter>
+    </ClCompile>
+    <ClCompile Include="Hitmarker.cpp">
+      <Filter>hack\Features</Filter>
+    </ClCompile>
+    <ClCompile Include="aes256\aes256.cpp">
+      <Filter>aes256</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_impl_dx9.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_impl_win32.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_widgets.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_demo.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_draw.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_freetype.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\colorpicker.cpp">
+      <Filter>CustomGui</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\combo.cpp">
+      <Filter>CustomGui</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\input_text.cpp">
+      <Filter>CustomGui</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\keybind.cpp">
+      <Filter>CustomGui</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\listbox.cpp">
+      <Filter>CustomGui</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\multicombo.cpp">
+      <Filter>CustomGui</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\slider.cpp">
+      <Filter>CustomGui</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\tab.cpp">
+      <Filter>CustomGui</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\text.cpp">
+      <Filter>CustomGui</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\window.cpp">
+      <Filter>CustomGui</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\button.cpp">
+      <Filter>CustomGui</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\checkbox.cpp">
+      <Filter>CustomGui</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\child.cpp">
+      <Filter>CustomGui</Filter>
+    </ClCompile>
+    <ClCompile Include="json\jsoncpp.cpp">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\bar.cpp">
+      <Filter>CustomGui</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\gui.cpp">
+      <Filter>CustomGui</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\dynamic_text.cpp">
+      <Filter>CustomGui</Filter>
+    </ClCompile>
+    <ClCompile Include="protect\protect.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
+  </ItemGroup>
+</Project>

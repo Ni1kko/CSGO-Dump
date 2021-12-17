@@ -1,0 +1,8 @@
+C:/Users/denis/Desktop/weave/freetype/out/build/x64-Debug (по умолчанию)/CMakeFiles/package.dir
+C:/Users/denis/Desktop/weave/freetype/out/build/x64-Debug (по умолчанию)/CMakeFiles/freetype.dir
+C:/Users/denis/Desktop/weave/freetype/out/build/x64-Debug (по умолчанию)/CMakeFiles/package_source.dir
+C:/Users/denis/Desktop/weave/freetype/out/build/x64-Debug (по умолчанию)/CMakeFiles/install/local.dir
+C:/Users/denis/Desktop/weave/freetype/out/build/x64-Debug (по умолчанию)/CMakeFiles/install.dir
+C:/Users/denis/Desktop/weave/freetype/out/build/x64-Debug (по умолчанию)/CMakeFiles/edit_cache.dir
+C:/Users/denis/Desktop/weave/freetype/out/build/x64-Debug (по умолчанию)/CMakeFiles/rebuild_cache.dir
+C:/Users/denis/Desktop/weave/freetype/out/build/x64-Debug (по умолчанию)/CMakeFiles/list_install_components.dir

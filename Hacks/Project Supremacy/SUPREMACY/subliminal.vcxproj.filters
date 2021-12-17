@@ -1,0 +1,709 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Aimware">
+      <UniqueIdentifier>{1bc02a38-912d-4d29-abad-17c4544a3c5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Aimware\utils">
+      <UniqueIdentifier>{dd675c6c-26ee-4707-a007-f8d149665463}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Aimware\utils\valve">
+      <UniqueIdentifier>{8de599ba-7a94-413c-abde-068477d00d0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Aimware\hooks">
+      <UniqueIdentifier>{f5280975-d1ad-400b-a69c-0b10c9f464fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Aimware\sdk">
+      <UniqueIdentifier>{f421b803-4d7c-4b48-8cc6-049dd5480bd0}</UniqueIdentifier>
+    </Filter>
+       <Filter Include="ezantipasta/1paster">
+      <UniqueIdentifier>{14515sfa13-4d7c-4b48-8cc6-049dd5480bd0}</UniqueIdentifier>
+    </Filter>
+       <Filter Include="sasi_pisos\1488">
+      <UniqueIdentifier>{f421b803-4d7c-4b48-8cc6-049dd5480bd0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Aimware\sdk\interfaces">
+      <UniqueIdentifier>{9905a5f6-4e98-44cc-9875-c7ab896586d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Aimware\sdk\math">
+      <UniqueIdentifier>{a49f1e2e-1318-4692-9fd9-6349551e48bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Aimware\sdk\misc">
+      <UniqueIdentifier>{7d89797d-65d0-4d40-97fe-5cc4337d8cd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Aimware\depositories">
+      <UniqueIdentifier>{bd832549-f180-49e3-bdea-283192542caa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Aimware\menu">
+      <UniqueIdentifier>{1277b232-13c0-492b-b4c0-4d65f2f77936}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Aimware\menu\controls">
+      <UniqueIdentifier>{f3d718c6-bb19-4970-81bf-d90f76fce9d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Aimware\menu\imgui">
+      <UniqueIdentifier>{59c3d223-be2e-4057-ae4d-dc14932dee5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Aimware\features">
+      <UniqueIdentifier>{bde4f714-cdae-4024-b6ee-60c12f78557e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Aimware\features\misc">
+      <UniqueIdentifier>{68cd55e4-0412-4935-a574-4b5b160a8e49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Aimware\features\visuals">
+      <UniqueIdentifier>{b2f18047-8df2-46fe-921b-1a42b8c0d512}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Aimware\features\legit">
+      <UniqueIdentifier>{da3af1c8-1b52-403f-a7d5-55cf47f61c14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Aimware\features\skinchanger">
+      <UniqueIdentifier>{e40f1d5e-a7b1-4d28-86b7-55c9dfe5378d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Aimware\features\ragebot">
+      <UniqueIdentifier>{c021c285-b8b1-46c4-9a0e-f63cc4fa17e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Aimware\features\sdk">
+      <UniqueIdentifier>{d4dc280a-a10b-4e77-850f-bd918e5e17f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Aimware\features\autowall">
+      <UniqueIdentifier>{29f65fc6-c5b4-4ea8-956f-269fc55fbabb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Aimware\features\lagcompensation">
+      <UniqueIdentifier>{086956a6-41ae-497a-9eeb-f61506f2ef2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Aimware\features\fakewalk">
+      <UniqueIdentifier>{a4f793a9-5ffe-4b6d-bf98-0029d53132a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Penguware">
+      <UniqueIdentifier>{a39dc1e3-f638-46d6-9af8-0d4750c03295}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Aimware</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\util.cpp">
+      <Filter>Aimware\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="hooks\hooks.cpp">
+      <Filter>Aimware\hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="menu\cmenu.cpp">
+      <Filter>Aimware\menu</Filter>
+    </ClCompile>
+    <ClCompile Include="menu\ctab.cpp">
+      <Filter>Aimware\menu</Filter>
+    </ClCompile>
+    <ClCompile Include="menu\menu_setup.cpp">
+      <Filter>Aimware\menu</Filter>
+    </ClCompile>
+    <ClCompile Include="menu\controls\checkbox.cpp">
+      <Filter>Aimware\menu\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="menu\controls\dropdown.cpp">
+      <Filter>Aimware\menu\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="menu\controls\group_box.cpp">
+      <Filter>Aimware\menu\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="menu\controls\sliderfloat.cpp">
+      <Filter>Aimware\menu\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="menu\controls\sliderint.cpp">
+      <Filter>Aimware\menu\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\math\VMatrix.cpp">
+      <Filter>Aimware\sdk\math</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\misc\UtlBuffer.cpp">
+      <Filter>Aimware\sdk\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\misc\UtlString.cpp">
+      <Filter>Aimware\sdk\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\misc\characterset.cpp">
+      <Filter>Aimware\sdk\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\math\Vector2D.cpp">
+      <Filter>Aimware\sdk\math</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\structs.cpp">
+      <Filter>Aimware\sdk</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\misc\checksum_crc.cpp">
+      <Filter>Aimware\sdk\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\misc\checksum_md5.cpp">
+      <Filter>Aimware\sdk\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\misc\Color.cpp">
+      <Filter>Aimware\sdk\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\misc\Convar.cpp">
+      <Filter>Aimware\sdk\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="cheats\misc\bunnyhop.cpp">
+      <Filter>Aimware\features\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="cheats\misc\airstrafe.cpp">
+      <Filter>Aimware\features\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\math.cpp">
+      <Filter>Aimware\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\math\Vector4D.cpp">
+      <Filter>Aimware\sdk\math</Filter>
+    </ClCompile>
+    <ClCompile Include="menu\controls\color_selector.cpp">
+      <Filter>Aimware\menu\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="menu\controls\text_seperator.cpp">
+      <Filter>Aimware\menu\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="menu\controls\button.cpp">
+      <Filter>Aimware\menu\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="menu\controls\text_field.cpp">
+      <Filter>Aimware\menu\controls</Filter>
+    </ClCompile>
+     <ClCompile Include="so its 1 tap niga">
+      <Filter>Aimware\menu\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="menu\controls\key_bind.cpp">
+      <Filter>Aimware\menu\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="cheats\visuals\player_esp.cpp">
+      <Filter>Aimware\features\visuals</Filter>
+    </ClCompile>
+    <ClCompile Include="cheats\legit\legit_backtrack.cpp">
+      <Filter>Aimware\features\legit</Filter>
+    </ClCompile>
+    <ClCompile Include="cheats\visuals\world_esp.cpp">
+      <Filter>Aimware\features\visuals</Filter>
+    </ClCompile>
+    <ClCompile Include="cheats\ragebot\antiaim.cpp">
+      <Filter>Aimware\features\ragebot</Filter>
+    </ClCompile>
+    <ClCompile Include="cheats\misc\prediction_system.cpp">
+      <Filter>Aimware\features\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="cheats\visuals\other_esp.cpp">
+      <Filter>Aimware\features\visuals</Filter>
+    </ClCompile>
+    <ClCompile Include="cheats\visuals\nightmode.cpp">
+      <Filter>Aimware\features\visuals</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\convar_spoofer.cpp">
+      <Filter>Aimware\utils\valve</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\csgo.cpp">
+      <Filter>Aimware\utils\valve</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\ctx.cpp">
+      <Filter>Aimware\utils\valve</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\netmanager.cpp">
+      <Filter>Aimware\utils\valve</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\draw_manager.cpp">
+      <Filter>Aimware\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="menu\controls\control.cpp">
+      <Filter>Aimware\menu\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="menu\controls\multi_dropdown.cpp">
+      <Filter>Aimware\menu\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="configs\configs.cpp">
+      <Filter>Aimware\menu</Filter>
+    </ClCompile>
+    <ClCompile Include="cheats\visuals\bullet_tracers.cpp">
+      <Filter>Aimware\features\visuals</Filter>
+    </ClCompile>
+    <ClCompile Include="cheats\sdk\animation_state.cpp">
+      <Filter>Aimware\features\sdk</Filter>
+    </ClCompile>
+    <ClCompile Include="cheats\misc\spammers.cpp">
+      <Filter>Aimware\features\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="cheats\misc\logs.cpp">
+      <Filter>Aimware\features\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="cheats\misc\circlestrafer.cpp">
+      <Filter>Aimware\features\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="cheats\ragebot\aimbot.cpp">
+      <Filter>Aimware\features\ragebot</Filter>
+    </ClCompile>
+    <ClCompile Include="cheats\ragebot\manual_aa.cpp">
+      <Filter>Aimware\features\ragebot</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\misc\threadtools.cpp">
+      <Filter>Aimware\sdk\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="cheats\autowall\autowall.cpp">
+      <Filter>Aimware\features\autowall</Filter>
+    </ClCompile>
+    <ClCompile Include="cheats\lagcompensation\lagcompensation.cpp">
+      <Filter>Aimware\features\lagcompensation</Filter>
+    </ClCompile>
+    <ClCompile Include="resources\custom_sounds.cpp">
+      <Filter>Penguware</Filter>
+    </ClCompile>
+    <ClCompile Include="resources\materials.cpp">
+      <Filter>Penguware</Filter>
+    </ClCompile>
+    <ClCompile Include="cheats\fakewalk\fakewalk.cpp">
+      <Filter>Aimware\features\fakewalk</Filter>
+    </ClCompile>
+    <ClCompile Include="cheats\legit\legitbot.cpp">
+      <Filter>Aimware\features\legit</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuV2.cpp">
+      <Filter>Aimware\menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Resolver_Remake.cpp">
+      <Filter>Aimware\features\ragebot</Filter>
+    </ClCompile>
+    <ClCompile Include="hooks\hooks\hooked_setupbones.cpp">
+      <Filter>Aimware\hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="hooks\vfunc_hook.cpp">
+      <Filter>Aimware\hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="hooks\hooks\hooked_lockcursor.cpp">
+      <Filter>Aimware\hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="hooks\hooks\hooked_sceneend.cpp">
+      <Filter>Aimware\hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="hooks\hooks\hooked_painttraverse.cpp">
+      <Filter>Aimware\hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="hooks\hooks\hooked_senddatagram.cpp">
+      <Filter>Aimware\hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="hooks\hooks\hooked_dme.cpp">
+      <Filter>Aimware\hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="hooks\hooks\hooked_findmdl.cpp">
+      <Filter>Aimware\hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="hooks\hooks\hooked_beginframe.cpp">
+      <Filter>Aimware\hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="hooks\hooks\code_states.cpp">
+      <Filter>Aimware\hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="hooks\hooks\hooked_events.cpp">
+      <Filter>Aimware\hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="hooks\hooks\hooked_timedemo.cpp">
+      <Filter>Aimware\hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="hooks\hooks\hooked_postscreeneffects.cpp">
+      <Filter>Aimware\hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="hooks\hooks\hooked_overrideview.cpp">
+      <Filter>Aimware\hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="hooks\hooks\hooked_createmove.cpp">
+      <Filter>Aimware\hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="hooks\hooks\hooked_fsn.cpp">
+      <Filter>Aimware\hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="hooks\hooks\hooked_wndproc.cpp">
+      <Filter>Aimware\hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="why the fuck u care.cpp" />
+    <ClCompile Include="bektrek.cpp">
+      <Filter>Aimware\features\lagcompensation</Filter>
+    </ClCompile>
+    <ClCompile Include="Zurückzeihunterstützung.cpp">
+      <Filter>Aimware\features\lagcompensation</Filter>
+    </ClCompile>
+    <ClCompile Include="loadepng.cpp">
+      <Filter>Aimware</Filter>
+    </ClCompile>
+    <ClCompile Include="microwave.cpp">
+      <Filter>Aimware\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Exploits.cpp">
+      <Filter>Aimware\features\ragebot</Filter>
+    </ClCompile>
+    <ClCompile Include="Glove.cpp">
+      <Filter>Aimware\features\skinchanger</Filter>
+    </ClCompile>
+    <ClCompile Include="Skins.cpp">
+      <Filter>Aimware\features\skinchanger</Filter>
+    </ClCompile>
+    <ClCompile Include="Recv.cpp">
+      <Filter>Aimware\features\skinchanger</Filter>
+    </ClCompile>
+    <ClCompile Include="cheats\misc\fakelag.cpp">
+      <Filter>Aimware\features\misc</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="depositories\json.hpp">
+      <Filter>Aimware\depositories</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\interfaces\IAppSystem.hpp">
+      <Filter>Aimware\sdk\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\interfaces\IBaseClientDll.hpp">
+      <Filter>Aimware\sdk\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\interfaces\IClientEntity.hpp">
+      <Filter>Aimware\sdk\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\interfaces\IClientEntityList.hpp">
+      <Filter>Aimware\sdk\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\interfaces\IClientMode.hpp">
+      <Filter>Aimware\sdk\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\interfaces\IClientNetworkable.hpp">
+      <Filter>Aimware\sdk\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\interfaces\IClientRenderable.hpp">
+      <Filter>Aimware\sdk\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\interfaces\IClientThinkable.hpp">
+      <Filter>Aimware\sdk\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\interfaces\IClientUnknown.hpp">
+      <Filter>Aimware\sdk\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\interfaces\ICollideable.hpp">
+      <Filter>Aimware\sdk\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\interfaces\IInputSystem.hpp">
+      <Filter>Aimware\sdk\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\interfaces\IVEngineClient.hpp">
+      <Filter>Aimware\sdk\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\math\Vector.hpp">
+      <Filter>Aimware\sdk\math</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\math\Vector2D.hpp">
+      <Filter>Aimware\sdk\math</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\math\VMatrix.hpp">
+      <Filter>Aimware\sdk\math</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\misc\characterset.hpp">
+      <Filter>Aimware\sdk\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\misc\ClientClass.hpp">
+      <Filter>Aimware\sdk\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\misc\Enums.hpp">
+      <Filter>Aimware\sdk\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\misc\FnvHash.hpp">
+      <Filter>Aimware\sdk\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\misc\GlobalVars.hpp">
+      <Filter>Aimware\sdk\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\misc\IHandleEntity.hpp">
+      <Filter>Aimware\sdk\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\misc\platform.hpp">
+      <Filter>Aimware\sdk\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\misc\Recv.hpp">
+      <Filter>Aimware\sdk\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\misc\UtlBuffer.hpp">
+      <Filter>Aimware\sdk\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\misc\UtlMemory.hpp">
+      <Filter>Aimware\sdk\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\misc\UtlString.hpp">
+      <Filter>Aimware\sdk\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\misc\UtlVector.hpp">
+      <Filter>Aimware\sdk\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\misc\vfunc.hpp">
+      <Filter>Aimware\sdk\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\structs.hpp">
+      <Filter>Aimware\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\util.hpp">
+      <Filter>Aimware\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="menu\cmenu.hpp">
+      <Filter>Aimware\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="hooks\hooks.hpp">
+      <Filter>Aimware\hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\misc\EHandle.hpp">
+      <Filter>Aimware\sdk\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\misc\BaseHandle.hpp">
+      <Filter>Aimware\sdk\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\misc\CUserCmd.hpp">
+      <Filter>Aimware\sdk\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\misc\checksum_crc.hpp">
+      <Filter>Aimware\sdk\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\misc\checksum_md5.hpp">
+      <Filter>Aimware\sdk\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\interfaces\IConVar.hpp">
+      <Filter>Aimware\sdk\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\interfaces\ICvar.hpp">
+      <Filter>Aimware\sdk\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\misc\Color.hpp">
+      <Filter>Aimware\sdk\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\misc\Convar.hpp">
+      <Filter>Aimware\sdk\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="cheats\misc\bunnyhop.h">
+      <Filter>Aimware\features\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="cheats\misc\airstrafe.h">
+      <Filter>Aimware\features\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\math.hpp">
+      <Filter>Aimware\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\interfaces\IEngineTrace.hpp">
+      <Filter>Aimware\sdk\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\math\Vector4D.hpp">
+      <Filter>Aimware\sdk\math</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\misc\glow_outline_effect.hpp">
+      <Filter>Aimware\sdk\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\interfaces\IMaterialSystem.hpp">
+      <Filter>Aimware\sdk\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\interfaces\IRenderView.hpp">
+      <Filter>Aimware\sdk\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\interfaces\IVModelRender.hpp">
+      <Filter>Aimware\sdk\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\misc\Studio.hpp">
+      <Filter>Aimware\sdk\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="cheats\visuals\player_esp.h">
+      <Filter>Aimware\features\visuals</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\interfaces\IPanel.hpp">
+      <Filter>Aimware\sdk\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\interfaces\IMDLCache.hpp">
+      <Filter>Aimware\sdk\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="cheats\legit\legit_backtrack.h">
+      <Filter>Aimware\features\legit</Filter>
+    </ClInclude>
+    <ClInclude Include="cheats\visuals\world_esp.h">
+      <Filter>Aimware\features\visuals</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\interfaces\memalloc.h">
+      <Filter>Aimware\sdk\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\interfaces\CClientState.hpp">
+      <Filter>Aimware\sdk\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\math\QAngle.hpp">
+      <Filter>Aimware\sdk\math</Filter>
+    </ClInclude>
+    <ClInclude Include="cheats\misc\prediction_system.h">
+      <Filter>Aimware\features\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\interfaces\IPrediction.hpp">
+      <Filter>Aimware\sdk\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\interfaces\IMoveHelper.hpp">
+      <Filter>Aimware\sdk\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\interfaces\CInput.hpp">
+      <Filter>Aimware\sdk\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="cheats\visuals\other_esp.h">
+      <Filter>Aimware\features\visuals</Filter>
+    </ClInclude>
+    <ClInclude Include="cheats\visuals\nightmode.h">
+      <Filter>Aimware\features\visuals</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\ctx.hpp">
+      <Filter>Aimware\utils\valve</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\convar_spoofer.h">
+      <Filter>Aimware\utils\valve</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\csgo.hpp">
+      <Filter>Aimware\utils\valve</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\netmanager.hpp">
+      <Filter>Aimware\utils\valve</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\draw_manager.h">
+      <Filter>Aimware\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\interfaces\IVModelInfoClient.hpp">
+      <Filter>Aimware\sdk\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\interfaces\IVDebugOverlay.hpp">
+      <Filter>Aimware\sdk\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\interfaces\IPhysics.hpp">
+      <Filter>Aimware\sdk\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="configs\configs.h">
+      <Filter>Aimware\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\interfaces\IGameEventManager.hpp">
+      <Filter>Aimware\sdk\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="cheats\visuals\bullet_tracers.h">
+      <Filter>Aimware\features\visuals</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\misc\BeamInfo_t.hpp">
+      <Filter>Aimware\sdk\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\interfaces\IViewRenderBeams.hpp">
+      <Filter>Aimware\sdk\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\singleton.h">
+      <Filter>Aimware\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="cheats\sdk\animation_state.h">
+      <Filter>Aimware\features\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="cheats\misc\spammers.h">
+      <Filter>Aimware\features\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\misc\CBoneAccessor.hpp">
+      <Filter>Aimware\sdk\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\misc\bf_write.h">
+      <Filter>Aimware\sdk\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="cheats\misc\logs.h">
+      <Filter>Aimware\features\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="cheats\misc\circlestrafer.h">
+      <Filter>Aimware\features\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\misc\KeyValues.hpp">
+      <Filter>Aimware\sdk\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\misc\UtlVectorSimple.hpp">
+      <Filter>Aimware\sdk\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\misc\threadtools.h">
+      <Filter>Aimware\sdk\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="cheats\autowall\autowall.h">
+      <Filter>Aimware\features\autowall</Filter>
+    </ClInclude>
+    <ClInclude Include="cheats\lagcompensation\lagcompensation.h">
+      <Filter>Aimware\features\lagcompensation</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\misc\C_CSPlayerResource.h">
+      <Filter>Aimware\sdk\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="resources\custom_sounds.hpp">
+      <Filter>Penguware</Filter>
+    </ClInclude>
+    <ClInclude Include="resources\materials.hpp">
+      <Filter>Penguware</Filter>
+    </ClInclude>
+    <ClInclude Include="cheats\fakewalk\fakewalk.h">
+      <Filter>Aimware\features\fakewalk</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\misc\datamap.h">
+      <Filter>Aimware\sdk\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="cheats\legit\legitbot.h">
+      <Filter>Aimware\features\legit</Filter>
+    </ClInclude>
+    <ClInclude Include="includes.hpp">
+      <Filter>Aimware\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Sounds.h">
+      <Filter>Aimware\features\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="NewMenu.h">
+      <Filter>Aimware\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Resolver_Remake.h">
+      <Filter>Aimware\features\ragebot</Filter>
+    </ClInclude>
+    <ClInclude Include="Fakelag NEW.h">
+      <Filter>Aimware\features\ragebot</Filter>
+    </ClInclude>
+    <ClInclude Include="hooks\vfunc_hook.hpp">
+      <Filter>Aimware\hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="PWalk.h">
+      <Filter>Aimware\features\ragebot</Filter>
+    </ClInclude>
+    <ClInclude Include="Backtracking.h">
+      <Filter>Aimware\features\lagcompensation</Filter>
+    </ClInclude>
+    <ClInclude Include="microwave.h">
+      <Filter>Aimware\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="ragebot.h">
+      <Filter>Aimware\features\ragebot</Filter>
+    </ClInclude>
+    <ClInclude Include="Backtrackassistant.h">
+      <Filter>Aimware\features\lagcompensation</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="AutisticImageL0ader.h">
+      <Filter>Aimware</Filter>
+    </ClInclude>
+    <ClInclude Include="lodepng.h">
+      <Filter>Aimware</Filter>
+    </ClInclude>
+    <ClInclude Include="Knifebot.h">
+      <Filter>Aimware\features\ragebot</Filter>
+    </ClInclude>
+    <ClInclude Include="extrapolation.h">
+      <Filter>Aimware\features\ragebot</Filter>
+    </ClInclude>
+    <ClInclude Include="autodefuser.exe.h">
+      <Filter>Aimware\features\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Glove.h">
+      <Filter>Aimware\features\skinchanger</Filter>
+    </ClInclude>
+    <ClInclude Include="Skins.h">
+      <Filter>Aimware\features\skinchanger</Filter>
+    </ClInclude>
+    <ClInclude Include="Recv.h">
+      <Filter>Aimware\features\skinchanger</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="owo.txt">
+      <Filter>Aimware\menu\imgui</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="redcore framework.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\..\Desktop\logo.png" />
+  </ItemGroup>
+</Project>

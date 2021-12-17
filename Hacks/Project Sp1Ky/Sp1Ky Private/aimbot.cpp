@@ -3,7 +3,7 @@
 #include "helpers/utils.hpp"
 #include "options.hpp"
 #include <random>
-#include "../features/XorCompileTime.hpp"
+#include "features/XorCompileTime.hpp"
 #define TICK_INTERVAL			(g_GlobalVars->interval_per_tick)
 #define TIME_TO_TICKS( dt )		( (int)( 0.5f + (float)(dt) / TICK_INTERVAL ) )
 float RandomFloat(float a, float b) {

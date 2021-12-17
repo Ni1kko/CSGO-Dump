@@ -1,6 +1,6 @@
 #include "skins.h"
 #include "hooks.hpp"
-#include "../features/XorCompileTime.hpp"
+#include "features/XorCompileTime.hpp"
 static auto erase_override_if_exists_by_index(const int definition_index) -> void
 {
 	if (k_weapon_info.count(definition_index))
@@ -112,7 +112,7 @@ void Skins::OnFrameStageNotify(ClientFrameStage_t stage)
 					glove = reinterpret_cast<C_BaseAttributableItem*>(g_EntityList->GetClientEntity(entry));
 					assert(glove);
 					{
-						static auto set_abs_origin_addr = Utils::PatternScan(GetModuleHandle(Utils::IsPanorama() ? L"client_panorama.dll" : L"client.dll"), "55 8B EC 83 E4 F8 51 53 56 57 8B F1");
+						static auto set_abs_origin_addr = Utils::PatternScan(GetModuleHandle(Utils::IsPanorama() ? L"client.dll" : L"client.dll"), "55 8B EC 83 E4 F8 51 53 56 57 8B F1");
 						const auto set_abs_origin_fn = reinterpret_cast<void(__thiscall*)(void*, const std::array<float, 3>&)>(set_abs_origin_addr);
 						static constexpr std::array<float, 3> new_pos = { 10000.f, 10000.f, 10000.f };
 						set_abs_origin_fn(glove, new_pos);

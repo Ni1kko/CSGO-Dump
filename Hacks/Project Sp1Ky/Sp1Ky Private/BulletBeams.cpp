@@ -1,6 +1,6 @@
 #include "../Sp1ky Private/features/MainInclude.hpp"
 #include "./BulletBeams.h"
-#include "../features/XorCompileTime.hpp"
+#include "features/XorCompileTime.hpp"
 void BulletBeamsEvent::FireGameEvent(IGameEvent *event)
 {
 	if (!g_LocalPlayer || !event)

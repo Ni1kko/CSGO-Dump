@@ -139,7 +139,7 @@ namespace Configs
 		settings["Visuals"]["Player Names"] = g_Options.legit_playa_name;
 		settings["Visuals"]["Player Health"] = g_Options.legit_playa_heal;
 		settings["Visuals"]["Player Armor"] = g_Options.legit_playa_arm;
-//		settings["Visuals"]["Player Weapons"] = g_Options.legit_playa_weap;
+		settings["Visuals"]["Player Weapons"] = g_Options.legit_playa_weap;
 		settings["Visuals"]["Player Snaplines"] = g_Options.esp_player_snaplines;
 		settings["Visuals"]["Crosshair"] = g_Options.legit_self_cros;
 		settings["Visuals"]["Dropped Weapons ESP"] = g_Options.legit_playa_dro_wep;
@@ -229,7 +229,7 @@ namespace Configs
 		GetVal(settings["Visuals"]["Player Names"], &g_Options.legit_playa_name);
 		GetVal(settings["Visuals"]["Player Health"], &g_Options.legit_playa_heal);
 		GetVal(settings["Visuals"]["Player Armor"], &g_Options.legit_playa_arm);
-//		GetVal(settings["Visuals"]["Player Weapons"], &g_Options.legit_playa_weap);
+		GetVal(settings["Visuals"]["Player Weapons"], &g_Options.legit_playa_weap);
 		GetVal(settings["Visuals"]["Player Snaplines"], &g_Options.esp_player_snaplines);
 		GetVal(settings["Visuals"]["Crosshair"], &g_Options.legit_self_cros);
 		GetVal(settings["Visuals"]["Dropped Weapons ESP"], &g_Options.legit_playa_dro_wep);

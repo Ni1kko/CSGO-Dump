@@ -16,7 +16,7 @@
 #include "./PredictionSystem.hpp"
 #include <assert.h>
 #include <crtdbg.h>
-#include "../features/XorCompileTime.hpp"
+#include "features/XorCompileTime.hpp"
 template<class T, class U>
 T clamp(T in, U low, U high)
 {
@@ -93,13 +93,13 @@ namespace Hooks
 
 	void Initialize()
 	{
-		hlclient_hook.setup(g_CHLClient, Utils::IsPanorama() ? "client_panorama.dll" : "client.dll");
+		hlclient_hook.setup(g_CHLClient, Utils::IsPanorama() ? "client.dll" : "client.dll");
 		direct3d_hook.setup(g_D3DDevice9,"shaderapidx9.dll");
 		vguipanel_hook.setup(g_VGuiPanel);
 		vguisurf_hook.setup(g_VGuiSurface);
 		viewrender_hook.setup(g_RenderView);
 		mdlrender_hook.setup(g_MdlRender,"engine.dll");
-		clientmode_hook.setup(g_ClientMode, Utils::IsPanorama() ? "client_panorama.dll" : "client.dll");
+		clientmode_hook.setup(g_ClientMode, Utils::IsPanorama() ? "client.dll" : "client.dll");
 		ConVar* sv_cheats_con = g_CVar->FindVar("sv_cheats");
 		sv_cheats.setup(sv_cheats_con);
 		gameevents_hook.setup(g_GameEvents);
@@ -321,7 +321,7 @@ namespace Hooks
 							if (Visuals::Player::Begin(entity)) {
 								if (g_Options.esp_player_snaplines) Visuals::Player::RenderSnapline();
 								if (g_Options.legit_box_toggle)     Visuals::Player::RenderBox();
-//								if (g_Options.legit_playa_weap)   Visuals::Player::RenderWeapon();
+								if (g_Options.legit_playa_weap)   Visuals::Player::RenderWeapon();
 								if (g_Options.legit_playa_name)     Visuals::Player::RenderName();
 								if (g_Options.legit_playa_heal)    Visuals::Player::RenderHealth();
 								if (g_Options.legit_playa_arm)    Visuals::Player::RenderArmour();
@@ -386,7 +386,7 @@ namespace Hooks
 
 		if (strstr(name, XorStr("UI/competitive_accept_beep.wav"))) {
 			static auto fnAccept =
-				(void(*)())Utils::PatternScan(GetModuleHandleA(Utils::IsPanorama() ? "client_panorama.dll" : "client.dll"), "55 8B EC 83 E4 F8 83 EC 08 56 8B 35 ? ? ? ? 57 83 BE");
+				(void(*)())Utils::PatternScan(GetModuleHandleA(Utils::IsPanorama() ? "client.dll" : "client.dll"), "55 8B EC 83 E4 F8 83 EC 08 56 8B 35 ? ? ? ? 57 83 BE");
 
 			fnAccept();
 
@@ -473,7 +473,7 @@ namespace Hooks
 		g_MdlRender->ForcedMaterialOverride(nullptr);
 	}
 
-	auto dwCAM_Think = Utils::PatternScan(GetModuleHandleW(Utils::IsPanorama() ? L"client_panorama.dll" : L"client.dll"), "85 C0 75 30 38 86");
+	auto dwCAM_Think = Utils::PatternScan(GetModuleHandleW(Utils::IsPanorama() ? L"client.dll" : L"client.dll"), "85 C0 75 30 38 86");
 	typedef bool(__thiscall *svc_get_bool_t)(PVOID);
 	bool __fastcall hkSvCheatsGetBool(PVOID pConVar, void* edx)
 	{

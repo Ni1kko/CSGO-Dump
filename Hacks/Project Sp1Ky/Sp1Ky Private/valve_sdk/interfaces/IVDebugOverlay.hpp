@@ -2,7 +2,7 @@
 #include "../Math/Vector.hpp"
 #include "../Math/QAngle.hpp"
 #include "../Math/VMatrix.hpp"
-#include "vfunc_hook.hpp"
+#include "../../helpers/vfunc_hook.hpp"
 class OverlayText_t;
 class IVDebugOverlay
 {

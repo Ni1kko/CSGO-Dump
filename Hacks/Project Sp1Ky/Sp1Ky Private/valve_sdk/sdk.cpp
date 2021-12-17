@@ -50,7 +50,7 @@ namespace Interfaces
     void Initialize()
     {
         auto engineFactory    = get_module_factory(GetModuleHandleW(L"engine.dll"));
-        auto clientFactory    = get_module_factory(GetModuleHandleW(Utils::IsPanorama() ? L"client_panorama.dll" : L"client.dll"));
+        auto clientFactory    = get_module_factory(GetModuleHandleW(Utils::IsPanorama() ? L"client.dll" : L"client.dll"));
         auto valveStdFactory  = get_module_factory(GetModuleHandleW(L"vstdlib.dll"));
         auto vguiFactory      = get_module_factory(GetModuleHandleW(L"vguimatsurface.dll"));
         auto vgui2Factory     = get_module_factory(GetModuleHandleW(L"vgui2.dll"));
@@ -79,7 +79,7 @@ namespace Interfaces
         g_PhysSurface         = get_interface<IPhysicsSurfaceProps>(vphysicsFactory , "VPhysicsSurfaceProps001");
 		g_Localize            = get_interface<ILocalize>           (localizeFactory , "Localize_001");
 		g_pMemAlloc = *(IMemAlloc**)(GetProcAddress(GetModuleHandleW(L"tier0.dll"), "g_pMemAlloc"));
-        auto client = GetModuleHandleW(Utils::IsPanorama() ? L"client_panorama.dll" : L"client.dll");
+        auto client = GetModuleHandleW(Utils::IsPanorama() ? L"client.dll" : L"client.dll");
         auto engine = GetModuleHandleW(L"engine.dll");
         auto dx9api = GetModuleHandleW(L"shaderapidx9.dll");
 		g_RenderBeams = *(IViewRenderBeams**)(Utils::PatternScan(client, "A1 ? ? ? ? FF 10 A1 ? ? ? ? B9") + 0x1);
@@ -95,6 +95,8 @@ namespace Interfaces
 		auto pfnFactory = get_module_factory(GetModuleHandleW(L"inputsystem.dll"));
 		g_InputSystem = get_interface<IInputSystem>(pfnFactory, "InputSystemVersion001");
     }
+
+
     void Dump()
     {
         // Ugly macros ugh

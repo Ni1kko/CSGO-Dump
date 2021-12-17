@@ -44,7 +44,7 @@ public:
     OPTION(bool, legit_playa_name, false);
     OPTION(bool, legit_playa_heal, false);
     OPTION(bool, legit_playa_arm, false);
-    //OPTION(bool, legit_playa_weap, false);
+    OPTION(bool, legit_playa_weap, false);
     OPTION(bool, esp_player_snaplines, false);
     OPTION(bool, legit_self_cros, false);
     OPTION(bool, legit_playa_dro_wep, false);

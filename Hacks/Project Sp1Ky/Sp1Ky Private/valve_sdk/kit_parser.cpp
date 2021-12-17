@@ -59,7 +59,7 @@ auto initialize_kits() -> void
 	// push    dword ptr [esi+0Ch]
 	// lea     ecx, [eax+4]
 	// call    CEconItemSchema::GetPaintKitDefinition
-	const auto sig_address = Utils::PatternScan(GetModuleHandle(Utils::IsPanorama() ? L"client_panorama.dll" : L"client.dll"), "E8 ? ? ? ? FF 76 0C 8D 48 04 E8");
+	const auto sig_address = Utils::PatternScan(GetModuleHandle(Utils::IsPanorama() ? L"client.dll" : L"client.dll"), "E8 ? ? ? ? FF 76 0C 8D 48 04 E8");
 	// Skip the opcode, read rel32 address
 	const auto item_system_offset = *reinterpret_cast<std::int32_t*>(sig_address + 1);
 	// Add the offset to the end of the instruction

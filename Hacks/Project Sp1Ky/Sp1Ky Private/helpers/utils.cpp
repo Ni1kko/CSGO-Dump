@@ -262,7 +262,7 @@ namespace Utils {
     void RankRevealAll()
     {
         using ServerRankRevealAll = bool(__cdecl*)(int*);
-        static auto fnServerRankRevealAll = PatternScan(GetModuleHandleW(IsPanorama() ? L"client_panorama.dll" : L"client.dll"), "55 8B EC 8B 0D ? ? ? ? 68");
+        static auto fnServerRankRevealAll = PatternScan(GetModuleHandleW(IsPanorama() ? L"client.dll" : L"client.dll"), "55 8B EC 8B 0D ? ? ? ? 68");
         int v[3] = { 0,0,0 };
         reinterpret_cast<ServerRankRevealAll>(fnServerRankRevealAll)(v);
     }
@@ -272,7 +272,7 @@ namespace Utils {
 	*
 	*/
 	bool IsPanorama() {
-		return GetModuleHandleA("client_panorama.dll");
+		return GetModuleHandleA("client.dll");
 	}
 }
 

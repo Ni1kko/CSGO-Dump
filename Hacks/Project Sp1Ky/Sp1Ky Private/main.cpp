@@ -9,11 +9,11 @@
 #include "./Hitmarker.h"
 #include "./BulletBeams.h"
 #include "AntiDBG.h"
-#include "../features/XorCompileTime.hpp"
+#include "features/XorCompileTime.hpp"
 
 DWORD WINAPI OnDllAttach(LPVOID base)
 {
-		if (Utils::WaitForModules(10000, { (Utils::IsPanorama() ? L"client_panorama.dll" : L"client.dll"), L"engine.dll", L"shaderapidx9.dll" }) == WAIT_TIMEOUT) {
+		if (Utils::WaitForModules(10000, { (Utils::IsPanorama() ? L"client.dll" : L"client.dll"), L"engine.dll", L"shaderapidx9.dll" }) == WAIT_TIMEOUT) {
 			return FALSE;
 		}
 #ifdef _DEBUG

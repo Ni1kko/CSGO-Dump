@@ -6,14 +6,14 @@ bool C_BaseEntity::IsPlayer()
 	//index: 152
 	//ref: "effects/nightvision"
 	//sig: 8B 92 ? ? ? ? FF D2 84 C0 0F 45 F7 85 F6
-	return CallVFunction<bool(__thiscall*)(C_BaseEntity*)>(this, 152)(this);
+	return CallVFunction<bool(__thiscall*)(C_BaseEntity*)>(this, 157)(this);
 }
 bool C_BaseEntity::IsWeapon()
 {
 	//index: 160
 	//ref: "CNewParticleEffect::DrawModel"
 	//sig: 8B 80 ? ? ? ? FF D0 84 C0 74 6F 8B 4D A4
-	return CallVFunction<bool(__thiscall*)(C_BaseEntity*)>(this, 160)(this);
+	return CallVFunction<bool(__thiscall*)(C_BaseEntity*)>(this, 165)(this);
 }
 bool C_BaseEntity::IsPlantedC4()
 {
@@ -25,7 +25,7 @@ bool C_BaseEntity::IsDefuseKit()
 }
 CCSWeaponInfo *C_BaseCombatWeapon::GetCSWeaponData()
 {
-	return CallVFunction<CCSWeaponInfo*(__thiscall*)(void*)>(this, 454)(this);
+	return CallVFunction<CCSWeaponInfo*(__thiscall*)(void*)>(this, 460)(this);
 }
 bool C_BaseCombatWeapon::HasBullets()
 {
@@ -119,20 +119,20 @@ bool C_BaseCombatWeapon::IsSniper()
 }
 bool C_BaseCombatWeapon::IsReloading()
 {
-	static auto inReload = *(uint32_t*)(Utils::PatternScan(GetModuleHandleW(Utils::IsPanorama() ? L"client_panorama.dll" : L"client.dll"), "C6 87 ? ? ? ? ? 8B 06 8B CE FF 90") + 2);
+	static auto inReload = *(uint32_t*)(Utils::PatternScan(GetModuleHandleW(Utils::IsPanorama() ? L"client.dll" : L"client.dll"), "C6 87 ? ? ? ? ? 8B 06 8B CE FF 90") + 2);
 	return *(bool*)((uintptr_t)this + inReload);
 }
 float C_BaseCombatWeapon::GetInaccuracy()
 {
-	return CallVFunction<float(__thiscall*)(void*)>(this, 478)(this);
+	return CallVFunction<float(__thiscall*)(void*)>(this, 482)(this);
 }
 float C_BaseCombatWeapon::GetSpread()
 {
-	return CallVFunction<float(__thiscall*)(void*)>(this, 448)(this);
+	return CallVFunction<float(__thiscall*)(void*)>(this, 452)(this);
 }
 void C_BaseCombatWeapon::UpdateAccuracyPenalty()
 {
-	CallVFunction<void(__thiscall*)(void*)>(this, 479)(this);
+	CallVFunction<void(__thiscall*)(void*)>(this, 483)(this);
 }
 bool C_BaseCombatWeapon::IsWeaponNonAim()
 {
@@ -144,17 +144,17 @@ bool C_BaseCombatWeapon::IsWeaponNonAim()
 }
 CUtlVector<IRefCounted*>& C_BaseCombatWeapon::m_CustomMaterials()
 {
-	static auto inReload = *(uint32_t*)(Utils::PatternScan(GetModuleHandleW(Utils::IsPanorama() ? L"client_panorama.dll" : L"client.dll"), "83 BE ? ? ? ? ? 7F 67") + 2) - 12;
+	static auto inReload = *(uint32_t*)(Utils::PatternScan(GetModuleHandleW(Utils::IsPanorama() ? L"client.dll" : L"client.dll"), "83 BE ? ? ? ? ? 7F 67") + 2) - 12;
 	return *(CUtlVector<IRefCounted*>*)((uintptr_t)this + inReload);
 }
 bool* C_BaseCombatWeapon::m_bCustomMaterialInitialized()
 {
-	static auto currentCommand = *(uint32_t*)(Utils::PatternScan(GetModuleHandleW(Utils::IsPanorama() ? L"client_panorama.dll" : L"client.dll"), "C6 86 ? ? ? ? ? FF 50 04") + 2);
+	static auto currentCommand = *(uint32_t*)(Utils::PatternScan(GetModuleHandleW(Utils::IsPanorama() ? L"client.dll" : L"client.dll"), "C6 86 ? ? ? ? ? FF 50 04") + 2);
 	return (bool*)((uintptr_t)this + currentCommand);
 }
 CUserCmd*& C_BasePlayer::m_pCurrentCommand()
 {
-	static auto currentCommand = *(uint32_t*)(Utils::PatternScan(GetModuleHandleW(Utils::IsPanorama() ? L"client_panorama.dll" : L"client.dll"), "89 BE ? ? ? ? E8 ? ? ? ? 85 FF") + 2);
+	static auto currentCommand = *(uint32_t*)(Utils::PatternScan(GetModuleHandleW(Utils::IsPanorama() ? L"client.dll" : L"client.dll"), "89 BE ? ? ? ? E8 ? ? ? ? 85 FF") + 2);
 	return *(CUserCmd**)((uintptr_t)this + currentCommand);
 }
 int C_BasePlayer::GetNumAnimOverlays()
@@ -165,7 +165,7 @@ AnimationLayer *C_BasePlayer::GetAnimOverlays()
 {
 	// to find offset: use 9/12/17 dll
 	// sig: 55 8B EC 51 53 8B 5D 08 33 C0
-	return *(AnimationLayer**)((DWORD)this + 10608);
+	return *(AnimationLayer**)((DWORD)this + 2990);
 }
 AnimationLayer *C_BasePlayer::GetAnimOverlay(int i)
 {
@@ -181,7 +181,7 @@ int C_BasePlayer::GetSequenceActivity(int sequence)
 	// sig for stuidohdr_t version: 53 56 8B F1 8B DA 85 F6 74 55
 	// sig for C_BaseAnimating version: 55 8B EC 83 7D 08 FF 56 8B F1 74 3D
 	// c_csplayer vfunc 242, follow calls to find the function.
-	static auto get_sequence_activity = reinterpret_cast<int(__fastcall*)(void*, studiohdr_t*, int)>(Utils::PatternScan(GetModuleHandle(Utils::IsPanorama() ? L"client_panorama.dll" : L"client.dll"), "55 8B EC 53 8B 5D 08 56 8B F1 83"));
+	static auto get_sequence_activity = reinterpret_cast<int(__fastcall*)(void*, studiohdr_t*, int)>(Utils::PatternScan(GetModuleHandle(Utils::IsPanorama() ? L"client.dll" : L"client.dll"), "55 8B EC 53 8B 5D 08 56 8B F1 83"));
 	return get_sequence_activity(this, hdr, sequence);
 }
 CBasePlayerAnimState *C_BasePlayer::GetBasePlayerAnimState()
@@ -196,7 +196,7 @@ CCSPlayerAnimState *C_BasePlayer::GetPlayerAnimState()
 void C_BasePlayer::UpdateAnimationState(CCSGOPlayerAnimState *state, QAngle angle)
 {
 	static auto UpdateAnimState = Utils::PatternScan(
-		GetModuleHandle(Utils::IsPanorama() ? L"client_panorama.dll" : L"client.dll"), "55 8B EC 83 E4 F8 83 EC 18 56 57 8B F9 F3 0F 11 54 24");
+		GetModuleHandle(Utils::IsPanorama() ? L"client.dll" : L"client.dll"), "55 8B EC 83 E4 F8 83 EC 18 56 57 8B F9 F3 0F 11 54 24");
 	/*static auto UpdateAnimState = Utils::PatternScan(
 	GetModuleHandle(L"client.dll"), "55 8B EC 83 E4 F8 83 EC 18 56 57 8B F9 F3 0F 11 54 24");
 	*/
@@ -216,7 +216,7 @@ void C_BasePlayer::UpdateAnimationState(CCSGOPlayerAnimState *state, QAngle angl
 void C_BasePlayer::ResetAnimationState(CCSGOPlayerAnimState *state)
 {
 	using ResetAnimState_t = void(__thiscall*)(CCSGOPlayerAnimState*);
-	static auto ResetAnimState = (ResetAnimState_t)Utils::PatternScan(GetModuleHandle(Utils::IsPanorama() ? L"client_panorama.dll" : L"client.dll"), "56 6A 01 68 ? ? ? ? 8B F1");
+	static auto ResetAnimState = (ResetAnimState_t)Utils::PatternScan(GetModuleHandle(Utils::IsPanorama() ? L"client.dll" : L"client.dll"), "56 6A 01 68 ? ? ? ? 8B F1");
 	if (!ResetAnimState)
 		return;
 	ResetAnimState(state);
@@ -224,7 +224,7 @@ void C_BasePlayer::ResetAnimationState(CCSGOPlayerAnimState *state)
 void C_BasePlayer::CreateAnimationState(CCSGOPlayerAnimState *state)
 {
 	using CreateAnimState_t = void(__thiscall*)(CCSGOPlayerAnimState*, C_BasePlayer*);
-	static auto CreateAnimState = (CreateAnimState_t)Utils::PatternScan(GetModuleHandle(Utils::IsPanorama() ? L"client_panorama.dll" : L"client.dll"), "55 8B EC 56 8B F1 B9 ? ? ? ? C7 46");
+	static auto CreateAnimState = (CreateAnimState_t)Utils::PatternScan(GetModuleHandle(Utils::IsPanorama() ? L"client.dll" : L"client.dll"), "55 8B EC 56 8B F1 B9 ? ? ? ? C7 46");
 	if (!CreateAnimState)
 		return;
 	CreateAnimState(state, this);
@@ -252,7 +252,7 @@ bool C_BasePlayer::HasC4()
 {
 	static auto fnHasC4
 		= reinterpret_cast<bool(__thiscall*)(void*)>(
-			Utils::PatternScan(GetModuleHandleW(Utils::IsPanorama() ? L"client_panorama.dll" : L"client.dll"), "56 8B F1 85 F6 74 31")
+			Utils::PatternScan(GetModuleHandleW(Utils::IsPanorama() ? L"client.dll" : L"client.dll"), "56 8B F1 85 F6 74 31")
 			);
 	return fnHasC4(this);
 }
@@ -379,7 +379,7 @@ void C_BasePlayer::UpdateClientSideAnimation()
 void C_BasePlayer::SetAngle2(QAngle wantedang)
 {
 	typedef void(__thiscall* SetAngleFn)(void*, const QAngle &);
-	static SetAngleFn SetAngle2 = reinterpret_cast<SetAngleFn>(Utils::PatternScan(GetModuleHandleA(Utils::IsPanorama() ? "client_panorama.dll" : "client.dll"), "55 8B EC 51 56 8B F1 80 BE ? ? ? ? ? 74 36"));
+	static SetAngleFn SetAngle2 = reinterpret_cast<SetAngleFn>(Utils::PatternScan(GetModuleHandleA(Utils::IsPanorama() ? "client.dll" : "client.dll"), "55 8B EC 51 56 8B F1 80 BE ? ? ? ? ? 74 36"));
 	SetAngle2(this, wantedang);
 }
 class PlayerList_t
@@ -395,7 +395,7 @@ private:
 extern PlayerList_t PlayerList[65];
 void C_BasePlayer::InvalidateBoneCache()
 {
-	static auto InvalidateBoneCacheFn = Utils::PatternScan(GetModuleHandleA(Utils::IsPanorama() ? "client_panorama.dll" : "client.dll"), "80 3D ?? ?? ?? ?? ?? 74 16 A1 ?? ?? ?? ?? 48 C7 81");
+	static auto InvalidateBoneCacheFn = Utils::PatternScan(GetModuleHandleA(Utils::IsPanorama() ? "client.dll" : "client.dll"), "80 3D ?? ?? ?? ?? ?? 74 16 A1 ?? ?? ?? ?? 48 C7 81");
 	reinterpret_cast<void(__fastcall*)(void*)>(InvalidateBoneCacheFn)(this);
 }
 int C_BasePlayer::m_nMoveType()
@@ -426,7 +426,7 @@ void C_BaseAttributableItem::SetGloveModelIndex(int modelIndex)
 }
 float C_BasePlayer::GetFlashBangTime()
 {
-	static uint32_t m_flFlashBangTime = *(uint32_t*)((uint32_t)Utils::PatternScan(GetModuleHandleA(Utils::IsPanorama() ? "client_panorama.dll" : "client.dll"),
+	static uint32_t m_flFlashBangTime = *(uint32_t*)((uint32_t)Utils::PatternScan(GetModuleHandleA(Utils::IsPanorama() ? "client.dll" : "client.dll"),
 		"F3 0F 10 86 ?? ?? ?? ?? 0F 2F 40 10 76 30") + 4);
 	return *(float*)(this + m_flFlashBangTime);
 	//return *(float*)((uintptr_t)this + 0xa308);
@@ -441,12 +441,12 @@ CUtlVector<IRefCounted*>& C_EconItemView::m_CustomMaterials()
 }
 CUtlVector<IRefCounted*>& C_EconItemView::m_VisualsDataProcessors()
 {
-	static auto inReload = *(uint32_t*)(Utils::PatternScan(GetModuleHandleW(Utils::IsPanorama() ? L"client_panorama.dll" : L"client.dll"), "81 C7 ? ? ? ? 8B 4F 0C 8B 57 04 89 4C 24 0C") + 2);
+	static auto inReload = *(uint32_t*)(Utils::PatternScan(GetModuleHandleW(Utils::IsPanorama() ? L"client.dll" : L"client.dll"), "81 C7 ? ? ? ? 8B 4F 0C 8B 57 04 89 4C 24 0C") + 2);
 	return *(CUtlVector<IRefCounted*>*)((uintptr_t)this + inReload);
 }
 float_t C_BasePlayer::m_flSpawnTime()
 {
-	return *(float_t*)((uintptr_t)this + 0xA290);
+	return *(float_t*)((uintptr_t)this + 0xA370);
 }
 bool C_BasePlayer::IsNotTarget()
 {

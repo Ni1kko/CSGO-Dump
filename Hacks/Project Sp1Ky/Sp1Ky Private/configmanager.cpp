@@ -27,7 +27,7 @@ void CConfig::Setup()
 	SetupValue(g_Options.legit_playa_name, false, "ESP", "legit_playa_name");
 	SetupValue(g_Options.legit_playa_heal, false, "ESP", "legit_playa_heal");
 	SetupValue(g_Options.legit_playa_arm, false, "ESP", "legit_playa_arm");
-//	SetupValue(g_Options.legit_playa_weap, false, "ESP", "legit_playa_weap");
+	SetupValue(g_Options.legit_playa_weap, false, "ESP", "legit_playa_weap");
 	SetupValue(g_Options.esp_player_snaplines, false, "ESP", "esp_player_snaplines");
 	SetupValue(g_Options.legit_self_cros, false, "ESP", "legit_self_cros");
 	SetupValue(g_Options.legit_playa_dro_wep, false, "ESP", "legit_playa_dro_wep");

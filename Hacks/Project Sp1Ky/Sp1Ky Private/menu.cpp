@@ -7,7 +7,7 @@
 #include "options.hpp"
 #include "ui.hpp"
 #include "droid.hpp"
-#include "../features/Configs.h"
+#include "features/Configs.h"
 #define IMGUI_DEFINE_MATH_OPERATORS
 #include "imgui/imgui_internal.h"
 #include "imgui/directx9/imgui_impl_dx9.h"
@@ -15,7 +15,7 @@
 #include <crtdbg.h>
 #include <assert.h>
 #include "ui.hpp"
-#include "../features/XorCompileTime.hpp"
+#include "features/XorCompileTime.hpp"
 const char* Hitsounds[] =
 {
 	XorStr("Off"),
@@ -148,7 +148,7 @@ void RenderEspTab()
             ImGui::Checkbox(XorStr("Names"), &g_Options.legit_playa_name);
             ImGui::Checkbox(XorStr("Health"), &g_Options.legit_playa_heal);
             ImGui::Checkbox(XorStr("Armor"), &g_Options.legit_playa_arm);
-           // ImGui::Checkbox(XorStr("Weapon"), &g_Options.legit_playa_weap);
+            ImGui::Checkbox(XorStr("Weapon"), &g_Options.legit_playa_weap);
             ImGui::Checkbox(XorStr("Crosshair"), &g_Options.legit_self_cros);
             ImGui::Checkbox(XorStr("Dropped Weapons"), &g_Options.legit_playa_dro_wep);
             ImGui::Checkbox(XorStr("Defuse Kit"), &g_Options.legit_playa_def);

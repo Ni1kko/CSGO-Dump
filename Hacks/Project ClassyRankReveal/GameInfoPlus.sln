@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameInfoPlus", "ClassyRankReveal\GameInfoPlus.csproj", "{CBCAD366-D3BE-468A-8A27-2A0E81BEA2BA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CBCAD366-D3BE-468A-8A27-2A0E81BEA2BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBCAD366-D3BE-468A-8A27-2A0E81BEA2BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBCAD366-D3BE-468A-8A27-2A0E81BEA2BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBCAD366-D3BE-468A-8A27-2A0E81BEA2BA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F2E7CFC2-4401-4A47-9EAE-6817259D3F27}
+	EndGlobalSection
+EndGlobal

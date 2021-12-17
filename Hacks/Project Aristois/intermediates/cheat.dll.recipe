@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>C:\Users\123\Desktop\aristois-pasted-by-choZen-master\output\debug\cheat.dll</ProjectOutputs>
+  <ContentFiles>C:\Users\123\Desktop\aristois-pasted-by-choZen-master\core\features\misc\logs.cpp;C:\Users\123\Desktop\aristois-pasted-by-choZen-master\core\menu\imgui\dx9\imgui_impl_dx9.cpp;C:\Users\123\Desktop\aristois-pasted-by-choZen-master\core\menu\imgui\imgui.cpp;C:\Users\123\Desktop\aristois-pasted-by-choZen-master\core\menu\imgui\imgui_draw.cpp;C:\Users\123\Desktop\aristois-pasted-by-choZen-master\core\features\misc\logs.hpp;C:\Users\123\Desktop\aristois-pasted-by-choZen-master\core\menu\imgui\dx9\imgui_impl_dx9.h;C:\Users\123\Desktop\aristois-pasted-by-choZen-master\core\menu\imgui\imconfig.h;C:\Users\123\Desktop\aristois-pasted-by-choZen-master\core\menu\imgui\imgui.h;C:\Users\123\Desktop\aristois-pasted-by-choZen-master\core\menu\imgui\imgui_internal.h;C:\Users\123\Desktop\aristois-pasted-by-choZen-master\core\menu\imgui\stb_rect_pack.h;C:\Users\123\Desktop\aristois-pasted-by-choZen-master\core\menu\imgui\stb_textedit.h;C:\Users\123\Desktop\aristois-pasted-by-choZen-master\core\menu\imgui\stb_truetype.h;C:\Users\123\Desktop\aristois-pasted-by-choZen-master\dependencies\interfaces\i_player_movement.hpp</ContentFiles>
+  <SatelliteDlls></SatelliteDlls>
+  <NonRecipeFileRefs></NonRecipeFileRefs>
+</Project>

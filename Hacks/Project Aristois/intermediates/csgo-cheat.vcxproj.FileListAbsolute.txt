@@ -1,0 +1,13 @@
+C:\Users\123\Desktop\aristois-pasted-by-choZen-master\output\debug\core\features\misc\logs.cpp
+C:\Users\123\Desktop\aristois-pasted-by-choZen-master\output\debug\core\menu\imgui\dx9\imgui_impl_dx9.cpp
+C:\Users\123\Desktop\aristois-pasted-by-choZen-master\output\debug\core\menu\imgui\imgui.cpp
+C:\Users\123\Desktop\aristois-pasted-by-choZen-master\output\debug\core\menu\imgui\imgui_draw.cpp
+C:\Users\123\Desktop\aristois-pasted-by-choZen-master\output\debug\core\features\misc\logs.hpp
+C:\Users\123\Desktop\aristois-pasted-by-choZen-master\output\debug\core\menu\imgui\dx9\imgui_impl_dx9.h
+C:\Users\123\Desktop\aristois-pasted-by-choZen-master\output\debug\core\menu\imgui\imconfig.h
+C:\Users\123\Desktop\aristois-pasted-by-choZen-master\output\debug\core\menu\imgui\imgui.h
+C:\Users\123\Desktop\aristois-pasted-by-choZen-master\output\debug\core\menu\imgui\imgui_internal.h
+C:\Users\123\Desktop\aristois-pasted-by-choZen-master\output\debug\core\menu\imgui\stb_rect_pack.h
+C:\Users\123\Desktop\aristois-pasted-by-choZen-master\output\debug\core\menu\imgui\stb_textedit.h
+C:\Users\123\Desktop\aristois-pasted-by-choZen-master\output\debug\core\menu\imgui\stb_truetype.h
+C:\Users\123\Desktop\aristois-pasted-by-choZen-master\output\debug\dependencies\interfaces\i_player_movement.hpp

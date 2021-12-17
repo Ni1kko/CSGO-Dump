@@ -1,0 +1,14 @@
+sKeybinds:
+Toggle Glowesp - F11
+Aimbot FOV + 0.2 - F7
+Aimbot FOV - 0.2 - F8
+Aimbot smooth + 0.2 - F9
+Aimbot smooth - 0.2 - F10
+Toggle Aimbot - F6
+Toggle Bhop - F2
+Shutdown Cheat - DELETE
+Reveal Ranks - INSERT
+Change GlowStyle - F1
+Triggerbot Hold - E
+Toggle Triggerbot - V
+Toggle BodyAim/HeadAim - F3

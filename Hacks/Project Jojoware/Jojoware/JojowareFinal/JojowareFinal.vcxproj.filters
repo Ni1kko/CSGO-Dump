@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Heads and Skulls">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Features">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Utilities">
+      <UniqueIdentifier>{6d0fc045-99cc-430b-a04b-de35f09ad5d4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="CheatManager.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="ReadProcessMemory.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Triggerbot.cpp">
+      <Filter>Features</Filter>
+    </ClCompile>
+    <ClCompile Include="HackProcess.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Aimbot.cpp">
+      <Filter>Features</Filter>
+    </ClCompile>
+    <ClCompile Include="GlowEsp.cpp">
+      <Filter>Features</Filter>
+    </ClCompile>
+    <ClCompile Include="Misc.cpp">
+      <Filter>Features</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CheatManager.h">
+      <Filter>Heads and Skulls</Filter>
+    </ClInclude>
+    <ClInclude Include="ReadProcessMemory.h">
+      <Filter>Heads and Skulls</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes.h">
+      <Filter>Heads and Skulls</Filter>
+    </ClInclude>
+    <ClInclude Include="Triggerbot.h">
+      <Filter>Features</Filter>
+    </ClInclude>
+    <ClInclude Include="HackProcess.h">
+      <Filter>Heads and Skulls</Filter>
+    </ClInclude>
+    <ClInclude Include="Aimbot.h">
+      <Filter>Features</Filter>
+    </ClInclude>
+    <ClInclude Include="GlowEsp.h">
+      <Filter>Features</Filter>
+    </ClInclude>
+    <ClInclude Include="Misc.h">
+      <Filter>Features</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

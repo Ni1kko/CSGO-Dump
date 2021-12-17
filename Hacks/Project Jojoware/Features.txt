@@ -1,0 +1,12 @@
+Features:
+Aimbot - FOV based and with smooth
+RCS (Included in Aimbot)
+GlowEsp - HP based
+All different Glowstyles
+BunnyHop
+RadarHack
+ClrRender Chams
+dwModelAmbient Chams
+RankReveal
+Triggerbot - Toggle or hold
+A .ini file which saves all your offsets so you don't have to recompile it after an update

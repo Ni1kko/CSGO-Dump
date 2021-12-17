@@ -1,0 +1,21 @@
+The special thing about this cheat is that you can use it Internal/External, that means that you compile the cheat as a dll and inject it into another process, for example, a windows process or discord. Some people are sure, that this makes the cheat less likely to be detected.
+You can compile the cheat as an exe too, both ways are supported and very easy to use.
+The Glow Esp does not flicker at all and the aimbot is very legit with correct settings. You can even use the aimbot to rage, it won't beat internal but it's pretty good at beating other externals.
+
+
+Update the offsets in Offsets.ini
+Change your config in Offsets.ini
+
+
+Fully External:
+Change absolutely nothing and compile as x86
+Place Offsets.ini in the same folder where your cheat is and start cheating
+
+
+Internal/External:
+Place Offsets.ini anywhere (Recommended: Harddrive).
+Copy the file path.
+Open the project, go to CheatManager.cpp, find LPCSTR FilePath = "" and change it to the file path where Offsets.ini is.
+Important: Use 2 "/" instead of 1 "/". Example: C:\Users\Offsets.ini ---> C:\\Users\\Offsets.ini
+Then Rightclick on JojowareFinal, properties, project standarts, configuration type = .dll
+Now compile it and inject it with any injector into any 32 bit process.

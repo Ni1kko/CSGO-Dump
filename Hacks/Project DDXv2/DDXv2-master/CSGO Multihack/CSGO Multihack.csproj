@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{421637C4-9929-4A60-873E-9D8C84A93A85}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DDX</RootNamespace>
+    <AssemblyName>CSGO Multihack</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <IntermediateOutputPath>C:\Users\KAMILM~1\AppData\Local\Temp\vs399F.tmp\Debug\</IntermediateOutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <IntermediateOutputPath>C:\Users\KAMILM~1\AppData\Local\Temp\vs399F.tmp\Release\</IntermediateOutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MahApps.Metro, Version=1.5.0.23, Culture=neutral, PublicKeyToken=f4fb5a3c4d1e5b4f, processorArchitecture=MSIL">
+      <HintPath>..\packages\MahApps.Metro.1.5.0\lib\net45\MahApps.Metro.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX, Version=3.1.1.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.3.1.1\lib\net45\SharpDX.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Direct2D1, Version=3.1.1.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.Direct2D1.3.1.1\lib\net45\SharpDX.Direct2D1.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Direct3D11, Version=3.1.1.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.Direct3D11.3.1.1\lib\net45\SharpDX.Direct3D11.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.DXGI, Version=3.1.1.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.DXGI.3.1.1\lib\net45\SharpDX.DXGI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\MahApps.Metro.1.5.0\lib\net45\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Enums\AccessRights.cs" />
+    <Compile Include="Enums\AllocationType.cs" />
+    <Compile Include="Enums\FreeType.cs" />
+    <Compile Include="Enums\ObserverMode.cs" />
+    <Compile Include="Enums\Protection.cs" />
+    <Compile Include="Enums\StrafingState.cs" />
+    <Compile Include="Extensions\RawVector2Extension.cs" />
+    <Compile Include="Objects\Bomb.cs" />
+    <Compile Include="Structs\ComboBoxItem.cs" />
+    <Compile Include="ConfigParser.cs" />
+    <Compile Include="Core\Bones.cs" />
+    <Compile Include="Core\Engine.cs" />
+    <Compile Include="Enums\Bone.cs" />
+    <Compile Include="Enums\ClassCategory.cs" />
+    <Compile Include="Enums\ClassId.cs" />
+    <Compile Include="Enums\ContentsFlag.cs" />
+    <Compile Include="Enums\Flags.cs" />
+    <Compile Include="Enums\HandleMethod.cs" />
+    <Compile Include="Enums\InGame.cs" />
+    <Compile Include="Enums\LifeState.cs" />
+    <Compile Include="Enums\LumpType.cs" />
+    <Compile Include="Enums\RankId.cs" />
+    <Compile Include="Enums\SurfFlag.cs" />
+    <Compile Include="Enums\Team.cs" />
+    <Compile Include="Enums\WeaponCategory.cs" />
+    <Compile Include="Enums\WeaponId.cs" />
+    <Compile Include="Core\Memory.cs" />
+    <Compile Include="Core\MemoryHelper.cs" />
+    <Compile Include="Objects\Entity.cs" />
+    <Compile Include="Objects\LocalPlayer.cs" />
+    <Compile Include="Objects\ObjectHelper.cs" />
+    <Compile Include="Objects\Player.cs" />
+    <Compile Include="Objects\Model.cs" />
+    <Compile Include="Objects\Weapon.cs" />
+    <Compile Include="Structs\AimTarget.cs" />
+    <Compile Include="Structs\Brush.cs" />
+    <Compile Include="Structs\Brushside.cs" />
+    <Compile Include="Structs\ColorRender.cs" />
+    <Compile Include="Structs\Config\AimConfig.cs" />
+    <Compile Include="Structs\Config\ColorsConfig.cs" />
+    <Compile Include="Structs\Config\Config.cs" />
+    <Compile Include="Structs\Config\KeysConfig.cs" />
+    <Compile Include="Structs\Config\MiscConfig.cs" />
+    <Compile Include="Structs\Config\SettingsConfig.cs" />
+    <Compile Include="Structs\Config\VisualsConfig.cs" />
+    <Compile Include="Structs\DrawData.cs" />
+    <Compile Include="Structs\Face.cs" />
+    <Compile Include="Structs\GlowColor.cs" />
+    <Compile Include="Structs\Header.cs" />
+    <Compile Include="Structs\Input.cs" />
+    <Compile Include="Structs\KeyboardHook.cs" />
+    <Compile Include="Structs\Leaf.cs" />
+    <Compile Include="Structs\Lump.cs" />
+    <Compile Include="Structs\Margins.cs" />
+    <Compile Include="Structs\Matrix4x4.cs" />
+    <Compile Include="Structs\Node.cs" />
+    <Compile Include="Structs\Particle.cs" />
+    <Compile Include="Structs\Plane.cs" />
+    <Compile Include="Structs\ScreenParameters.cs" />
+    <Compile Include="Structs\UserCmd.cs" />
+    <Compile Include="Structs\Vector2.cs" />
+    <Compile Include="Structs\Vector3.cs" />
+    <Compile Include="Structs\ViewAngles.cs" />
+    <Compile Include="Core\ThreadManager.cs" />
+    <Compile Include="Extensions\ClassExtensions.cs" />
+    <Compile Include="Extensions\RankExtensions.cs" />
+    <Compile Include="Extensions\WeaponExtensions.cs" />
+    <Compile Include="Extensions\ColorExtension.cs" />
+    <Compile Include="Extensions\StringExtension.cs" />
+    <Compile Include="Functions\Bsp\BspParsing.cs" />
+    <Compile Include="Functions\Bsp\UtilityReader.cs" />
+    <Compile Include="Functions\Func.cs" />
+    <Compile Include="Functions\FuncHelper.cs" />
+    <Compile Include="Functions\GlobalRead.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Keyboard\KeyboardHook.cs" />
+    <Compile Include="Keyboard\KeyboardHelper.cs" />
+    <Compile Include="Views\MenuWindow.xaml.cs">
+      <DependentUpon>MenuWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OverlayForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OverlayForm.Designer.cs">
+      <DependentUpon>OverlayForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\KeyboardSerivce.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="WinApi.cs" />
+    <Page Include="Views\MenuWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\LoaderWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\LoaderWindow.xaml.cs">
+      <DependentUpon>LoaderWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Services\ParticleService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Forms\OverlayForm.resx">
+      <DependentUpon>OverlayForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.manifest" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

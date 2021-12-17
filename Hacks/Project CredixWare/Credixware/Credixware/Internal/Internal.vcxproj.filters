@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{26153949-3c3e-4761-8f0b-6f6bf7d66a56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hacks">
+      <UniqueIdentifier>{d3cba39d-516f-4c11-936b-fc27713f9af5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK">
+      <UniqueIdentifier>{346b5c0b-d0b3-48d5-98cd-38b88e37c563}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\math">
+      <UniqueIdentifier>{c610504c-2427-4d33-98b9-5d33cc9eccc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooks">
+      <UniqueIdentifier>{1519a020-0913-4e47-9841-15e6f8b96433}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Headers\Common.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Hooks.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Utils.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Interfaces.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\IPanel.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\IClientPanel.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Interface.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\math\utlvector.h">
+      <Filter>SDK\math</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\math\mathlib.h">
+      <Filter>SDK\math</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\SDK.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Hacks\Hacks.h">
+      <Filter>Hacks</Filter>
+    </ClInclude>
+    <ClInclude Include="Hacks\Menu.h">
+      <Filter>Hacks</Filter>
+    </ClInclude>
+    <ClInclude Include="Hooks\PaintTraverse.h">
+      <Filter>Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\ISurface.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Color.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\IHTML.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\IAppSystem.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\IImage.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\math\vector.h">
+      <Filter>SDK\math</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\basetypes.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\math\vector2d.h">
+      <Filter>SDK\math</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\ImageFormat.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Hacks\ESP.h">
+      <Filter>Hacks</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\IClientEntityList.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\IVEngineClient.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\IMaterial.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\math\vmatrix.h">
+      <Filter>SDK\math</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\math\vplane.h">
+      <Filter>SDK\math</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\math\vector4d.h">
+      <Filter>SDK\math</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\IMaterialSystem.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\IClientEntity.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\IClientNetworkable.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\IClientRenderable.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\IClientThinkable.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\C_BaseEntity.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\C_BasePlayer.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\ConVar.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\CUserCmd.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Hooks\CreateMove.h">
+      <Filter>Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="Hooks\FrameStageNotify.h">
+      <Filter>Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\CInput.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\IInput.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Hooks\OverrideView.h">
+      <Filter>Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\CViewSetup.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\IVModelRender.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Hooks\DrawModelExecute.h">
+      <Filter>Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="Hacks\Thirdperson.h">
+      <Filter>Hacks</Filter>
+    </ClInclude>
+    <ClInclude Include="Hacks\Settings.h">
+      <Filter>Hacks</Filter>
+    </ClInclude>
+    <ClInclude Include="Hacks\Skinchanger.h">
+      <Filter>Hacks</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\C_BaseCombatWeapon.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Hacks\SilentAim.h">
+      <Filter>Hacks</Filter>
+    </ClInclude>
+    <ClInclude Include="Hacks\Nightmode.h">
+      <Filter>Hacks</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\MenuWrapper.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\IVModelInfo.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\ClientClass.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Hacks\Bunnyhop.h">
+      <Filter>Hacks</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\KeyValues.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Hacks\Chams.h">
+      <Filter>Hacks</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\C_BaseViewModel.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Hooks\FireEventClientSide.h">
+      <Filter>Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\IGameEvent.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Hooks\FireEvent.h">
+      <Filter>Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="Hacks\Events.h">
+      <Filter>Hacks</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Offsets.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Hacks\AntiAim.h">
+      <Filter>Hacks</Filter>
+    </ClInclude>
+    <ClInclude Include="Hacks\Backtrack.h">
+      <Filter>Hacks</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\CGlobalVars.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Hacks\Glow.h">
+      <Filter>Hacks</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\CGlowObjectManager.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Hooks\RenderGlowEffects.h">
+      <Filter>Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="Hacks\GrenadeHelper.h">
+      <Filter>Hacks</Filter>
+    </ClInclude>
+    <ClInclude Include="Hacks\ClantagChanger.h">
+      <Filter>Hacks</Filter>
+    </ClInclude>
+    <ClInclude Include="Hacks\HitChance.h">
+      <Filter>Hacks</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\IEngineTrace.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

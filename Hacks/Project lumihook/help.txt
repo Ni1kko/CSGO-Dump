@@ -1,0 +1,41 @@
+how to compile this project without errors.
+
+-------------------------------------------
+
+1. step: download visual studio
+
+i prefer having visual studio community, but
+you can download other versions of it. after
+downloading, in the installer download:
+net desktop development and desktop development with c++
+
+
+(installer: https://visualstudio.microsoft.com/downloads/)
+
+
+-------------------------------------------
+
+2. step: download the right sdk
+
+this is an important step, because if you don't
+download this the cheat will not work. after downloading
+goto the project, and compile it. if you having no erros,
+your lucky. if you having erros about "d3dx9.h" go here
+and put the file into your project. after placing it into
+the project it will work.
+
+(its typicaly here:
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include)
+
+-------------------------------------------
+
+3. step: injecting
+
+if you want to use the cheat, you need to inject it.
+i have a good manual map injector in my discord server.
+check it out!:)
+(link: https://discord.com/channels/764541651132874813/764579717415960586)
+
+-------------------------------------------
+
+

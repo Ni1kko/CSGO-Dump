@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "free", "killaura.vcxproj", "{C1AB28C0-B2C0-402A-B8CD-568AC42444F6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C1AB28C0-B2C0-402A-B8CD-568AC42444F6}.Debug|x86.ActiveCfg = Debug|Win32
+		{C1AB28C0-B2C0-402A-B8CD-568AC42444F6}.Debug|x86.Build.0 = Debug|Win32
+		{C1AB28C0-B2C0-402A-B8CD-568AC42444F6}.Release|x86.ActiveCfg = Release|Win32
+		{C1AB28C0-B2C0-402A-B8CD-568AC42444F6}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D55E0273-0A5C-4CE2-99A6-64C89C255E6F}
+	EndGlobalSection
+EndGlobal

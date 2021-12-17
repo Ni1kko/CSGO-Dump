@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="csgo\features\chaiscript\chai_console.cpp" />
+    <ClCompile Include="csgo\features\chaiscript\chai_wrapper.cpp" />
+    <ClCompile Include="csgo\features\entity listener\ent_listener.cpp" />
+    <ClCompile Include="csgo\configs\configs.cpp" />
+    <ClCompile Include="csgo\dllmain.cpp" />
+    <ClCompile Include="csgo\features\animations\anim.cpp" />
+    <ClCompile Include="csgo\features\anti-aim\antiaim.cpp" />
+    <ClCompile Include="csgo\features\autowall\autowall.cpp" />
+    <ClCompile Include="csgo\features\chams\chams.cpp" />
+    <ClCompile Include="csgo\features\engine_pred\engine_pred.cpp" />
+    <ClCompile Include="csgo\features\events\events.cpp" />
+    <ClCompile Include="csgo\features\fakelag\fakelag.cpp" />
+    <ClCompile Include="csgo\features\geometry\geometry.cpp" />
+    <ClCompile Include="csgo\features\misc\misc.cpp" />
+    <ClCompile Include="csgo\features\nade_pred\nade_pred.cpp" />
+    <ClCompile Include="csgo\features\notifications\notifications.cpp" />
+    <ClCompile Include="csgo\features\backtrack\backtrack.cpp" />
+    <ClCompile Include="csgo\features\ragebot\ragebot.cpp" />
+    <ClCompile Include="csgo\features\resolver\resolver.cpp" />
+    <ClCompile Include="csgo\features\visuals\visuals.cpp" />
+    <ClCompile Include="csgo\hooking\hooks\CreateMove.cpp" />
+    <ClCompile Include="csgo\hooking\hooks\DoExtraBonesProcessing.cpp" />
+    <ClCompile Include="csgo\hooking\hooks\DoPostScreenSpaceEffects.cpp" />
+    <ClCompile Include="csgo\hooking\hooks\DrawModelExecute.cpp" />
+    <ClCompile Include="csgo\hooking\hooks\EndScene.cpp" />
+    <ClCompile Include="csgo\hooking\hooks\GetMaterial.cpp" />
+    <ClCompile Include="csgo\hooking\hooks\FrameStageNotify.cpp" />
+    <ClCompile Include="csgo\hooking\hooks\GetViewmodelFOV.cpp" />
+    <ClCompile Include="csgo\hooking\hooks\IsHltv.cpp" />
+    <ClCompile Include="csgo\hooking\hooks\LevelShutdown.cpp" />
+    <ClCompile Include="csgo\hooking\hooks\LevelInitPostEntity.cpp" />
+    <ClCompile Include="csgo\hooking\hooks\LockCursor.cpp" />
+    <ClCompile Include="csgo\hooking\hooks\OverrideView.cpp" />
+    <ClCompile Include="csgo\hooking\hooks\PaintTraverse.cpp" />
+    <ClCompile Include="csgo\hooking\hooks\Present.cpp" />
+    <ClCompile Include="csgo\hooking\hooks\RenderSmokeOverlay.cpp" />
+    <ClCompile Include="csgo\hooking\hooks\Reset.cpp" />
+    <ClCompile Include="csgo\hooking\hooks\ResetEx.cpp" />
+    <ClCompile Include="csgo\hooking\hooks\SceneEnd.cpp" />
+    <ClCompile Include="csgo\hooking\hooks\SetupBones.cpp" />
+    <ClCompile Include="csgo\hooking\hooks\ShouldDrawFog.cpp" />
+    <ClCompile Include="csgo\hooking\manager.cpp" />
+    <ClCompile Include="csgo\menu\menu.cpp" />
+    <ClCompile Include="csgo\hooking\hooks\DrawSetColor.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="csgo\features\chaiscript\chai_console.hpp" />
+    <ClInclude Include="csgo\features\chaiscript\chai_wrapper.hpp" />
+    <ClInclude Include="csgo\features\entity listener\ent_listener.h" />
+    <ClInclude Include="csgo\configs\config.h" />
+    <ClInclude Include="csgo\features\animations\anim.h" />
+    <ClInclude Include="csgo\features\anti-aim\antiaim.h" />
+    <ClInclude Include="csgo\features\autowall\autowall.h" />
+    <ClInclude Include="csgo\features\chams\chams.h" />
+    <ClInclude Include="csgo\features\client.h" />
+    <ClInclude Include="csgo\features\engine_pred\engine_pred.h" />
+    <ClInclude Include="csgo\features\events\events.h" />
+    <ClInclude Include="csgo\features\fakelag\fakelag.h" />
+    <ClInclude Include="csgo\features\geometry\geometry.h" />
+    <ClInclude Include="csgo\features\misc\misc.h" />
+    <ClInclude Include="csgo\features\nade_pred\nade_pred.h" />
+    <ClInclude Include="csgo\features\notifications\notifications.h" />
+    <ClInclude Include="csgo\features\backtrack\backtrack.h" />
+    <ClInclude Include="csgo\features\ragebot\ragebot.h" />
+    <ClInclude Include="csgo\features\resolver\resolver.h" />
+    <ClInclude Include="csgo\features\vars.h" />
+    <ClInclude Include="csgo\features\visuals\visuals.h" />
+    <ClInclude Include="csgo\hooking\manager.h" />
+    <ClInclude Include="csgo\inc.h" />
+    <ClInclude Include="csgo\json.h" />
+    <ClInclude Include="csgo\menu\menu.h" />
+    <ClInclude Include="csgo\sdk\address.h" />
+    <ClInclude Include="csgo\sdk\csgo\csgo.h" />
+    <ClInclude Include="csgo\sdk\custom classes\angle.h" />
+    <ClInclude Include="csgo\sdk\custom classes\animstate.h" />
+    <ClInclude Include="csgo\sdk\custom classes\color.h" />
+    <ClInclude Include="csgo\sdk\custom classes\entity.h" />
+    <ClInclude Include="csgo\sdk\custom classes\keyvalues.h" />
+    <ClInclude Include="csgo\sdk\custom classes\matrix.h" />
+    <ClInclude Include="csgo\sdk\custom classes\vector.h" />
+    <ClInclude Include="csgo\sdk\interfaces\c_global_vars.h" />
+    <ClInclude Include="csgo\sdk\interfaces\c_glow_object_mngr.h" />
+    <ClInclude Include="csgo\sdk\interfaces\c_handle.h" />
+    <ClInclude Include="csgo\sdk\interfaces\c_input.h" />
+    <ClInclude Include="csgo\sdk\interfaces\clientdll.h" />
+    <ClInclude Include="csgo\sdk\interfaces\client_class.h" />
+    <ClInclude Include="csgo\sdk\interfaces\c_physics_surface.h" />
+    <ClInclude Include="csgo\sdk\interfaces\def.h" />
+    <ClInclude Include="csgo\sdk\interfaces\dt_recv.h" />
+    <ClInclude Include="csgo\sdk\interfaces\i_client_entity.h" />
+    <ClInclude Include="csgo\sdk\interfaces\i_client_entity_list.h" />
+    <ClInclude Include="csgo\sdk\interfaces\i_client_mode_shared.h" />
+    <ClInclude Include="csgo\sdk\interfaces\i_client_networkable.h" />
+    <ClInclude Include="csgo\sdk\interfaces\i_client_renderable.h" />
+    <ClInclude Include="csgo\sdk\interfaces\i_client_unknown.h" />
+    <ClInclude Include="csgo\sdk\interfaces\i_command_line.h" />
+    <ClInclude Include="csgo\sdk\interfaces\i_cvar.h" />
+    <ClInclude Include="csgo\sdk\interfaces\i_efx.h" />
+    <ClInclude Include="csgo\sdk\interfaces\ienginesounds.h" />
+    <ClInclude Include="csgo\sdk\interfaces\i_engine_trace.h" />
+    <ClInclude Include="csgo\sdk\interfaces\i_game_event.h" />
+    <ClInclude Include="csgo\sdk\interfaces\i_game_movement.h" />
+    <ClInclude Include="csgo\sdk\interfaces\i_localize.h" />
+    <ClInclude Include="csgo\sdk\interfaces\i_material.h" />
+    <ClInclude Include="csgo\sdk\interfaces\i_material_system.h" />
+    <ClInclude Include="csgo\sdk\interfaces\i_material_var.h" />
+    <ClInclude Include="csgo\sdk\interfaces\i_matrendercontext.h" />
+    <ClInclude Include="csgo\sdk\interfaces\i_netchannel.h" />
+    <ClInclude Include="csgo\sdk\interfaces\i_panel.h" />
+    <ClInclude Include="csgo\sdk\interfaces\i_prediction.h" />
+    <ClInclude Include="csgo\sdk\interfaces\i_studio_render.h" />
+    <ClInclude Include="csgo\sdk\interfaces\i_surface.h" />
+    <ClInclude Include="csgo\sdk\interfaces\i_texture.h" />
+    <ClInclude Include="csgo\sdk\interfaces\iv_debug_overlay.h" />
+    <ClInclude Include="csgo\sdk\interfaces\i_view_render_beams.h" />
+    <ClInclude Include="csgo\sdk\interfaces\iv_model_info.h" />
+    <ClInclude Include="csgo\sdk\interfaces\iv_model_render.h" />
+    <ClInclude Include="csgo\sdk\interfaces\iv_render_view.h" />
+    <ClInclude Include="csgo\sdk\interfaces\i_weaponinfo.h" />
+    <ClInclude Include="csgo\sdk\interfaces\i_weapon_system.h" />
+    <ClInclude Include="csgo\sdk\interfaces\steam.h" />
+    <ClInclude Include="csgo\sdk\sdk.h" />
+    <ClInclude Include="csgo\sdk\stack.h" />
+    <ClInclude Include="csgo\sdk\utils\c_vmt.h" />
+    <ClInclude Include="csgo\sdk\utils\interface_manager.h" />
+    <ClInclude Include="csgo\sdk\utils\netvars.h" />
+    <ClInclude Include="csgo\sdk\valve utils\cutlvector.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{4A1BC10A-64B0-4BB4-8BD1-5D081D76DE09}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>dccsgo</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)build\bin\</OutDir>
+    <IntDir>$(SolutionDir)\build\dc-csgo-obj\</IntDir>
+    <IncludePath>$(SolutionDir)oshgui\;$(DXSDK_DIR)include\;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)Lib\x86\;$(SolutionDir)build\bin\lib_debug\;$(LibraryPath)</LibraryPath>
+    <TargetName>$(ProjectName)-debug</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)build\bin\</OutDir>
+    <IntDir>$(SolutionDir)\build\dc-csgo-obj\</IntDir>
+    <LibraryPath>$(DXSDK_DIR)Lib\x86\;$(SolutionDir)build\bin\lib\;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)oshgui\;$(DXSDK_DIR)include\;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;DCCSGO_EXPORTS;_WINDOWS;_USRDLL;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeaderFile />
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>deadcell_debug.lib;oshgui_debug.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImageHasSafeExceptionHandlers>true</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;DCCSGO_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <PrecompiledHeaderFile />
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>deadcell.lib;oshgui.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;DCCSGO_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

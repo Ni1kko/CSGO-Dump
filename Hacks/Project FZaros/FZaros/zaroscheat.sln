@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.271
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "csgo-internal", "src\csgo-internal.vcxproj", "{A40E47C3-C7C4-472C-983E-1133E16660CB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Beta|x86 = Beta|x86
+		Debug|x86 = Debug|x86
+		DEV|x86 = DEV|x86
+		Stable|x86 = Stable|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A40E47C3-C7C4-472C-983E-1133E16660CB}.Beta|x86.ActiveCfg = Beta|Win32
+		{A40E47C3-C7C4-472C-983E-1133E16660CB}.Beta|x86.Build.0 = Beta|Win32
+		{A40E47C3-C7C4-472C-983E-1133E16660CB}.Debug|x86.ActiveCfg = Debug|Win32
+		{A40E47C3-C7C4-472C-983E-1133E16660CB}.Debug|x86.Build.0 = Debug|Win32
+		{A40E47C3-C7C4-472C-983E-1133E16660CB}.DEV|x86.ActiveCfg = DEV|Win32
+		{A40E47C3-C7C4-472C-983E-1133E16660CB}.DEV|x86.Build.0 = DEV|Win32
+		{A40E47C3-C7C4-472C-983E-1133E16660CB}.Stable|x86.ActiveCfg = Stable|Win32
+		{A40E47C3-C7C4-472C-983E-1133E16660CB}.Stable|x86.Build.0 = Stable|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {54BA6153-006F-4602-B416-8735F3664263}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,7 @@
+1 - open the Mirror injector
+2 - open csgo
+3 - select the dll you want to inject in the mirror injector
+4 - type "csgo" in the process bar in the injector
+5 - click inject
+
+NOTE: depending on what cheat it is, it may take up to 5 seconds for the menu to show up. 

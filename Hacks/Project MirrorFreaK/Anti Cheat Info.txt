@@ -1,0 +1,7 @@
+This is a FREE CHEAT, meant for HvH SERVERS. Both this and the injector are NOT undetected. 
+If you are going to use this in MM, make sure it is on a THROWAWAY ACCOUNT.
+
+Do NOT use this on your main.
+
+If you wish to make this undetected, you will have to add a little junk code, pack the dll with VMP or
+themedia, and, to be as sure as possible, replace the hooking method.

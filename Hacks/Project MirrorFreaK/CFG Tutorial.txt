@@ -1,0 +1,21 @@
+Once you inject mirror, 
+
+ 1- go to the colour tab
+
+ 2- Type a cfg name in the " [ _ ] " space on the middle right.
+
+ 3- Click "add config"
+
+A CFG File will have apeared in the CSGO folder.
+The location should be: C:\Steam\steamapps\common\Counter-Strike Global Offensive\miroawr\cfg
+
+To add a cfg, you can:
+
+ A- Open the one already there, and replace the inside of the file by deleting
+the whole thing, then pasting the text from the included cfg into it, then save.
+
+or
+
+ B- Place the desired cfg in the file. Then, open the .TXT called "miroawr_configs,
+and type the cfg name 1 line below the last saved cfg, like this 
+https://gyazo.com/9a2948c43e34b044953151c63f60ab2e

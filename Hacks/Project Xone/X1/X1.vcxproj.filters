@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Cheat">
+      <UniqueIdentifier>{03de8b74-aba4-4206-82e8-c29c649cae68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Cheat\Init">
+      <UniqueIdentifier>{1babf578-af6a-451d-86df-c05dcbfa8417}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Cheat\Engine">
+      <UniqueIdentifier>{73f3aeda-b1d6-4b8f-859c-f0c48b88e391}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Cheat\Main.cpp">
+      <Filter>Cheat</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat\Include\Headers.h" />
+    <ClCompile Include="Cheat\Engine\CSX\CSX_Cvar.cpp" />
+    <ClCompile Include="Cheat\Engine\CSX\CSX_Hook.cpp" />
+    <ClCompile Include="Cheat\Engine\CSX\CSX_Log.cpp" />
+    <ClCompile Include="Cheat\Engine\CSX\CSX_Memory.cpp" />
+    <ClCompile Include="Cheat\Engine\CSX\CSX_Utils.cpp" />
+    <ClCompile Include="Cheat\Initialize\Offsets.cpp" />
+    <ClCompile Include="Cheat\Engine\SDK\CRC.cpp" />
+    <ClCompile Include="Cheat\Engine\SDK\KeyValues.cpp" />
+    <ClCompile Include="Cheat\Engine\SDK\SDK.cpp" />
+    <ClCompile Include="Cheat\Engine\SDK\Vector.cpp" />
+    <ClCompile Include="Cheat\Engine\SDK\Vector2D.cpp" />
+    <ClCompile Include="Cheat\Engine\SDK\Vector4D.cpp" />
+    <ClCompile Include="Cheat\Engine\SDK\VMatrix.cpp" />
+    <ClCompile Include="Cheat\Engine\NetVar.cpp" />
+    <ClCompile Include="Cheat\Render\DXRender.cpp" />
+    <ClCompile Include="Cheat\Render\DXRenderInit.cpp" />
+    <ClCompile Include="Cheat\Hacks\Setup.cpp" />
+    <ClCompile Include="Cheat\Render\DXOverlayManager.cpp" />
+    <ClCompile Include="Cheat\Render\DXRenderDraw.cpp" />
+    <ClCompile Include="Cheat\Render\DXFont.cpp" />
+    <ClCompile Include="Cheat\GUI\Gui.cpp" />
+    <ClCompile Include="Cheat\Engine\Engine.cpp" />
+    <ClCompile Include="Cheat\Engine\EntityMem.cpp" />
+    <ClCompile Include="Cheat\Engine\Entity.cpp" />
+    <ClCompile Include="Cheat\Engine\Weapon.cpp" />
+    <ClCompile Include="Cheat\Hacks\Esp\Esp.cpp" />
+    <ClCompile Include="Cheat\Hacks\Esp\PlayerEsp.cpp" />
+    <ClCompile Include="Cheat\Hacks\Esp\WorldEsp.cpp" />
+    <ClCompile Include="Cheat\GUI\Menu.h" />
+    <ClCompile Include="Cheat\Hacks\Esp\MenuEsp.cpp" />
+    <ClCompile Include="Cheat\Hacks\Esp\CustomVisuals.cpp" />
+    <ClCompile Include="Cheat\Hacks\Misc\Misc.cpp" />
+    <ClCompile Include="Cheat\Hacks\Misc\MenuMisc.cpp" />
+    <ClCompile Include="Cheat\Hacks\LegitAim\LegitAim.cpp" />
+    <ClCompile Include="Cheat\Hacks\LegitAim\MenuLegitAim.cpp" />
+    <ClCompile Include="Cheat\Hacks\Settings.cpp" />
+    <ClCompile Include="Cheat\Hacks\CloudSettings.cpp" />
+    <ClCompile Include="Cheat\License\base64.cpp" />
+    <ClCompile Include="Cheat\X1API\HTTP\CHTTPSession.cpp" />
+    <ClCompile Include="Cheat\License\License.cpp" />
+    <ClCompile Include="Cheat\Hacks\Radar\Radar.cpp" />
+    <ClCompile Include="Cheat\Hacks\Radar\RadarMenu.cpp" />
+    <ClCompile Include="Cheat\Hacks\Skins\DynSkin.cpp" />
+    <ClCompile Include="Cheat\Hacks\Skins\KitParser.cpp" />
+    <ClCompile Include="Cheat\Hacks\Skins\MenuSkins.cpp" />
+    <ClCompile Include="Cheat\Hacks\Skins\Skins.cpp" />
+    <ClCompile Include="Cheat\Hacks\Inventory\Inventory.cpp" />
+    <ClCompile Include="Cheat\Hacks\Inventory\MenuInventory.cpp" />
+    <ClCompile Include="Cheat\X1API\MinHook\src\buffer.c" />
+    <ClCompile Include="Cheat\X1API\MinHook\src\hook.c" />
+    <ClCompile Include="Cheat\X1API\MinHook\src\trampoline.c" />
+    <ClCompile Include="Cheat\X1API\MinHook\src\HDE\hde32.c" />
+    <ClCompile Include="Cheat\X1API\MinHook\src\HDE\hde64.c" />
+    <ClCompile Include="Cheat\Engine\GrenadePrediction.cpp" />
+    <ClCompile Include="Cheat\Hacks\GrenadeHelper\GreandeHelper.cpp" />
+    <ClCompile Include="Cheat\Hacks\GrenadeHelper\GreandeHelperMenu.cpp" />
+    <ClCompile Include="Cheat\3DMenu\3DMenu.cpp" />
+    <ClCompile Include="Cheat\Hacks\Inventory\EconItem.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Cheat\Main.h">
+      <Filter>Cheat</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Include\Winheaders.h" />
+    <ClInclude Include="Cheat\X1API\X1FastCall.h" />
+    <ClInclude Include="Cheat\X1API\ThreadInMemory.h" />
+    <ClInclude Include="Cheat\Initialize\Initialize.h" />
+    <ClInclude Include="Cheat\Include\Def.h" />
+    <ClInclude Include="Cheat\Hooks\Render.h" />
+    <ClInclude Include="Cheat\Engine\CSX\CSX.h" />
+    <ClInclude Include="Cheat\Engine\CSX\CSX_Cvar.h" />
+    <ClInclude Include="Cheat\Engine\CSX\CSX_Hook.h" />
+    <ClInclude Include="Cheat\Engine\CSX\CSX_Log.h" />
+    <ClInclude Include="Cheat\Engine\CSX\CSX_Memory.h" />
+    <ClInclude Include="Cheat\Engine\CSX\CSX_Utils.h" />
+    <ClInclude Include="Cheat\Engine\XorStr.h" />
+    <ClInclude Include="Cheat\Hooks\Tables.h" />
+    <ClInclude Include="Cheat\Hooks\Hook.h" />
+    <ClInclude Include="Cheat\Initialize\Offsets.h" />
+    <ClInclude Include="Cheat\Hooks\CreateMove.h" />
+    <ClInclude Include="Cheat\Engine\SDK\BaseTypes.h" />
+    <ClInclude Include="Cheat\Engine\SDK\ButtonCode.h" />
+    <ClInclude Include="Cheat\Engine\SDK\CBaseEntity.h" />
+    <ClInclude Include="Cheat\Engine\SDK\CGlobalVarsBase.hpp" />
+    <ClInclude Include="Cheat\Engine\SDK\CHandle.hpp" />
+    <ClInclude Include="Cheat\Engine\SDK\CInput.hpp" />
+    <ClInclude Include="Cheat\Engine\SDK\ClientClass.hpp" />
+    <ClInclude Include="Cheat\Engine\SDK\Color.hpp" />
+    <ClInclude Include="Cheat\Engine\SDK\Const.h" />
+    <ClInclude Include="Cheat\Engine\SDK\CRC.hpp" />
+    <ClInclude Include="Cheat\Engine\SDK\CVar.h" />
+    <ClInclude Include="Cheat\Engine\SDK\Definitions.hpp" />
+    <ClInclude Include="Cheat\Engine\SDK\IAppSystem.hpp" />
+    <ClInclude Include="Cheat\Engine\SDK\IBaseClientDll.hpp" />
+    <ClInclude Include="Cheat\Engine\SDK\IClientEntity.hpp" />
+    <ClInclude Include="Cheat\Engine\SDK\IClientEntityList.hpp" />
+    <ClInclude Include="Cheat\Engine\SDK\IClientMode.hpp" />
+    <ClInclude Include="Cheat\Engine\SDK\IClientNetworkable.hpp" />
+    <ClInclude Include="Cheat\Engine\SDK\IClientRenderable.hpp" />
+    <ClInclude Include="Cheat\Engine\SDK\IClientThinkable.hpp" />
+    <ClInclude Include="Cheat\Engine\SDK\IClientUnknown.hpp" />
+    <ClInclude Include="Cheat\Engine\SDK\ICollideable.h" />
+    <ClInclude Include="Cheat\Engine\SDK\IDebugOverlay.hpp" />
+    <ClInclude Include="Cheat\Engine\SDK\IEngineSound.h" />
+    <ClInclude Include="Cheat\Engine\SDK\IEngineTrace.hpp" />
+    <ClInclude Include="Cheat\Engine\SDK\IGameEvent.h" />
+    <ClInclude Include="Cheat\Engine\SDK\IHandleEntity.hpp" />
+    <ClInclude Include="Cheat\Engine\SDK\ILocalize.hpp" />
+    <ClInclude Include="Cheat\Engine\SDK\IMaterial.h" />
+    <ClInclude Include="Cheat\Engine\SDK\IMaterialSystem.h" />
+    <ClInclude Include="Cheat\Engine\SDK\InputEnums.h" />
+    <ClInclude Include="Cheat\Engine\SDK\ISurface.h" />
+    <ClInclude Include="Cheat\Engine\SDK\IVEngineClient.hpp" />
+    <ClInclude Include="Cheat\Engine\SDK\IVModelInfoClient.hpp" />
+    <ClInclude Include="Cheat\Engine\SDK\IVModelRender.h" />
+    <ClInclude Include="Cheat\Engine\SDK\IVRenderView.h" />
+    <ClInclude Include="Cheat\Engine\SDK\KeyValues.h" />
+    <ClInclude Include="Cheat\Engine\SDK\memalloc.h" />
+    <ClInclude Include="Cheat\Engine\SDK\PlayerInfo.hpp" />
+    <ClInclude Include="Cheat\Engine\SDK\QAngle.hpp" />
+    <ClInclude Include="Cheat\Engine\SDK\Recv.hpp" />
+    <ClInclude Include="Cheat\Engine\SDK\RecvCommon.hpp" />
+    <ClInclude Include="Cheat\Engine\SDK\SDK.h" />
+    <ClInclude Include="Cheat\Engine\SDK\TextureGroupNames.h" />
+    <ClInclude Include="Cheat\Engine\SDK\Vector.hpp" />
+    <ClInclude Include="Cheat\Engine\SDK\Vector2D.hpp" />
+    <ClInclude Include="Cheat\Engine\SDK\Vector4D.hpp" />
+    <ClInclude Include="Cheat\Engine\SDK\VMatrix.hpp" />
+    <ClInclude Include="Cheat\Engine\SDK\Vplane.h" />
+    <ClInclude Include="Cheat\steam_sdk\steam_api.h" />
+    <ClInclude Include="Cheat\Engine\NetVar.h" />
+    <ClInclude Include="Cheat\Hooks\Views.h" />
+    <ClInclude Include="Cheat\Hooks\Sound.h" />
+    <ClInclude Include="Cheat\Hooks\FrameStageNotify.h" />
+    <ClInclude Include="Cheat\Hooks\DrawModelExecute.h" />
+    <ClInclude Include="Cheat\Render\DXRender.h" />
+    <ClInclude Include="Cheat\X1API\detours.h" />
+    <ClInclude Include="Cheat\Render\DirectData\Reset.h" />
+    <ClInclude Include="Cheat\Render\DirectData\EndScene.h" />
+    <ClInclude Include="Cheat\Render\DirectData\Present.h" />
+    <ClInclude Include="Cheat\Hacks\Setup.h" />
+    <ClInclude Include="Cheat\Render\color.h" />
+    <ClInclude Include="Cheat\X1API\X1Vector.h" />
+    <ClInclude Include="Cheat\Render\TestTexture.h" />
+    <ClInclude Include="Cheat\Render\DXOverlayManager.h" />
+    <ClInclude Include="Cheat\Render\DXFont.h" />
+    <ClInclude Include="Cheat\Render\Fonts\Tahoma.h" />
+    <ClInclude Include="Cheat\Render\Fonts\stb_truetype.h" />
+    <ClInclude Include="Cheat\Render\Fonts\stb_rect_pack.h" />
+    <ClInclude Include="Cheat\Render\Fonts\WeaponIcons.h" />
+    <ClInclude Include="Cheat\GUI\Gui.h" />
+    <ClInclude Include="Cheat\Engine\Engine.h" />
+    <ClInclude Include="Cheat\Engine\EntityMem.h" />
+    <ClInclude Include="Cheat\Engine\Entity.h" />
+    <ClInclude Include="Cheat\Engine\Weapon.h" />
+    <ClInclude Include="Cheat\Hacks\Esp\Esp.h" />
+    <ClInclude Include="Cheat\Render\Fonts\Arial.h" />
+    <ClInclude Include="Cheat\Hacks\Misc\Misc.h" />
+    <ClInclude Include="Cheat\Hacks\LegitAim\LegitAim.h" />
+    <ClInclude Include="Cheat\Hacks\Settings.h" />
+    <ClInclude Include="Cheat\Json\Json.hpp" />
+    <ClInclude Include="Cheat\Hacks\CloudSettings.h" />
+    <ClInclude Include="Cheat\License\base64.h" />
+    <ClInclude Include="Cheat\X1API\HTTP\CHTTPSession.h" />
+    <ClInclude Include="Cheat\VMP\VMProtectSDK.h" />
+    <ClInclude Include="Cheat\License\License.h" />
+    <ClInclude Include="Cheat\Hacks\Radar\Radar.h" />
+    <ClInclude Include="Cheat\Hacks\Skins\DynSkin.h" />
+    <ClInclude Include="Cheat\Hacks\Skins\Skins.h" />
+    <ClInclude Include="Cheat\Hacks\Inventory\Inventory.h" />
+    <ClInclude Include="Cheat\X1API\MinHook\hook.h" />
+    <ClInclude Include="Cheat\X1API\MinHook\MinHook.h" />
+    <ClInclude Include="Cheat\X1API\MinHook\src\buffer.h" />
+    <ClInclude Include="Cheat\X1API\MinHook\src\trampoline.h" />
+    <ClInclude Include="Cheat\X1API\MinHook\src\HDE\hde32.h" />
+    <ClInclude Include="Cheat\X1API\MinHook\src\HDE\hde64.h" />
+    <ClInclude Include="Cheat\X1API\MinHook\src\HDE\pstdint.h" />
+    <ClInclude Include="Cheat\X1API\MinHook\src\HDE\table32.h" />
+    <ClInclude Include="Cheat\X1API\MinHook\src\HDE\table64.h" />
+    <ClInclude Include="Cheat\Engine\GrenadePrediction.h" />
+    <ClInclude Include="Cheat\Hacks\GrenadeHelper\GreandeHelper.h" />
+    <ClInclude Include="Cheat\3DMenu\3DMenu.h" />
+    <ClInclude Include="Cheat\Hacks\Inventory\EconItem.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Cheat\X1API\detours.lib" />
+    <Library Include="Cheat\VMP\VMProtectSDK32.lib" />
+  </ItemGroup>
+</Project>

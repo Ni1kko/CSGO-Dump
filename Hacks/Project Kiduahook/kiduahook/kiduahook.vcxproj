@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DA16785A-7F36-4F91-8CBF-4813A9428AD5}</ProjectGuid>
+    <RootNamespace>kiduahook</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>false</CLRSupport>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalOptions>/Zc:threadSafeInit- /MP</AdditionalOptions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>_WINDLL;_CRT_SECURE_NO_WARNINGS;_ENABLE_EXTENDED_ALIGNED_STORAGE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="calcviewmodelview.cpp" />
+    <ClCompile Include="csmshadow.cpp" />
+    <ClCompile Include="Detour.cpp" />
+    <ClCompile Include="doextraboneprocessing.cpp" />
+    <ClCompile Include="drawmodel.cpp" />
+    <ClCompile Include="drawmodelstatsoverlay.cpp" />
+    <ClCompile Include="eventlogs.cpp" />
+    <ClCompile Include="fireevent.cpp" />
+    <ClCompile Include="gameevents.cpp" />
+    <ClCompile Include="HDE.cpp" />
+    <ClCompile Include="hitmarker.cpp" />
+    <ClCompile Include="inprediction.cpp" />
+    <ClCompile Include="IsEntBreakableHook.cpp" />
+    <ClCompile Include="ishltv.cpp" />
+    <ClCompile Include="md5.cpp" />
+    <ClCompile Include="nadepred.cpp" />
+    <ClCompile Include="offset.cpp" />
+    <ClCompile Include="overrideconfig.cpp" />
+    <ClCompile Include="antiaim.cpp" />
+    <ClCompile Include="awall.cpp" />
+    <ClCompile Include="cbasecombatweapon.cpp" />
+    <ClCompile Include="checksum_crc.cpp" />
+    <ClCompile Include="createmove.cpp" />
+    <ClCompile Include="debug.cpp" />
+    <ClCompile Include="drawing.cpp" />
+    <ClCompile Include="beginframe.cpp" />
+    <ClCompile Include="packetstart.cpp" />
+    <ClCompile Include="sceneend.cpp" />
+    <ClCompile Include="setupbones.cpp" />
+    <ClCompile Include="shouldskipanimframe.cpp" />
+    <ClCompile Include="skinchanger.cpp" />
+    <ClCompile Include="svcheats.cpp" />
+    <ClCompile Include="TraceRay.cpp" />
+    <ClCompile Include="updateanimations.cpp" />
+    <ClCompile Include="viewmodel.cpp" />
+    <ClCompile Include="visuals.cpp" />
+    <ClCompile Include="framestagenotify.cpp" />
+    <ClCompile Include="history.cpp" />
+    <ClCompile Include="hooks.cpp" />
+    <ClCompile Include="interfaces.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="math.cpp" />
+    <ClCompile Include="gui.cpp" />
+    <ClCompile Include="misc.cpp" />
+    <ClCompile Include="netvarmanager.cpp" />
+    <ClCompile Include="overrideview.cpp" />
+    <ClCompile Include="painttraverse.cpp" />
+    <ClCompile Include="patternscan.cpp" />
+    <ClCompile Include="rageaimbot.cpp" />
+    <ClCompile Include="resolver.cpp" />
+    <ClCompile Include="runcommand.cpp" />
+    <ClCompile Include="sdk.cpp" />
+    <ClCompile Include="vars.cpp" />
+    <ClCompile Include="vmtmanager.cpp" />
+    <ClCompile Include="wndproc.cpp" />
+    <ClCompile Include="writeusercmd.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="animation.h" />
+    <ClInclude Include="calcviewmodelview.h" />
+    <ClInclude Include="chudchat.h" />
+    <ClInclude Include="clientstate.h" />
+    <ClInclude Include="csmshadow.h" />
+    <ClInclude Include="Detour.h" />
+    <ClInclude Include="doextraboneprocessing.h" />
+    <ClInclude Include="drawmodel.h" />
+    <ClInclude Include="drawmodelstatsoverlay.h" />
+    <ClInclude Include="eventlogs.h" />
+    <ClInclude Include="gameevents.h" />
+    <ClInclude Include="HDE.h" />
+    <ClInclude Include="hitmarker.h" />
+    <ClInclude Include="imemalloc.h" />
+    <ClInclude Include="inprediction.h" />
+    <ClInclude Include="IsEntBreakableHook.hpp" />
+    <ClInclude Include="ishltv.h" />
+    <ClInclude Include="json.h" />
+    <ClInclude Include="md5.h" />
+    <ClInclude Include="nadepred.h" />
+    <ClInclude Include="offset.h" />
+    <ClInclude Include="overrideconfig.h" />
+    <ClInclude Include="iviewrenderbeams.h" />
+    <ClInclude Include="antiaim.h" />
+    <ClInclude Include="awall.h" />
+    <ClInclude Include="cbasecombatweapon.h" />
+    <ClInclude Include="cbaseentity.h" />
+    <ClInclude Include="cenginetraceclient.h" />
+    <ClInclude Include="cgamemovement.h" />
+    <ClInclude Include="cglowobjectmanager.h" />
+    <ClInclude Include="checksum_crc.h" />
+    <ClInclude Include="cinput.h" />
+    <ClInclude Include="clientclass.h" />
+    <ClInclude Include="color.h" />
+    <ClInclude Include="createmove.h" />
+    <ClInclude Include="cusercmd.h" />
+    <ClInclude Include="cweapondata.h" />
+    <ClInclude Include="debug.h" />
+    <ClInclude Include="defines.h" />
+    <ClInclude Include="drawing.h" />
+    <ClInclude Include="beginframe.h" />
+    <ClInclude Include="packetstart.h" />
+    <ClInclude Include="sceneend.h" />
+    <ClInclude Include="setupbones.h" />
+    <ClInclude Include="shouldskipanimframe.h" />
+    <ClInclude Include="skinchanger.h" />
+    <ClInclude Include="svcheats.h" />
+    <ClInclude Include="TraceRay.hpp" />
+    <ClInclude Include="updateanimations.h" />
+    <ClInclude Include="viewmodel.h" />
+    <ClInclude Include="visuals.h" />
+    <ClInclude Include="framestagenotify.h" />
+    <ClInclude Include="globalvars.h" />
+    <ClInclude Include="history.h" />
+    <ClInclude Include="hlclient.h" />
+    <ClInclude Include="hooks.h" />
+    <ClInclude Include="iCvar.h" />
+    <ClInclude Include="ienginesoundclient.h" />
+    <ClInclude Include="imaterial.h" />
+    <ClInclude Include="imovehelper.h" />
+    <ClInclude Include="inetchannel.h" />
+    <ClInclude Include="interfaces.h" />
+    <ClInclude Include="irecipienfilter.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="math.h" />
+    <ClInclude Include="gui.h" />
+    <ClInclude Include="misc.h" />
+    <ClInclude Include="netvarmanager.h" />
+    <ClInclude Include="overrideview.h" />
+    <ClInclude Include="painttraverse.h" />
+    <ClInclude Include="patternscan.h" />
+    <ClInclude Include="rageaimbot.h" />
+    <ClInclude Include="resolver.h" />
+    <ClInclude Include="runcommand.h" />
+    <ClInclude Include="sdk.h" />
+    <ClInclude Include="vars.h" />
+    <ClInclude Include="vcliententitylist.h" />
+    <ClInclude Include="vclientprediction.h" />
+    <ClInclude Include="vdebugoverlay.h" />
+    <ClInclude Include="vector.h" />
+    <ClInclude Include="vengineclient.h" />
+    <ClInclude Include="vengineeffects.h" />
+    <ClInclude Include="vgui_panel.h" />
+    <ClInclude Include="vgui_surface.h" />
+    <ClInclude Include="vmodelinfoclient.h" />
+    <ClInclude Include="vmtmanager.h" />
+    <ClInclude Include="vphysicssurfaceprops.h" />
+    <ClInclude Include="weaponicon.h" />
+    <ClInclude Include="wndproc.h" />
+    <ClInclude Include="writeusercmd.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

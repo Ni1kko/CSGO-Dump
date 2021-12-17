@@ -1,0 +1,606 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Cheat">
+      <UniqueIdentifier>{e2d9a18e-ed29-407d-84be-49cb09bf92cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Cheat\Aimer">
+      <UniqueIdentifier>{178267d8-8399-4bbf-a3f8-464823906bc0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Cheat\Misc">
+      <UniqueIdentifier>{f175e22f-a5d0-4686-ba07-6fe11c830cb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Cheat\Vars">
+      <UniqueIdentifier>{19189792-2d6c-4ed5-915a-cd6d8844bce4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Cheat\Antiaim">
+      <UniqueIdentifier>{aa3a6212-63f5-49c0-9e56-9f65d54402c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math">
+      <UniqueIdentifier>{20c3f8d6-a166-4e00-b6a4-a55b4dd522cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math\Vector">
+      <UniqueIdentifier>{25ec3b0d-70b4-4388-b1a2-b82e480f4961}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooks">
+      <UniqueIdentifier>{4e8f5bda-2cc8-4428-a33b-cf2a947c99b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools">
+      <UniqueIdentifier>{10fced70-673a-44ad-879b-9fb268048fb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sdk Rebuild">
+      <UniqueIdentifier>{700cec73-c18a-4492-bfe9-09e5c51c8ecf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sdk Rebuild\Drawing">
+      <UniqueIdentifier>{3943c569-6c51-4def-9409-e73b7746dbe8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sdk Rebuild\Netvars">
+      <UniqueIdentifier>{29752d4d-272f-435e-9de6-069922e7c96c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sdk Rebuild\VmtManager">
+      <UniqueIdentifier>{9d762890-22a3-40e1-995e-fc3ed98a54b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\PatternScan">
+      <UniqueIdentifier>{779dcb39-3cb9-4737-8d6d-f24408bb3446}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\Debug">
+      <UniqueIdentifier>{cd59de11-36b9-4d39-a497-484a9610f554}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sdk Rebuild\Sdk">
+      <UniqueIdentifier>{df92a9ed-3a60-4d79-bcc9-6545010120db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\Interfaces">
+      <UniqueIdentifier>{92323332-86cf-4b1d-a071-c295c2c095f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooks\PaintTraverse">
+      <UniqueIdentifier>{4ffb7b01-13df-4934-add2-59409f495775}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooks\CreateMove">
+      <UniqueIdentifier>{c90412ed-a981-44b3-8b35-d202606df08d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooks\RunCommand">
+      <UniqueIdentifier>{ce232e2b-1075-48c1-8899-b5bba4f570db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math\Checksum">
+      <UniqueIdentifier>{f1028761-5dd7-459d-bd4b-7f7fa70b7492}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math\Autowall">
+      <UniqueIdentifier>{87145796-bfe1-4f7a-90b5-3f783f36583a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math\Math">
+      <UniqueIdentifier>{345478b5-7808-4123-8c23-2f59c9d7a24d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Cheat\Menu">
+      <UniqueIdentifier>{16712a2c-0259-432c-830c-4db14b7038b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooks\FrameStageNotify">
+      <UniqueIdentifier>{f50956dd-e340-4649-ad9d-9d16410e1ab1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooks\OverrideView">
+      <UniqueIdentifier>{509928be-842e-4386-b921-7c4515a44ff6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Cheat\History">
+      <UniqueIdentifier>{9ebdbf38-8011-45be-9069-f15d0999afe8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Cheat\Resolver">
+      <UniqueIdentifier>{85a1abf5-2cb4-4cd8-856a-15a53f638120}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Cheat\Visuals">
+      <UniqueIdentifier>{b1acbcd0-e586-4f8f-9bc9-421f50346c82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Cheat\Events">
+      <UniqueIdentifier>{e62a6c56-5d5c-4583-8d03-55bb86f8d1fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooks\DrawModel">
+      <UniqueIdentifier>{e5d0c3ea-d5e9-46a1-ae00-8f8e20fdebdb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooks\DrawModelStats">
+      <UniqueIdentifier>{c460c240-5a4b-4697-b7f4-972bd3f65a3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooks\BeginFrame">
+      <UniqueIdentifier>{ba390257-f306-444a-8cff-5d1a48a80432}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Offset">
+      <UniqueIdentifier>{c45543c7-95f1-4d7b-964c-7711337b8845}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooks\Viewmodel">
+      <UniqueIdentifier>{03710a5f-9ffd-446f-a260-d912f3fe5d1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooks\OverrideConfig">
+      <UniqueIdentifier>{6acdae35-7f3a-4c3a-98a7-f5ba0397c999}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Cheat\Skinchanger">
+      <UniqueIdentifier>{b718de3e-46ac-419d-9a77-7f8e3d79b248}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooks\WindowProc">
+      <UniqueIdentifier>{82da65a1-7d52-49ef-97b9-43a2e0695a4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooks\SvCheats">
+      <UniqueIdentifier>{4dde2517-3b4f-4ec4-908d-e16e68be161e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooks\SetupBones">
+      <UniqueIdentifier>{b1eb9492-6be5-49d8-9d0b-22df7a877978}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooks\IsHLTV">
+      <UniqueIdentifier>{e9b07014-22c9-497c-9cfd-5e567d119baa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooks\Sceneend">
+      <UniqueIdentifier>{14ff84ce-f8f3-48d0-8d27-2d89c1513e2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooks\FireEvent">
+      <UniqueIdentifier>{4756f87e-4009-48b7-9b2e-2395d9cc07a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooks\DoExtraBoneProcessing">
+      <UniqueIdentifier>{dba65c38-34ed-4bbb-bad3-fe66bca7924e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooks\CSMShadow">
+      <UniqueIdentifier>{44100673-b77d-4b08-8723-0ee0cbadb3b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooks\TraceRay">
+      <UniqueIdentifier>{a9a4d3a3-17e3-461d-a026-b627063fbfa2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooks\IsEntBreakable">
+      <UniqueIdentifier>{a9a77df6-ef9d-47eb-ac5c-c42d56683454}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\Bytepatch hook">
+      <UniqueIdentifier>{c1e37d0c-79a0-495f-b075-ca10d8cadc34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\Bytepatch hook\HDE">
+      <UniqueIdentifier>{a63c2912-ad31-48ae-99fc-f383508889d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooks\UpdatePlayerAnimations">
+      <UniqueIdentifier>{b01e1ea9-ad02-416e-9631-21662339e1b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooks\ShouldSkipAnimationFrame">
+      <UniqueIdentifier>{02337e2c-5363-4370-a07c-9c137744a5df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooks\InPrediction">
+      <UniqueIdentifier>{0c3ba57d-7e54-4615-ae20-2ef4cc0bb796}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooks\WriteUserCmdDeltaToBuffer">
+      <UniqueIdentifier>{e0accc57-2d8a-46e3-93b4-f311164c447b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooks\CalcViewModelView">
+      <UniqueIdentifier>{520cda21-318f-4adb-b6b3-425826943b81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooks\PacketStart">
+      <UniqueIdentifier>{677ae152-c565-4439-b278-3065debd4c94}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="debug.cpp">
+      <Filter>Tools\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="netvarmanager.cpp">
+      <Filter>Sdk Rebuild\Netvars</Filter>
+    </ClCompile>
+    <ClCompile Include="interfaces.cpp">
+      <Filter>Tools\Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="patternscan.cpp">
+      <Filter>Tools\PatternScan</Filter>
+    </ClCompile>
+    <ClCompile Include="vmtmanager.cpp">
+      <Filter>Sdk Rebuild\VmtManager</Filter>
+    </ClCompile>
+    <ClCompile Include="hooks.cpp">
+      <Filter>Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="painttraverse.cpp">
+      <Filter>Hooks\PaintTraverse</Filter>
+    </ClCompile>
+    <ClCompile Include="createmove.cpp">
+      <Filter>Hooks\CreateMove</Filter>
+    </ClCompile>
+    <ClCompile Include="checksum_crc.cpp">
+      <Filter>Math\Checksum</Filter>
+    </ClCompile>
+    <ClCompile Include="drawing.cpp">
+      <Filter>Sdk Rebuild\Drawing</Filter>
+    </ClCompile>
+    <ClCompile Include="math.cpp">
+      <Filter>Math\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="vars.cpp">
+      <Filter>Cheat\Vars</Filter>
+    </ClCompile>
+    <ClCompile Include="gui.cpp">
+      <Filter>Cheat\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="awall.cpp">
+      <Filter>Math\Autowall</Filter>
+    </ClCompile>
+    <ClCompile Include="cbasecombatweapon.cpp">
+      <Filter>Sdk Rebuild\Sdk</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk.cpp">
+      <Filter>Sdk Rebuild\Sdk</Filter>
+    </ClCompile>
+    <ClCompile Include="misc.cpp">
+      <Filter>Cheat\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="antiaim.cpp">
+      <Filter>Cheat\Antiaim</Filter>
+    </ClCompile>
+    <ClCompile Include="runcommand.cpp">
+      <Filter>Hooks\RunCommand</Filter>
+    </ClCompile>
+    <ClCompile Include="framestagenotify.cpp">
+      <Filter>Hooks\FrameStageNotify</Filter>
+    </ClCompile>
+    <ClCompile Include="overrideview.cpp">
+      <Filter>Hooks\OverrideView</Filter>
+    </ClCompile>
+    <ClCompile Include="history.cpp">
+      <Filter>Cheat\History</Filter>
+    </ClCompile>
+    <ClCompile Include="resolver.cpp">
+      <Filter>Cheat\Resolver</Filter>
+    </ClCompile>
+    <ClCompile Include="visuals.cpp">
+      <Filter>Cheat\Visuals</Filter>
+    </ClCompile>
+    <ClCompile Include="gameevents.cpp">
+      <Filter>Cheat\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="drawmodel.cpp">
+      <Filter>Hooks\DrawModel</Filter>
+    </ClCompile>
+    <ClCompile Include="drawmodelstatsoverlay.cpp">
+      <Filter>Hooks\DrawModelStats</Filter>
+    </ClCompile>
+    <ClCompile Include="beginframe.cpp">
+      <Filter>Hooks\BeginFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="offset.cpp">
+      <Filter>Offset</Filter>
+    </ClCompile>
+    <ClCompile Include="viewmodel.cpp">
+      <Filter>Hooks\Viewmodel</Filter>
+    </ClCompile>
+    <ClCompile Include="overrideconfig.cpp">
+      <Filter>Hooks\OverrideConfig</Filter>
+    </ClCompile>
+    <ClCompile Include="skinchanger.cpp">
+      <Filter>Cheat\Skinchanger</Filter>
+    </ClCompile>
+    <ClCompile Include="wndproc.cpp">
+      <Filter>Hooks\WindowProc</Filter>
+    </ClCompile>
+    <ClCompile Include="svcheats.cpp">
+      <Filter>Hooks\SvCheats</Filter>
+    </ClCompile>
+    <ClCompile Include="setupbones.cpp">
+      <Filter>Hooks\SetupBones</Filter>
+    </ClCompile>
+    <ClCompile Include="rageaimbot.cpp">
+      <Filter>Cheat\Aimer</Filter>
+    </ClCompile>
+    <ClCompile Include="ishltv.cpp">
+      <Filter>Hooks\IsHLTV</Filter>
+    </ClCompile>
+    <ClCompile Include="sceneend.cpp">
+      <Filter>Hooks\Sceneend</Filter>
+    </ClCompile>
+    <ClCompile Include="nadepred.cpp">
+      <Filter>Cheat\Visuals</Filter>
+    </ClCompile>
+    <ClCompile Include="eventlogs.cpp">
+      <Filter>Cheat\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="hitmarker.cpp">
+      <Filter>Cheat\Visuals</Filter>
+    </ClCompile>
+    <ClCompile Include="fireevent.cpp">
+      <Filter>Hooks\FireEvent</Filter>
+    </ClCompile>
+    <ClCompile Include="md5.cpp">
+      <Filter>Math\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="doextraboneprocessing.cpp">
+      <Filter>Hooks\DoExtraBoneProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="csmshadow.cpp">
+      <Filter>Hooks\CSMShadow</Filter>
+    </ClCompile>
+    <ClCompile Include="TraceRay.cpp">
+      <Filter>Hooks\TraceRay</Filter>
+    </ClCompile>
+    <ClCompile Include="HDE.cpp">
+      <Filter>Tools\Bytepatch hook\HDE</Filter>
+    </ClCompile>
+    <ClCompile Include="Detour.cpp" />
+    <ClCompile Include="IsEntBreakableHook.cpp">
+      <Filter>Hooks\IsEntBreakable</Filter>
+    </ClCompile>
+    <ClCompile Include="updateanimations.cpp">
+      <Filter>Hooks\UpdatePlayerAnimations</Filter>
+    </ClCompile>
+    <ClCompile Include="shouldskipanimframe.cpp">
+      <Filter>Hooks\ShouldSkipAnimationFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="inprediction.cpp">
+      <Filter>Hooks\InPrediction</Filter>
+    </ClCompile>
+    <ClCompile Include="writeusercmd.cpp">
+      <Filter>Hooks\WriteUserCmdDeltaToBuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="calcviewmodelview.cpp">
+      <Filter>Hooks\CalcViewModelView</Filter>
+    </ClCompile>
+    <ClCompile Include="packetstart.cpp">
+      <Filter>Hooks\PacketStart</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h" />
+    <ClInclude Include="vector.h">
+      <Filter>Math\Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="vmtmanager.h">
+      <Filter>Sdk Rebuild\VmtManager</Filter>
+    </ClInclude>
+    <ClInclude Include="debug.h">
+      <Filter>Tools\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="netvarmanager.h">
+      <Filter>Sdk Rebuild\Netvars</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk.h">
+      <Filter>Sdk Rebuild\Sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="interfaces.h">
+      <Filter>Tools\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="patternscan.h">
+      <Filter>Tools\PatternScan</Filter>
+    </ClInclude>
+    <ClInclude Include="hooks.h">
+      <Filter>Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="painttraverse.h">
+      <Filter>Hooks\PaintTraverse</Filter>
+    </ClInclude>
+    <ClInclude Include="createmove.h">
+      <Filter>Hooks\CreateMove</Filter>
+    </ClInclude>
+    <ClInclude Include="checksum_crc.h">
+      <Filter>Math\Checksum</Filter>
+    </ClInclude>
+    <ClInclude Include="drawing.h">
+      <Filter>Sdk Rebuild\Drawing</Filter>
+    </ClInclude>
+    <ClInclude Include="math.h">
+      <Filter>Math\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="vars.h">
+      <Filter>Cheat\Vars</Filter>
+    </ClInclude>
+    <ClInclude Include="gui.h">
+      <Filter>Cheat\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="awall.h">
+      <Filter>Math\Autowall</Filter>
+    </ClInclude>
+    <ClInclude Include="cbasecombatweapon.h">
+      <Filter>Sdk Rebuild\Sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="cenginetraceclient.h">
+      <Filter>Sdk Rebuild\Sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="cgamemovement.h">
+      <Filter>Sdk Rebuild\Sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="cglowobjectmanager.h">
+      <Filter>Sdk Rebuild\Sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="cinput.h">
+      <Filter>Sdk Rebuild\Sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="clientclass.h">
+      <Filter>Sdk Rebuild\Sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="cusercmd.h">
+      <Filter>Sdk Rebuild\Sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="cweapondata.h">
+      <Filter>Sdk Rebuild\Sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="defines.h">
+      <Filter>Sdk Rebuild\Sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="globalvars.h">
+      <Filter>Sdk Rebuild\Sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="hlclient.h">
+      <Filter>Sdk Rebuild\Sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="imovehelper.h">
+      <Filter>Sdk Rebuild\Sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="vcliententitylist.h">
+      <Filter>Sdk Rebuild\Sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="vclientprediction.h">
+      <Filter>Sdk Rebuild\Sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="vdebugoverlay.h">
+      <Filter>Sdk Rebuild\Sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="vengineclient.h">
+      <Filter>Sdk Rebuild\Sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="vgui_panel.h">
+      <Filter>Sdk Rebuild\Sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="vgui_surface.h">
+      <Filter>Sdk Rebuild\Sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="vmodelinfoclient.h">
+      <Filter>Sdk Rebuild\Sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="vphysicssurfaceprops.h">
+      <Filter>Sdk Rebuild\Sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="cbaseentity.h">
+      <Filter>Sdk Rebuild\Sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="misc.h">
+      <Filter>Cheat\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="iCvar.h">
+      <Filter>Sdk Rebuild\Sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="antiaim.h">
+      <Filter>Cheat\Antiaim</Filter>
+    </ClInclude>
+    <ClInclude Include="inetchannel.h">
+      <Filter>Sdk Rebuild\Sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="runcommand.h">
+      <Filter>Hooks\RunCommand</Filter>
+    </ClInclude>
+    <ClInclude Include="framestagenotify.h">
+      <Filter>Hooks\FrameStageNotify</Filter>
+    </ClInclude>
+    <ClInclude Include="color.h">
+      <Filter>Sdk Rebuild\Sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="imaterial.h">
+      <Filter>Sdk Rebuild\Sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="vengineeffects.h">
+      <Filter>Sdk Rebuild\Sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="irecipienfilter.h">
+      <Filter>Sdk Rebuild\Sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="ienginesoundclient.h">
+      <Filter>Sdk Rebuild\Sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="overrideview.h">
+      <Filter>Hooks\OverrideView</Filter>
+    </ClInclude>
+    <ClInclude Include="history.h">
+      <Filter>Cheat\History</Filter>
+    </ClInclude>
+    <ClInclude Include="resolver.h">
+      <Filter>Cheat\Resolver</Filter>
+    </ClInclude>
+    <ClInclude Include="iviewrenderbeams.h">
+      <Filter>Sdk Rebuild\Sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="visuals.h">
+      <Filter>Cheat\Visuals</Filter>
+    </ClInclude>
+    <ClInclude Include="gameevents.h">
+      <Filter>Sdk Rebuild\Sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="drawmodel.h">
+      <Filter>Hooks\DrawModel</Filter>
+    </ClInclude>
+    <ClInclude Include="drawmodelstatsoverlay.h">
+      <Filter>Hooks\DrawModelStats</Filter>
+    </ClInclude>
+    <ClInclude Include="beginframe.h">
+      <Filter>Hooks\BeginFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="offset.h">
+      <Filter>Offset</Filter>
+    </ClInclude>
+    <ClInclude Include="clientstate.h">
+      <Filter>Sdk Rebuild\Sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="imemalloc.h">
+      <Filter>Sdk Rebuild\Sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="weaponicon.h">
+      <Filter>Sdk Rebuild\Drawing</Filter>
+    </ClInclude>
+    <ClInclude Include="json.h">
+      <Filter>Cheat\Vars</Filter>
+    </ClInclude>
+    <ClInclude Include="viewmodel.h">
+      <Filter>Hooks\Viewmodel</Filter>
+    </ClInclude>
+    <ClInclude Include="overrideconfig.h">
+      <Filter>Hooks\OverrideConfig</Filter>
+    </ClInclude>
+    <ClInclude Include="skinchanger.h">
+      <Filter>Cheat\Skinchanger</Filter>
+    </ClInclude>
+    <ClInclude Include="chudchat.h">
+      <Filter>Sdk Rebuild\Sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="wndproc.h">
+      <Filter>Hooks\WindowProc</Filter>
+    </ClInclude>
+    <ClInclude Include="svcheats.h">
+      <Filter>Hooks\SvCheats</Filter>
+    </ClInclude>
+    <ClInclude Include="setupbones.h">
+      <Filter>Hooks\SetupBones</Filter>
+    </ClInclude>
+    <ClInclude Include="rageaimbot.h">
+      <Filter>Cheat\Aimer</Filter>
+    </ClInclude>
+    <ClInclude Include="ishltv.h">
+      <Filter>Hooks\IsHLTV</Filter>
+    </ClInclude>
+    <ClInclude Include="animation.h">
+      <Filter>Sdk Rebuild\Sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sceneend.h">
+      <Filter>Hooks\Sceneend</Filter>
+    </ClInclude>
+    <ClInclude Include="nadepred.h">
+      <Filter>Cheat\Visuals</Filter>
+    </ClInclude>
+    <ClInclude Include="eventlogs.h">
+      <Filter>Cheat\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="hitmarker.h">
+      <Filter>Cheat\Visuals</Filter>
+    </ClInclude>
+    <ClInclude Include="md5.h">
+      <Filter>Math\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="doextraboneprocessing.h">
+      <Filter>Hooks\DoExtraBoneProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="csmshadow.h">
+      <Filter>Hooks\CSMShadow</Filter>
+    </ClInclude>
+    <ClInclude Include="TraceRay.hpp">
+      <Filter>Hooks\TraceRay</Filter>
+    </ClInclude>
+    <ClInclude Include="HDE.h">
+      <Filter>Tools\Bytepatch hook\HDE</Filter>
+    </ClInclude>
+    <ClInclude Include="Detour.h">
+      <Filter>Tools\Bytepatch hook</Filter>
+    </ClInclude>
+    <ClInclude Include="IsEntBreakableHook.hpp">
+      <Filter>Hooks\IsEntBreakable</Filter>
+    </ClInclude>
+    <ClInclude Include="updateanimations.h">
+      <Filter>Hooks\UpdatePlayerAnimations</Filter>
+    </ClInclude>
+    <ClInclude Include="shouldskipanimframe.h">
+      <Filter>Hooks\ShouldSkipAnimationFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="inprediction.h">
+      <Filter>Hooks\InPrediction</Filter>
+    </ClInclude>
+    <ClInclude Include="writeusercmd.h">
+      <Filter>Hooks\WriteUserCmdDeltaToBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="calcviewmodelview.h">
+      <Filter>Hooks\CalcViewModelView</Filter>
+    </ClInclude>
+    <ClInclude Include="packetstart.h">
+      <Filter>Hooks\PacketStart</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

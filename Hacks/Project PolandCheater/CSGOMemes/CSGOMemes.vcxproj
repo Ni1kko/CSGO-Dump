@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{222531BD-34DD-4FB4-92A8-A97709698384}</ProjectGuid>
+    <RootNamespace>CSGOMemes</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)build\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>ucstaff_csgo</TargetName>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)build\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>ucstaff_csgo</TargetName>
+    <TargetExt>.dll</TargetExt>
+    <IncludePath>C:\boost_1_63_0;$(IncludePath)</IncludePath>
+    <LinkIncremental>
+    </LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)build\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>ucstaff_csgo</TargetName>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)build\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>ucstaff_csgo</TargetName>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_WINDLL;_WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_WINDLL;_WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>_WINDLL;_WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_WINDLL;_WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="EnginePrediction.hpp" />
+    <ClInclude Include="features\AutoStrafe.hpp" />
+    <ClInclude Include="features\bhop.hpp" />
+    <ClInclude Include="Features\FakeLag.hpp" />
+    <ClInclude Include="features\GrenadePrediction.h" />
+    <ClInclude Include="features\KnifeChanger.h" />
+    <ClInclude Include="features\LegitBot.h" />
+    <ClInclude Include="Helpers\input_system.hpp" />
+    <ClInclude Include="Helpers\math.hpp" />
+    <ClInclude Include="Helpers\utils.hpp" />
+    <ClInclude Include="Helpers\vdf_parser.hpp" />
+    <ClInclude Include="Helpers\vfunc_hook.hpp" />
+    <ClInclude Include="hooks.hpp" />
+    <ClInclude Include="imgui\directx9\imgui_impl_dx9.h" />
+    <ClInclude Include="imgui\imconfig.h" />
+    <ClInclude Include="imgui\imgui.h" />
+    <ClInclude Include="imgui\imgui_internal.h" />
+    <ClInclude Include="Listener.hpp" />
+    <ClInclude Include="Menu.hpp" />
+    <ClInclude Include="imgui\stb_rect_pack.h" />
+    <ClInclude Include="imgui\stb_textedit.h" />
+    <ClInclude Include="imgui\stb_truetype.h" />
+    <ClInclude Include="Proxies.h" />
+    <ClInclude Include="singleton.hpp" />
+    <ClInclude Include="ui.hpp" />
+    <ClInclude Include="json.hpp" />
+    <ClInclude Include="Options.hpp" />
+    <ClInclude Include="ValveSDK\csgostructs.hpp" />
+    <ClInclude Include="ValveSDK\ILocalize.hpp" />
+    <ClInclude Include="ValveSDK\interfaces.hpp" />
+    <ClInclude Include="ValveSDK\interfaces\CClientState.hpp" />
+    <ClInclude Include="ValveSDK\interfaces\CInput.hpp" />
+    <ClInclude Include="ValveSDK\interfaces\CLobbyScreen.hpp" />
+    <ClInclude Include="ValveSDK\interfaces\IAppSystem.hpp" />
+    <ClInclude Include="ValveSDK\interfaces\IBaseClientDll.hpp" />
+    <ClInclude Include="ValveSDK\interfaces\IClientEntity.hpp" />
+    <ClInclude Include="ValveSDK\interfaces\IClientEntityList.hpp" />
+    <ClInclude Include="ValveSDK\interfaces\IClientMode.hpp" />
+    <ClInclude Include="ValveSDK\interfaces\IClientNetworkable.hpp" />
+    <ClInclude Include="ValveSDK\interfaces\IClientRenderable.hpp" />
+    <ClInclude Include="ValveSDK\interfaces\IClientThinkable.hpp" />
+    <ClInclude Include="ValveSDK\interfaces\IClientUnknown.hpp" />
+    <ClInclude Include="ValveSDK\interfaces\ICollideable.hpp" />
+    <ClInclude Include="ValveSDK\interfaces\IConVar.hpp" />
+    <ClInclude Include="ValveSDK\interfaces\ICvar.hpp" />
+    <ClInclude Include="ValveSDK\interfaces\IEngineSound.hpp" />
+    <ClInclude Include="ValveSDK\interfaces\IEngineTrace.hpp" />
+    <ClInclude Include="ValveSDK\interfaces\IGameEventmanager.hpp" />
+    <ClInclude Include="ValveSDK\interfaces\IMaterialSystem.hpp" />
+    <ClInclude Include="ValveSDK\interfaces\IMDLCache.hpp" />
+    <ClInclude Include="ValveSDK\interfaces\IMoveHelper.hpp" />
+    <ClInclude Include="ValveSDK\interfaces\INetworkStringTable.hpp" />
+    <ClInclude Include="ValveSDK\interfaces\IPanel.hpp" />
+    <ClInclude Include="ValveSDK\interfaces\IPhysics.hpp" />
+    <ClInclude Include="ValveSDK\interfaces\IPrediction.hpp" />
+    <ClInclude Include="ValveSDK\interfaces\IRenderView.hpp" />
+    <ClInclude Include="ValveSDK\interfaces\ISurface.hpp" />
+    <ClInclude Include="ValveSDK\interfaces\IVDebugOverlay.hpp" />
+    <ClInclude Include="ValveSDK\interfaces\IVEffects.hpp" />
+    <ClInclude Include="ValveSDK\interfaces\IVEngineClient.hpp" />
+    <ClInclude Include="ValveSDK\interfaces\IViewRender.hpp" />
+    <ClInclude Include="ValveSDK\interfaces\IVModelInfoClient.hpp" />
+    <ClInclude Include="ValveSDK\interfaces\IVModelRender.hpp" />
+    <ClInclude Include="ValveSDK\interfaces\KeyValues.h" />
+    <ClInclude Include="ValveSDK\math\QAngle.hpp" />
+    <ClInclude Include="ValveSDK\math\Vector.hpp" />
+    <ClInclude Include="ValveSDK\math\Vector2D.hpp" />
+    <ClInclude Include="ValveSDK\math\Vector4D.hpp" />
+    <ClInclude Include="ValveSDK\math\VMatrix.hpp" />
+    <ClInclude Include="ValveSDK\misc\BaseHandle.hpp" />
+    <ClInclude Include="ValveSDK\misc\characterset.hpp" />
+    <ClInclude Include="ValveSDK\misc\checksum_crc.hpp" />
+    <ClInclude Include="ValveSDK\misc\checksum_md5.hpp" />
+    <ClInclude Include="ValveSDK\misc\ClientClass.hpp" />
+    <ClInclude Include="ValveSDK\misc\Color.hpp" />
+    <ClInclude Include="ValveSDK\misc\Convar.hpp" />
+    <ClInclude Include="ValveSDK\misc\CUserCmd.hpp" />
+    <ClInclude Include="ValveSDK\misc\EHandle.hpp" />
+    <ClInclude Include="ValveSDK\misc\Enums.hpp" />
+    <ClInclude Include="ValveSDK\misc\GlobalVars.hpp" />
+    <ClInclude Include="ValveSDK\misc\glow_outline_effect.hpp" />
+    <ClInclude Include="ValveSDK\misc\IHandleEntity.hpp" />
+    <ClInclude Include="ValveSDK\misc\platform.hpp" />
+    <ClInclude Include="ValveSDK\misc\Recv.hpp" />
+    <ClInclude Include="ValveSDK\misc\SpoofedConvar.hpp" />
+    <ClInclude Include="ValveSDK\misc\Studio.hpp" />
+    <ClInclude Include="ValveSDK\misc\UtlBuffer.hpp" />
+    <ClInclude Include="ValveSDK\misc\UtlMemory.hpp" />
+    <ClInclude Include="ValveSDK\misc\UtlString.hpp" />
+    <ClInclude Include="ValveSDK\misc\UtlVector.hpp" />
+    <ClInclude Include="ValveSDK\misc\vfunc.hpp" />
+    <ClInclude Include="ValveSDK\netvar_system.hpp" />
+    <ClInclude Include="features\visuals.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="EnginePrediction.cpp" />
+    <ClCompile Include="features\AutoStrafe.cpp" />
+    <ClCompile Include="features\bhop.cpp" />
+    <ClCompile Include="Features\FakeLag.cpp" />
+    <ClCompile Include="features\GrenadePrediction.cpp" />
+    <ClCompile Include="features\LegitBot.cpp" />
+    <ClCompile Include="Helpers\input_system.cpp" />
+    <ClCompile Include="Helpers\math.cpp" />
+    <ClCompile Include="Helpers\utils.cpp" />
+    <ClCompile Include="Helpers\vfunc_hook.cpp" />
+    <ClCompile Include="hooks.cpp" />
+    <ClCompile Include="imgui\directx9\imgui_impl_dx9.cpp" />
+    <ClCompile Include="imgui\imgui.cpp" />
+    <ClCompile Include="imgui\imgui_draw.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="ui.cpp" />
+    <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="Options.cpp" />
+    <ClCompile Include="ValveSDK\csgostructs.cpp" />
+    <ClCompile Include="ValveSDK\interfaces.cpp" />
+    <ClCompile Include="ValveSDK\math\Vector2D.cpp" />
+    <ClCompile Include="ValveSDK\math\Vector4D.cpp" />
+    <ClCompile Include="ValveSDK\math\VMatrix.cpp" />
+    <ClCompile Include="ValveSDK\misc\characterset.cpp" />
+    <ClCompile Include="ValveSDK\misc\checksum_crc.cpp" />
+    <ClCompile Include="ValveSDK\misc\checksum_md5.cpp" />
+    <ClCompile Include="ValveSDK\misc\Color.cpp" />
+    <ClCompile Include="ValveSDK\misc\Convar.cpp" />
+    <ClCompile Include="ValveSDK\misc\SpoofedConvar.cpp" />
+    <ClCompile Include="ValveSDK\misc\UtlBuffer.cpp" />
+    <ClCompile Include="ValveSDK\misc\UtlString.cpp" />
+    <ClCompile Include="ValveSDK\netvar_system.cpp" />
+    <ClCompile Include="features\visuals.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

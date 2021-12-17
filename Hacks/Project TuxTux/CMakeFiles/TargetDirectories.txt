@@ -1,0 +1,3 @@
+/home/pysen/tuktuk/CMakeFiles/rebuild_cache.dir
+/home/pysen/tuktuk/CMakeFiles/SpaceHook.dir
+/home/pysen/tuktuk/CMakeFiles/edit_cache.dir

@@ -1,0 +1,65 @@
+R"zk1sakz(
+<root>
+  <styles>
+    <include src="file://{resources}/styles/csgostyles.css" />
+    <include src="file://{resources}/styles/settings/settings.css" />
+    <include src="file://{resources}/styles/mainmenu.css"/>
+  </styles>
+
+  <scripts>
+    <include src="file://{resources}/scripts/settingsmenu.js" />
+    <include src="file://{resources}/scripts/settingsmenu_shared.js" />
+    <include src="file://{resources}/scripts/buymenu.js" />
+  </scripts>
+
+  <script>
+        var strGameType = 'classic';
+         var    strGameMode = 'casual';
+   var settings = {
+	        update: {
+	            Game: {
+	                type: strGameType,
+	                mode: strGameMode,
+	            }
+	        }
+	    };
+
+     var StartMatchmakinga = function () {
+    LobbyAPI.UpdateSessionSettings( settings );
+	    LobbyAPI.StartMatchmaking();
+    };
+  </script>
+
+  <Panel class='Main mainmenu-content__container' style='width: 700px; height: 500px; horizontal-align: right; vertical-align: center; background-color: gradient( linear, 0% 0%, 0% 100%, from( #1e2a38dd ), to( #19232fdd ) );'>
+        <Label text='pysen' style='horizontal-align: center; vertical-align: top; font-size: 24px; color: grey;'/>
+        <Panel class="horizontal-separator"/>
+        <Panel style='vertical-align: top; horizontal-align: left; flow-children: down;'>
+          <Panel style='horizontal-align: left;margin-bottom: 10px; flow-children: right; color:red;'>
+            <TextButton class="PopupButton" onactivate="LobbyAPI.StopMatchmaking();" >
+              <Label style="color:red;" text="Stop Matchmaking"/>
+            </TextButton>
+            <TextButton class="PopupButton" text="StartMatchmaking" onactivate="StartMatchmakinga();" />
+           
+          </Panel>
+          <Panel class="horizontal-separator"/>
+         <TextButton class="PopupButton" text="ActionReconnectToOngoingMatch" onactivate="CompetitiveMatchAPI.ActionReconnectToOngoingMatch();" />
+          <Panel style='horizontal-align: left; margin-bottom: 10px;'>
+            <ToggleButton id="skele_enable_bhop" data-category="skele" class="PopupButton Row" onactivate="LobbyAPI.KickPlayer('76561198982538880');" >
+              <Label id="" text="BunnyHop" />
+            </ToggleButton>
+          </Panel>
+          <Panel style='horizontal-align: left; margin-bottom: 10px;'>
+            <ToggleButton id="skele_enable_esp" data-category="skele" class="PopupButton Row" onactivate="LobbyAPI.CloseSession();" >
+              <Label id="" text="Chicken ESP" />
+            </ToggleButton>
+          </Panel>
+
+          <Panel class="horizontal-separator"/>
+
+          <CSGOSettingsSlider text="example" max="8" min="0.05" displayprecision="2" convar="skele_example_slider"/>
+          <CSGOSettingsSlider text="sensitivity" max="8" min="0.05" displayprecision="2" convar="sensitivity"/>
+        </Panel>
+    </Panel>
+</root>
+
+)zk1sakz"

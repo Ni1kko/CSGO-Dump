@@ -3,18 +3,18 @@ using System.Runtime.InteropServices;
 
 namespace ManualMapInjection.Injection.Types
 {
-    public class ManagedPtr<T> where T : struct
+    internal class ManagedPtr<T> where T : struct
     {
-        public IntPtr Address { get; }
+        internal IntPtr Address { get; }
 
-        public T Value
+        internal T Value
         {
             get { return this[0]; }
         }
 
-        private int? _structSize;
+        private protected int? _structSize;
 
-        public int StructSize
+        internal int StructSize
         {
             get
             {
@@ -27,12 +27,12 @@ namespace ManualMapInjection.Injection.Types
             }
         }
 
-        private static T GetStructure(IntPtr address)
+        private protected static T GetStructure(IntPtr address)
         {
             return (T) Marshal.PtrToStructure(address, typeof(T));
         }
 
-        public T this[uint index]
+        internal T this[uint index]
         {
             get { return GetStructure(Address + (int) index * StructSize); }
         }
@@ -72,16 +72,16 @@ namespace ManualMapInjection.Injection.Types
             return ptr.Address;
         }
 
-        private GCHandle _handle;
+        private protected GCHandle _handle;
 
-        private bool _freeHandle;
+        private protected bool _freeHandle;
 
-        public ManagedPtr(IntPtr address)
+        internal ManagedPtr(IntPtr address)
         {
             Address = address;
         }
 
-        public ManagedPtr(object value, bool freeHandle = true)
+        internal ManagedPtr(object value, bool freeHandle = true)
         {
             if (value == null)
             {

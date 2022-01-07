@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Runtime.InteropServices;
-using ManualMapInjection.Injection.Types;
 
 namespace ManualMapInjection.Injection.Win32
 {
-    public enum MachineType : ushort
+    internal enum MachineType : ushort
     {
         Native = 0,
         I386 = 0x014c,
@@ -12,13 +11,13 @@ namespace ManualMapInjection.Injection.Win32
         x64 = 0x8664
     }
 
-    public enum MagicType : ushort
+    internal enum MagicType : ushort
     {
         IMAGE_NT_OPTIONAL_HDR32_MAGIC = 0x10b,
         IMAGE_NT_OPTIONAL_HDR64_MAGIC = 0x20b
     }
 
-    public enum SubSystemType : ushort
+    internal enum SubSystemType : ushort
     {
         IMAGE_SUBSYSTEM_UNKNOWN = 0,
         IMAGE_SUBSYSTEM_NATIVE = 1,
@@ -33,7 +32,7 @@ namespace ManualMapInjection.Injection.Win32
         IMAGE_SUBSYSTEM_XBOX = 14
     }
 
-    public enum DllCharacteristicsType : ushort
+    internal enum DllCharacteristicsType : ushort
     {
         RES_0 = 0x0001,
         RES_1 = 0x0002,
@@ -51,7 +50,7 @@ namespace ManualMapInjection.Injection.Win32
     }
 
     [Flags]
-    public enum DataSectionFlags : uint
+    internal enum DataSectionFlags : uint
     {
         /// <summary>
         /// Reserved for future use.
@@ -265,264 +264,264 @@ namespace ManualMapInjection.Injection.Win32
     }
 
     [StructLayout(LayoutKind.Sequential)]
-    public struct IMAGE_DOS_HEADER
+    internal struct IMAGE_DOS_HEADER
     {
-        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 2)] public char[] e_magic; // Magic number
-        public UInt16 e_cblp; // Bytes on last page of file
-        public UInt16 e_cp; // Pages in file
-        public UInt16 e_crlc; // Relocations
-        public UInt16 e_cparhdr; // Size of header in paragraphs
-        public UInt16 e_minalloc; // Minimum extra paragraphs needed
-        public UInt16 e_maxalloc; // Maximum extra paragraphs needed
-        public UInt16 e_ss; // Initial (relative) SS value
-        public UInt16 e_sp; // Initial SP value
-        public UInt16 e_csum; // Checksum
-        public UInt16 e_ip; // Initial IP value
-        public UInt16 e_cs; // Initial (relative) CS value
-        public UInt16 e_lfarlc; // File address of relocation table
-        public UInt16 e_ovno; // Overlay number
-        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 4)] public UInt16[] e_res1; // Reserved words
-        public UInt16 e_oemid; // OEM identifier (for e_oeminfo)
-        public UInt16 e_oeminfo; // OEM information; e_oemid specific
-        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 10)] public UInt16[] e_res2; // Reserved words
-        public Int32 e_lfanew; // File address of new exe header
+        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 2)] internal char[] e_magic; // Magic number
+        internal UInt16 e_cblp; // Bytes on last page of file
+        internal UInt16 e_cp; // Pages in file
+        internal UInt16 e_crlc; // Relocations
+        internal UInt16 e_cparhdr; // Size of header in paragraphs
+        internal UInt16 e_minalloc; // Minimum extra paragraphs needed
+        internal UInt16 e_maxalloc; // Maximum extra paragraphs needed
+        internal UInt16 e_ss; // Initial (relative) SS value
+        internal UInt16 e_sp; // Initial SP value
+        internal UInt16 e_csum; // Checksum
+        internal UInt16 e_ip; // Initial IP value
+        internal UInt16 e_cs; // Initial (relative) CS value
+        internal UInt16 e_lfarlc; // File address of relocation table
+        internal UInt16 e_ovno; // Overlay number
+        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 4)] internal UInt16[] e_res1; // Reserved words
+        internal UInt16 e_oemid; // OEM identifier (for e_oeminfo)
+        internal UInt16 e_oeminfo; // OEM information; e_oemid specific
+        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 10)] internal UInt16[] e_res2; // Reserved words
+        internal Int32 e_lfanew; // File address of new exe header
 
         private string _e_magic
         {
             get { return new string(e_magic); }
         }
 
-        public bool isValid
+        internal bool isValid
         {
             get { return _e_magic == "MZ"; }
         }
     }
 
     [StructLayout(LayoutKind.Sequential)]
-    public struct IMAGE_FILE_HEADER
+    internal struct IMAGE_FILE_HEADER
     {
-        public UInt16 Machine;
-        public UInt16 NumberOfSections;
-        public UInt32 TimeDateStamp;
-        public UInt32 PointerToSymbolTable;
-        public UInt32 NumberOfSymbols;
-        public UInt16 SizeOfOptionalHeader;
-        public UInt16 Characteristics;
+        internal UInt16 Machine;
+        internal UInt16 NumberOfSections;
+        internal UInt32 TimeDateStamp;
+        internal UInt32 PointerToSymbolTable;
+        internal UInt32 NumberOfSymbols;
+        internal UInt16 SizeOfOptionalHeader;
+        internal UInt16 Characteristics;
     }
 
     [StructLayout(LayoutKind.Sequential)]
-    public struct IMAGE_DATA_DIRECTORY
+    internal struct IMAGE_DATA_DIRECTORY
     {
-        public UInt32 VirtualAddress;
-        public UInt32 Size;
+        internal UInt32 VirtualAddress;
+        internal UInt32 Size;
     }
 
     [StructLayout(LayoutKind.Explicit)]
-    public struct IMAGE_OPTIONAL_HEADER32
+    internal struct IMAGE_OPTIONAL_HEADER32
     {
-        [FieldOffset(0)] public MagicType Magic;
+        [FieldOffset(0)] internal MagicType Magic;
 
-        [FieldOffset(2)] public byte MajorLinkerVersion;
+        [FieldOffset(2)] internal byte MajorLinkerVersion;
 
-        [FieldOffset(3)] public byte MinorLinkerVersion;
+        [FieldOffset(3)] internal byte MinorLinkerVersion;
 
-        [FieldOffset(4)] public uint SizeOfCode;
+        [FieldOffset(4)] internal uint SizeOfCode;
 
-        [FieldOffset(8)] public uint SizeOfInitializedData;
+        [FieldOffset(8)] internal uint SizeOfInitializedData;
 
-        [FieldOffset(12)] public uint SizeOfUninitializedData;
+        [FieldOffset(12)] internal uint SizeOfUninitializedData;
 
-        [FieldOffset(16)] public uint AddressOfEntryPoint;
+        [FieldOffset(16)] internal uint AddressOfEntryPoint;
 
-        [FieldOffset(20)] public uint BaseOfCode;
+        [FieldOffset(20)] internal uint BaseOfCode;
 
         // PE32 contains this additional field
-        [FieldOffset(24)] public uint BaseOfData;
+        [FieldOffset(24)] internal uint BaseOfData;
 
-        [FieldOffset(28)] public uint ImageBase;
+        [FieldOffset(28)] internal uint ImageBase;
 
-        [FieldOffset(32)] public uint SectionAlignment;
+        [FieldOffset(32)] internal uint SectionAlignment;
 
-        [FieldOffset(36)] public uint FileAlignment;
+        [FieldOffset(36)] internal uint FileAlignment;
 
-        [FieldOffset(40)] public ushort MajorOperatingSystemVersion;
+        [FieldOffset(40)] internal ushort MajorOperatingSystemVersion;
 
-        [FieldOffset(42)] public ushort MinorOperatingSystemVersion;
+        [FieldOffset(42)] internal ushort MinorOperatingSystemVersion;
 
-        [FieldOffset(44)] public ushort MajorImageVersion;
+        [FieldOffset(44)] internal ushort MajorImageVersion;
 
-        [FieldOffset(46)] public ushort MinorImageVersion;
+        [FieldOffset(46)] internal ushort MinorImageVersion;
 
-        [FieldOffset(48)] public ushort MajorSubsystemVersion;
+        [FieldOffset(48)] internal ushort MajorSubsystemVersion;
 
-        [FieldOffset(50)] public ushort MinorSubsystemVersion;
+        [FieldOffset(50)] internal ushort MinorSubsystemVersion;
 
-        [FieldOffset(52)] public uint Win32VersionValue;
+        [FieldOffset(52)] internal uint Win32VersionValue;
 
-        [FieldOffset(56)] public uint SizeOfImage;
+        [FieldOffset(56)] internal uint SizeOfImage;
 
-        [FieldOffset(60)] public uint SizeOfHeaders;
+        [FieldOffset(60)] internal uint SizeOfHeaders;
 
-        [FieldOffset(64)] public uint CheckSum;
+        [FieldOffset(64)] internal uint CheckSum;
 
-        [FieldOffset(68)] public SubSystemType Subsystem;
+        [FieldOffset(68)] internal SubSystemType Subsystem;
 
-        [FieldOffset(70)] public DllCharacteristicsType DllCharacteristics;
+        [FieldOffset(70)] internal DllCharacteristicsType DllCharacteristics;
 
-        [FieldOffset(72)] public uint SizeOfStackReserve;
+        [FieldOffset(72)] internal uint SizeOfStackReserve;
 
-        [FieldOffset(76)] public uint SizeOfStackCommit;
+        [FieldOffset(76)] internal uint SizeOfStackCommit;
 
-        [FieldOffset(80)] public uint SizeOfHeapReserve;
+        [FieldOffset(80)] internal uint SizeOfHeapReserve;
 
-        [FieldOffset(84)] public uint SizeOfHeapCommit;
+        [FieldOffset(84)] internal uint SizeOfHeapCommit;
 
-        [FieldOffset(88)] public uint LoaderFlags;
+        [FieldOffset(88)] internal uint LoaderFlags;
 
-        [FieldOffset(92)] public uint NumberOfRvaAndSizes;
+        [FieldOffset(92)] internal uint NumberOfRvaAndSizes;
 
-        [FieldOffset(96)] public IMAGE_DATA_DIRECTORY ExportTable;
+        [FieldOffset(96)] internal IMAGE_DATA_DIRECTORY ExportTable;
 
-        [FieldOffset(104)] public IMAGE_DATA_DIRECTORY ImportTable;
+        [FieldOffset(104)] internal IMAGE_DATA_DIRECTORY ImportTable;
 
-        [FieldOffset(112)] public IMAGE_DATA_DIRECTORY ResourceTable;
+        [FieldOffset(112)] internal IMAGE_DATA_DIRECTORY ResourceTable;
 
-        [FieldOffset(120)] public IMAGE_DATA_DIRECTORY ExceptionTable;
+        [FieldOffset(120)] internal IMAGE_DATA_DIRECTORY ExceptionTable;
 
-        [FieldOffset(128)] public IMAGE_DATA_DIRECTORY CertificateTable;
+        [FieldOffset(128)] internal IMAGE_DATA_DIRECTORY CertificateTable;
 
-        [FieldOffset(136)] public IMAGE_DATA_DIRECTORY BaseRelocationTable;
+        [FieldOffset(136)] internal IMAGE_DATA_DIRECTORY BaseRelocationTable;
 
-        [FieldOffset(144)] public IMAGE_DATA_DIRECTORY Debug;
+        [FieldOffset(144)] internal IMAGE_DATA_DIRECTORY Debug;
 
-        [FieldOffset(152)] public IMAGE_DATA_DIRECTORY Architecture;
+        [FieldOffset(152)] internal IMAGE_DATA_DIRECTORY Architecture;
 
-        [FieldOffset(160)] public IMAGE_DATA_DIRECTORY GlobalPtr;
+        [FieldOffset(160)] internal IMAGE_DATA_DIRECTORY GlobalPtr;
 
-        [FieldOffset(168)] public IMAGE_DATA_DIRECTORY TLSTable;
+        [FieldOffset(168)] internal IMAGE_DATA_DIRECTORY TLSTable;
 
-        [FieldOffset(176)] public IMAGE_DATA_DIRECTORY LoadConfigTable;
+        [FieldOffset(176)] internal IMAGE_DATA_DIRECTORY LoadConfigTable;
 
-        [FieldOffset(184)] public IMAGE_DATA_DIRECTORY BoundImport;
+        [FieldOffset(184)] internal IMAGE_DATA_DIRECTORY BoundImport;
 
-        [FieldOffset(192)] public IMAGE_DATA_DIRECTORY IAT;
+        [FieldOffset(192)] internal IMAGE_DATA_DIRECTORY IAT;
 
-        [FieldOffset(200)] public IMAGE_DATA_DIRECTORY DelayImportDescriptor;
+        [FieldOffset(200)] internal IMAGE_DATA_DIRECTORY DelayImportDescriptor;
 
-        [FieldOffset(208)] public IMAGE_DATA_DIRECTORY CLRRuntimeHeader;
+        [FieldOffset(208)] internal IMAGE_DATA_DIRECTORY CLRRuntimeHeader;
 
-        [FieldOffset(216)] public IMAGE_DATA_DIRECTORY Reserved;
+        [FieldOffset(216)] internal IMAGE_DATA_DIRECTORY Reserved;
     }
 
     [StructLayout(LayoutKind.Explicit)]
-    public struct IMAGE_OPTIONAL_HEADER64
+    internal struct IMAGE_OPTIONAL_HEADER64
     {
-        [FieldOffset(0)] public MagicType Magic;
+        [FieldOffset(0)] internal MagicType Magic;
 
-        [FieldOffset(2)] public byte MajorLinkerVersion;
+        [FieldOffset(2)] internal byte MajorLinkerVersion;
 
-        [FieldOffset(3)] public byte MinorLinkerVersion;
+        [FieldOffset(3)] internal byte MinorLinkerVersion;
 
-        [FieldOffset(4)] public uint SizeOfCode;
+        [FieldOffset(4)] internal uint SizeOfCode;
 
-        [FieldOffset(8)] public uint SizeOfInitializedData;
+        [FieldOffset(8)] internal uint SizeOfInitializedData;
 
-        [FieldOffset(12)] public uint SizeOfUninitializedData;
+        [FieldOffset(12)] internal uint SizeOfUninitializedData;
 
-        [FieldOffset(16)] public uint AddressOfEntryPoint;
+        [FieldOffset(16)] internal uint AddressOfEntryPoint;
 
-        [FieldOffset(20)] public uint BaseOfCode;
+        [FieldOffset(20)] internal uint BaseOfCode;
 
-        [FieldOffset(24)] public ulong ImageBase;
+        [FieldOffset(24)] internal ulong ImageBase;
 
-        [FieldOffset(32)] public uint SectionAlignment;
+        [FieldOffset(32)] internal uint SectionAlignment;
 
-        [FieldOffset(36)] public uint FileAlignment;
+        [FieldOffset(36)] internal uint FileAlignment;
 
-        [FieldOffset(40)] public ushort MajorOperatingSystemVersion;
+        [FieldOffset(40)] internal ushort MajorOperatingSystemVersion;
 
-        [FieldOffset(42)] public ushort MinorOperatingSystemVersion;
+        [FieldOffset(42)] internal ushort MinorOperatingSystemVersion;
 
-        [FieldOffset(44)] public ushort MajorImageVersion;
+        [FieldOffset(44)] internal ushort MajorImageVersion;
 
-        [FieldOffset(46)] public ushort MinorImageVersion;
+        [FieldOffset(46)] internal ushort MinorImageVersion;
 
-        [FieldOffset(48)] public ushort MajorSubsystemVersion;
+        [FieldOffset(48)] internal ushort MajorSubsystemVersion;
 
-        [FieldOffset(50)] public ushort MinorSubsystemVersion;
+        [FieldOffset(50)] internal ushort MinorSubsystemVersion;
 
-        [FieldOffset(52)] public uint Win32VersionValue;
+        [FieldOffset(52)] internal uint Win32VersionValue;
 
-        [FieldOffset(56)] public uint SizeOfImage;
+        [FieldOffset(56)] internal uint SizeOfImage;
 
-        [FieldOffset(60)] public uint SizeOfHeaders;
+        [FieldOffset(60)] internal uint SizeOfHeaders;
 
-        [FieldOffset(64)] public uint CheckSum;
+        [FieldOffset(64)] internal uint CheckSum;
 
-        [FieldOffset(68)] public SubSystemType Subsystem;
+        [FieldOffset(68)] internal SubSystemType Subsystem;
 
-        [FieldOffset(70)] public DllCharacteristicsType DllCharacteristics;
+        [FieldOffset(70)] internal DllCharacteristicsType DllCharacteristics;
 
-        [FieldOffset(72)] public ulong SizeOfStackReserve;
+        [FieldOffset(72)] internal ulong SizeOfStackReserve;
 
-        [FieldOffset(80)] public ulong SizeOfStackCommit;
+        [FieldOffset(80)] internal ulong SizeOfStackCommit;
 
-        [FieldOffset(88)] public ulong SizeOfHeapReserve;
+        [FieldOffset(88)] internal ulong SizeOfHeapReserve;
 
-        [FieldOffset(96)] public ulong SizeOfHeapCommit;
+        [FieldOffset(96)] internal ulong SizeOfHeapCommit;
 
-        [FieldOffset(104)] public uint LoaderFlags;
+        [FieldOffset(104)] internal uint LoaderFlags;
 
-        [FieldOffset(108)] public uint NumberOfRvaAndSizes;
+        [FieldOffset(108)] internal uint NumberOfRvaAndSizes;
 
-        [FieldOffset(112)] public IMAGE_DATA_DIRECTORY ExportTable;
+        [FieldOffset(112)] internal IMAGE_DATA_DIRECTORY ExportTable;
 
-        [FieldOffset(120)] public IMAGE_DATA_DIRECTORY ImportTable;
+        [FieldOffset(120)] internal IMAGE_DATA_DIRECTORY ImportTable;
 
-        [FieldOffset(128)] public IMAGE_DATA_DIRECTORY ResourceTable;
+        [FieldOffset(128)] internal IMAGE_DATA_DIRECTORY ResourceTable;
 
-        [FieldOffset(136)] public IMAGE_DATA_DIRECTORY ExceptionTable;
+        [FieldOffset(136)] internal IMAGE_DATA_DIRECTORY ExceptionTable;
 
-        [FieldOffset(144)] public IMAGE_DATA_DIRECTORY CertificateTable;
+        [FieldOffset(144)] internal IMAGE_DATA_DIRECTORY CertificateTable;
 
-        [FieldOffset(152)] public IMAGE_DATA_DIRECTORY BaseRelocationTable;
+        [FieldOffset(152)] internal IMAGE_DATA_DIRECTORY BaseRelocationTable;
 
-        [FieldOffset(160)] public IMAGE_DATA_DIRECTORY Debug;
+        [FieldOffset(160)] internal IMAGE_DATA_DIRECTORY Debug;
 
-        [FieldOffset(168)] public IMAGE_DATA_DIRECTORY Architecture;
+        [FieldOffset(168)] internal IMAGE_DATA_DIRECTORY Architecture;
 
-        [FieldOffset(176)] public IMAGE_DATA_DIRECTORY GlobalPtr;
+        [FieldOffset(176)] internal IMAGE_DATA_DIRECTORY GlobalPtr;
 
-        [FieldOffset(184)] public IMAGE_DATA_DIRECTORY TLSTable;
+        [FieldOffset(184)] internal IMAGE_DATA_DIRECTORY TLSTable;
 
-        [FieldOffset(192)] public IMAGE_DATA_DIRECTORY LoadConfigTable;
+        [FieldOffset(192)] internal IMAGE_DATA_DIRECTORY LoadConfigTable;
 
-        [FieldOffset(200)] public IMAGE_DATA_DIRECTORY BoundImport;
+        [FieldOffset(200)] internal IMAGE_DATA_DIRECTORY BoundImport;
 
-        [FieldOffset(208)] public IMAGE_DATA_DIRECTORY IAT;
+        [FieldOffset(208)] internal IMAGE_DATA_DIRECTORY IAT;
 
-        [FieldOffset(216)] public IMAGE_DATA_DIRECTORY DelayImportDescriptor;
+        [FieldOffset(216)] internal IMAGE_DATA_DIRECTORY DelayImportDescriptor;
 
-        [FieldOffset(224)] public IMAGE_DATA_DIRECTORY CLRRuntimeHeader;
+        [FieldOffset(224)] internal IMAGE_DATA_DIRECTORY CLRRuntimeHeader;
 
-        [FieldOffset(232)] public IMAGE_DATA_DIRECTORY Reserved;
+        [FieldOffset(232)] internal IMAGE_DATA_DIRECTORY Reserved;
     }
 
     [StructLayout(LayoutKind.Explicit)]
-    public struct IMAGE_NT_HEADERS32
+    internal struct IMAGE_NT_HEADERS32
     {
-        [FieldOffset(0)] [MarshalAs(UnmanagedType.ByValArray, SizeConst = 4)] public char[] Signature;
+        [FieldOffset(0)] [MarshalAs(UnmanagedType.ByValArray, SizeConst = 4)] internal char[] Signature;
 
-        [FieldOffset(4)] public IMAGE_FILE_HEADER FileHeader;
+        [FieldOffset(4)] internal IMAGE_FILE_HEADER FileHeader;
 
-        [FieldOffset(24)] public IMAGE_OPTIONAL_HEADER32 OptionalHeader;
+        [FieldOffset(24)] internal IMAGE_OPTIONAL_HEADER32 OptionalHeader;
 
         private string _Signature
         {
             get { return new string(Signature); }
         }
 
-        public bool isValid
+        internal bool isValid
         {
             get
             {
@@ -533,20 +532,20 @@ namespace ManualMapInjection.Injection.Win32
     }
 
     [StructLayout(LayoutKind.Explicit)]
-    public struct IMAGE_NT_HEADERS64
+    internal struct IMAGE_NT_HEADERS64
     {
-        [FieldOffset(0)] [MarshalAs(UnmanagedType.ByValArray, SizeConst = 4)] public char[] Signature;
+        [FieldOffset(0)] [MarshalAs(UnmanagedType.ByValArray, SizeConst = 4)] internal char[] Signature;
 
-        [FieldOffset(4)] public IMAGE_FILE_HEADER FileHeader;
+        [FieldOffset(4)] internal IMAGE_FILE_HEADER FileHeader;
 
-        [FieldOffset(24)] public IMAGE_OPTIONAL_HEADER64 OptionalHeader;
+        [FieldOffset(24)] internal IMAGE_OPTIONAL_HEADER64 OptionalHeader;
 
         private string _Signature
         {
             get { return new string(Signature); }
         }
 
-        public bool isValid
+        internal bool isValid
         {
             get
             {
@@ -557,161 +556,161 @@ namespace ManualMapInjection.Injection.Win32
     }
 
     [StructLayout(LayoutKind.Explicit)]
-    public struct IMAGE_SECTION_HEADER
+    internal struct IMAGE_SECTION_HEADER
     {
-        [FieldOffset(0)] [MarshalAs(UnmanagedType.ByValArray, SizeConst = 8)] public char[] Name;
+        [FieldOffset(0)] [MarshalAs(UnmanagedType.ByValArray, SizeConst = 8)] internal char[] Name;
 
-        [FieldOffset(8)] public UInt32 VirtualSize;
+        [FieldOffset(8)] internal UInt32 VirtualSize;
 
-        [FieldOffset(12)] public UInt32 VirtualAddress;
+        [FieldOffset(12)] internal UInt32 VirtualAddress;
 
-        [FieldOffset(16)] public UInt32 SizeOfRawData;
+        [FieldOffset(16)] internal UInt32 SizeOfRawData;
 
-        [FieldOffset(20)] public UInt32 PointerToRawData;
+        [FieldOffset(20)] internal UInt32 PointerToRawData;
 
-        [FieldOffset(24)] public UInt32 PointerToRelocations;
+        [FieldOffset(24)] internal UInt32 PointerToRelocations;
 
-        [FieldOffset(28)] public UInt32 PointerToLinenumbers;
+        [FieldOffset(28)] internal UInt32 PointerToLinenumbers;
 
-        [FieldOffset(32)] public UInt16 NumberOfRelocations;
+        [FieldOffset(32)] internal UInt16 NumberOfRelocations;
 
-        [FieldOffset(34)] public UInt16 NumberOfLinenumbers;
+        [FieldOffset(34)] internal UInt16 NumberOfLinenumbers;
 
-        [FieldOffset(36)] public DataSectionFlags Characteristics;
+        [FieldOffset(36)] internal DataSectionFlags Characteristics;
 
-        public string Section
+        internal string Section
         {
             get { return new string(Name); }
         }
     }
 
     [StructLayout(LayoutKind.Explicit)]
-    public struct IMAGE_IMPORT_DESCRIPTOR
+    internal struct IMAGE_IMPORT_DESCRIPTOR
     {
-        [FieldOffset(0)] public uint Characteristics;
+        [FieldOffset(0)] internal uint Characteristics;
 
-        [FieldOffset(0)] public uint OriginalFirstThunk;
+        [FieldOffset(0)] internal uint OriginalFirstThunk;
 
-        [FieldOffset(4)] public uint TimeDateStamp;
+        [FieldOffset(4)] internal uint TimeDateStamp;
 
-        [FieldOffset(8)] public uint ForwarderChain;
+        [FieldOffset(8)] internal uint ForwarderChain;
 
-        [FieldOffset(12)] public uint Name;
+        [FieldOffset(12)] internal uint Name;
 
-        [FieldOffset(16)] public uint FirstThunk;
+        [FieldOffset(16)] internal uint FirstThunk;
     }
 
     [StructLayout(LayoutKind.Sequential, Pack = 1)]
-    public struct PROCESS_BASIC_INFORMATION
+    internal struct PROCESS_BASIC_INFORMATION
     {
-        public IntPtr ExitStatus;
-        public IntPtr PebBaseAddress;
-        public IntPtr AffinityMask;
-        public IntPtr BasePriority;
-        public UIntPtr UniqueProcessId;
-        public IntPtr InheritedFromUniqueProcessId;
+        internal IntPtr ExitStatus;
+        internal IntPtr PebBaseAddress;
+        internal IntPtr AffinityMask;
+        internal IntPtr BasePriority;
+        internal UIntPtr UniqueProcessId;
+        internal IntPtr InheritedFromUniqueProcessId;
 
-        public int Size
+        internal int Size
         {
             get { return (int) Marshal.SizeOf(typeof(PROCESS_BASIC_INFORMATION)); }
         }
     }
 
     [StructLayout(LayoutKind.Sequential, Pack = 0)]
-    public struct UNICODE_STRING
+    internal struct UNICODE_STRING
     {
-        public ushort Length;
-        public ushort MaximumLength;
-        public IntPtr Buffer;
+        internal ushort Length;
+        internal ushort MaximumLength;
+        internal IntPtr Buffer;
     }
 
     [StructLayout(LayoutKind.Explicit)]
-    public struct IMAGE_THUNK_DATA
+    internal struct IMAGE_THUNK_DATA
     {
-        [FieldOffset(0)] public uint ForwarderString; // PBYTE 
+        [FieldOffset(0)] internal uint ForwarderString; // PBYTE 
 
-        [FieldOffset(0)] public uint Function; // PDWORD
+        [FieldOffset(0)] internal uint Function; // PDWORD
 
-        [FieldOffset(0)] public uint Ordinal;
+        [FieldOffset(0)] internal uint Ordinal;
 
-        [FieldOffset(0)] public uint AddressOfData; // PIMAGE_IMPORT_BY_NAME
+        [FieldOffset(0)] internal uint AddressOfData; // PIMAGE_IMPORT_BY_NAME
     }
 
     [StructLayout(LayoutKind.Sequential)]
-    public struct IMAGE_EXPORT_DIRECTORY
+    internal struct IMAGE_EXPORT_DIRECTORY
     {
-        public UInt32 Characteristics;
-        public UInt32 TimeDateStamp;
-        public UInt16 MajorVersion;
-        public UInt16 MinorVersion;
-        public UInt32 Name;
-        public UInt32 Base;
-        public UInt32 NumberOfFunctions;
-        public UInt32 NumberOfNames;
-        public UInt32 AddressOfFunctions; // RVA from base of image
-        public UInt32 AddressOfNames; // RVA from base of image
-        public UInt32 AddressOfNameOrdinals; // RVA from base of image
+        internal UInt32 Characteristics;
+        internal UInt32 TimeDateStamp;
+        internal UInt16 MajorVersion;
+        internal UInt16 MinorVersion;
+        internal UInt32 Name;
+        internal UInt32 Base;
+        internal UInt32 NumberOfFunctions;
+        internal UInt32 NumberOfNames;
+        internal UInt32 AddressOfFunctions; // RVA from base of image
+        internal UInt32 AddressOfNames; // RVA from base of image
+        internal UInt32 AddressOfNameOrdinals; // RVA from base of image
     }
 
     [StructLayout(LayoutKind.Sequential)]
-    public struct IMAGE_IMPORT_BY_NAME
+    internal struct IMAGE_IMPORT_BY_NAME
     {
-        public short Hint;
-        public char Name;
+        internal short Hint;
+        internal char Name;
     }
 
     [StructLayout(LayoutKind.Sequential)]
-    public struct IMAGE_BASE_RELOCATION
+    internal struct IMAGE_BASE_RELOCATION
     {
-        public UInt32 VirtualAddress;
-        public UInt32 SizeOfBlock;
+        internal UInt32 VirtualAddress;
+        internal UInt32 SizeOfBlock;
     }
 
     [StructLayout(LayoutKind.Sequential)]
-    public struct IMAGE_TLS_DIRECTORY32
+    internal struct IMAGE_TLS_DIRECTORY32
     {
-        public UInt32 StartAddressOfRawData;
-        public UInt32 EndAddressOfRawData;
-        public UInt32 AddressOfIndex; // PDWORD
-        public UInt32 AddressOfCallBacks; // PIMAGE_TLS_CALLBACK *
-        public UInt32 SizeOfZeroFill;
-        public UInt32 Characteristics;
+        internal UInt32 StartAddressOfRawData;
+        internal UInt32 EndAddressOfRawData;
+        internal UInt32 AddressOfIndex; // PDWORD
+        internal UInt32 AddressOfCallBacks; // PIMAGE_TLS_CALLBACK *
+        internal UInt32 SizeOfZeroFill;
+        internal UInt32 Characteristics;
     }
 
     [StructLayout(LayoutKind.Sequential)]
-    public struct IMAGE_LOAD_CONFIG_DIRECTORY32
+    internal struct IMAGE_LOAD_CONFIG_DIRECTORY32
     {
-        public UInt32 Size;
-        public UInt32 TimeDateStamp;
-        public UInt16 MajorVersion;
-        public UInt16 MinorVersion;
-        public UInt32 GlobalFlagsClear;
-        public UInt32 GlobalFlagsSet;
-        public UInt32 CriticalSectionDefaultTimeout;
-        public UInt32 DeCommitFreeBlockThreshold;
-        public UInt32 DeCommitTotalFreeThreshold;
-        public UInt32 LockPrefixTable;                // VA
-        public UInt32 MaximumAllocationSize;
-        public UInt32 VirtualMemoryThreshold;
-        public UInt32 ProcessHeapFlags;
-        public UInt32 ProcessAffinityMask;
-        public UInt16 CSDVersion;
-        public UInt16 Reserved1;
-        public UInt32 EditList;                       // VA
-        public UInt32 SecurityCookie;                 // VA
-        public UInt32 SEHandlerTable;                 // VA
-        public UInt32 SEHandlerCount;
-        public UInt32 GuardCFCheckFunctionPointer;    // VA
-        public UInt32 Reserved2;
-        public UInt32 GuardCFFunctionTable;           // VA
-        public UInt32 GuardCFFunctionCount;
-        public UInt32 GuardFlags;
+        internal UInt32 Size;
+        internal UInt32 TimeDateStamp;
+        internal UInt16 MajorVersion;
+        internal UInt16 MinorVersion;
+        internal UInt32 GlobalFlagsClear;
+        internal UInt32 GlobalFlagsSet;
+        internal UInt32 CriticalSectionDefaultTimeout;
+        internal UInt32 DeCommitFreeBlockThreshold;
+        internal UInt32 DeCommitTotalFreeThreshold;
+        internal UInt32 LockPrefixTable;                // VA
+        internal UInt32 MaximumAllocationSize;
+        internal UInt32 VirtualMemoryThreshold;
+        internal UInt32 ProcessHeapFlags;
+        internal UInt32 ProcessAffinityMask;
+        internal UInt16 CSDVersion;
+        internal UInt16 Reserved1;
+        internal UInt32 EditList;                       // VA
+        internal UInt32 SecurityCookie;                 // VA
+        internal UInt32 SEHandlerTable;                 // VA
+        internal UInt32 SEHandlerCount;
+        internal UInt32 GuardCFCheckFunctionPointer;    // VA
+        internal UInt32 Reserved2;
+        internal UInt32 GuardCFFunctionTable;           // VA
+        internal UInt32 GuardCFFunctionCount;
+        internal UInt32 GuardFlags;
     }
 
     [StructLayout(LayoutKind.Sequential)]
-    public struct FILETIME
+    internal struct FILETIME
     {
-        public uint DateTimeLow;
-        public uint DateTimeHigh;
+        internal uint DateTimeLow;
+        internal uint DateTimeHigh;
     }
 }

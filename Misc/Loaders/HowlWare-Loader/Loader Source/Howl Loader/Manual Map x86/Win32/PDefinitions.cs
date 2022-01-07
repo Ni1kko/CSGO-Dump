@@ -5,13 +5,13 @@ using ManualMapInjection.Injection.Types;
 
 namespace ManualMapInjection.Injection.Win32
 {
-    public class PIMAGE_DOS_HEADER : ManagedPtr<IMAGE_DOS_HEADER>
+    internal class PIMAGE_DOS_HEADER : ManagedPtr<IMAGE_DOS_HEADER>
     {
-        public PIMAGE_DOS_HEADER(IntPtr address) : base(address)
+        internal PIMAGE_DOS_HEADER(IntPtr address) : base(address)
         {
         }
 
-        public PIMAGE_DOS_HEADER(object value) : base(value)
+        internal PIMAGE_DOS_HEADER(object value) : base(value)
         {
         }
 
@@ -26,13 +26,13 @@ namespace ManualMapInjection.Injection.Win32
         }
     }
 
-    public class PIMAGE_NT_HEADERS32 : ManagedPtr<IMAGE_NT_HEADERS32>
+    internal class PIMAGE_NT_HEADERS32 : ManagedPtr<IMAGE_NT_HEADERS32>
     {
-        public PIMAGE_NT_HEADERS32(IntPtr address) : base(address)
+        internal PIMAGE_NT_HEADERS32(IntPtr address) : base(address)
         {
         }
 
-        public PIMAGE_NT_HEADERS32(object value) : base(value)
+        internal PIMAGE_NT_HEADERS32(object value) : base(value)
         {
         }
 
@@ -47,17 +47,17 @@ namespace ManualMapInjection.Injection.Win32
         }
     }
 
-    public class PCHAR : ManagedPtr<char>
+    internal class PCHAR : ManagedPtr<char>
     {
-        public PCHAR(IntPtr address) : base(address)
+        internal PCHAR(IntPtr address) : base(address)
         {
         }
 
-        public PCHAR(object value) : base(value)
+        internal PCHAR(object value) : base(value)
         {
         }
 
-        public PCHAR(string value) : base(Encoding.UTF8.GetBytes(value))
+        internal PCHAR(string value) : base(Encoding.UTF8.GetBytes(value))
         {
         }
 
@@ -87,13 +87,13 @@ namespace ManualMapInjection.Injection.Win32
         }
     }
 
-    public class PPROCESS_BASIC_INFORMATION : ManagedPtr<PROCESS_BASIC_INFORMATION>
+    internal class PPROCESS_BASIC_INFORMATION : ManagedPtr<PROCESS_BASIC_INFORMATION>
     {
-        public PPROCESS_BASIC_INFORMATION(IntPtr address) : base(address)
+        internal PPROCESS_BASIC_INFORMATION(IntPtr address) : base(address)
         {
         }
 
-        public PPROCESS_BASIC_INFORMATION(object value) : base(value)
+        internal PPROCESS_BASIC_INFORMATION(object value) : base(value)
         {
         }
 
@@ -108,13 +108,13 @@ namespace ManualMapInjection.Injection.Win32
         }
     }
 
-    public class PIMAGE_IMPORT_DESCRIPTOR : ManagedPtr<IMAGE_IMPORT_DESCRIPTOR>
+    internal class PIMAGE_IMPORT_DESCRIPTOR : ManagedPtr<IMAGE_IMPORT_DESCRIPTOR>
     {
-        public PIMAGE_IMPORT_DESCRIPTOR(IntPtr address) : base(address)
+        internal PIMAGE_IMPORT_DESCRIPTOR(IntPtr address) : base(address)
         {
         }
 
-        public PIMAGE_IMPORT_DESCRIPTOR(object value) : base(value)
+        internal PIMAGE_IMPORT_DESCRIPTOR(object value) : base(value)
         {
         }
 
@@ -139,13 +139,13 @@ namespace ManualMapInjection.Injection.Win32
         }
     }
 
-    public class PIMAGE_SECTION_HEADER : ManagedPtr<IMAGE_SECTION_HEADER>
+    internal class PIMAGE_SECTION_HEADER : ManagedPtr<IMAGE_SECTION_HEADER>
     {
-        public PIMAGE_SECTION_HEADER(IntPtr address) : base(address)
+        internal PIMAGE_SECTION_HEADER(IntPtr address) : base(address)
         {
         }
 
-        public PIMAGE_SECTION_HEADER(object value) : base(value)
+        internal PIMAGE_SECTION_HEADER(object value) : base(value)
         {
         }
 
@@ -160,13 +160,13 @@ namespace ManualMapInjection.Injection.Win32
         }
     }
 
-    public class PIMAGE_THUNK_DATA : ManagedPtr<IMAGE_THUNK_DATA>
+    internal class PIMAGE_THUNK_DATA : ManagedPtr<IMAGE_THUNK_DATA>
     {
-        public PIMAGE_THUNK_DATA(IntPtr address) : base(address)
+        internal PIMAGE_THUNK_DATA(IntPtr address) : base(address)
         {
         }
 
-        public PIMAGE_THUNK_DATA(object value) : base(value)
+        internal PIMAGE_THUNK_DATA(object value) : base(value)
         {
         }
 
@@ -191,13 +191,13 @@ namespace ManualMapInjection.Injection.Win32
         }
     }
 
-    public class PIMAGE_EXPORT_DIRECTORY : ManagedPtr<IMAGE_EXPORT_DIRECTORY>
+    internal class PIMAGE_EXPORT_DIRECTORY : ManagedPtr<IMAGE_EXPORT_DIRECTORY>
     {
-        public PIMAGE_EXPORT_DIRECTORY(IntPtr address) : base(address)
+        internal PIMAGE_EXPORT_DIRECTORY(IntPtr address) : base(address)
         {
         }
 
-        public PIMAGE_EXPORT_DIRECTORY(object value) : base(value)
+        internal PIMAGE_EXPORT_DIRECTORY(object value) : base(value)
         {
         }
 
@@ -222,13 +222,13 @@ namespace ManualMapInjection.Injection.Win32
         }
     }
 
-    public class PWORD : ManagedPtr<ushort>
+    internal class PWORD : ManagedPtr<ushort>
     {
-        public PWORD(IntPtr address) : base(address)
+        internal PWORD(IntPtr address) : base(address)
         {
         }
 
-        public PWORD(object value) : base(value)
+        internal PWORD(object value) : base(value)
         {
         }
 
@@ -253,13 +253,13 @@ namespace ManualMapInjection.Injection.Win32
         }
     }
 
-    public class PDWORD : ManagedPtr<uint>
+    internal class PDWORD : ManagedPtr<uint>
     {
-        public PDWORD(IntPtr address) : base(address)
+        internal PDWORD(IntPtr address) : base(address)
         {
         }
 
-        public PDWORD(object value) : base(value)
+        internal PDWORD(object value) : base(value)
         {
         }
 
@@ -283,13 +283,13 @@ namespace ManualMapInjection.Injection.Win32
             return new PDWORD(ptr);
         }
     }
-    public class PIMAGE_IMPORT_BY_NAME : ManagedPtr<IMAGE_IMPORT_BY_NAME>
+    internal class PIMAGE_IMPORT_BY_NAME : ManagedPtr<IMAGE_IMPORT_BY_NAME>
     {
-        public PIMAGE_IMPORT_BY_NAME(IntPtr address) : base(address)
+        internal PIMAGE_IMPORT_BY_NAME(IntPtr address) : base(address)
         {
         }
 
-        public PIMAGE_IMPORT_BY_NAME(object value) : base(value)
+        internal PIMAGE_IMPORT_BY_NAME(object value) : base(value)
         {
         }
 
@@ -314,13 +314,13 @@ namespace ManualMapInjection.Injection.Win32
         }
     }
 
-    public class PBYTE : ManagedPtr<byte>
+    internal class PBYTE : ManagedPtr<byte>
     {
-        public PBYTE(IntPtr address) : base(address)
+        internal PBYTE(IntPtr address) : base(address)
         {
         }
 
-        public PBYTE(object value) : base(value)
+        internal PBYTE(object value) : base(value)
         {
         }
 
@@ -345,13 +345,13 @@ namespace ManualMapInjection.Injection.Win32
         }
     }
 
-    public class PIMAGE_BASE_RELOCATION : ManagedPtr<IMAGE_BASE_RELOCATION>
+    internal class PIMAGE_BASE_RELOCATION : ManagedPtr<IMAGE_BASE_RELOCATION>
     {
-        public PIMAGE_BASE_RELOCATION(IntPtr address) : base(address)
+        internal PIMAGE_BASE_RELOCATION(IntPtr address) : base(address)
         {
         }
 
-        public PIMAGE_BASE_RELOCATION(object value) : base(value)
+        internal PIMAGE_BASE_RELOCATION(object value) : base(value)
         {
         }
 
@@ -376,13 +376,13 @@ namespace ManualMapInjection.Injection.Win32
         }
     }
 
-    public class PSHORT : ManagedPtr<short>
+    internal class PSHORT : ManagedPtr<short>
     {
-        public PSHORT(IntPtr address) : base(address)
+        internal PSHORT(IntPtr address) : base(address)
         {
         }
 
-        public PSHORT(object value) : base(value)
+        internal PSHORT(object value) : base(value)
         {
         }
 
@@ -407,13 +407,13 @@ namespace ManualMapInjection.Injection.Win32
         }
     }
 
-    public class PIMAGE_TLS_DIRECTORY32 : ManagedPtr<IMAGE_TLS_DIRECTORY32>
+    internal class PIMAGE_TLS_DIRECTORY32 : ManagedPtr<IMAGE_TLS_DIRECTORY32>
     {
-        public PIMAGE_TLS_DIRECTORY32(IntPtr address) : base(address)
+        internal PIMAGE_TLS_DIRECTORY32(IntPtr address) : base(address)
         {
         }
 
-        public PIMAGE_TLS_DIRECTORY32(object value) : base(value)
+        internal PIMAGE_TLS_DIRECTORY32(object value) : base(value)
         {
         }
 
@@ -438,13 +438,13 @@ namespace ManualMapInjection.Injection.Win32
         }
     }
 
-    public class PIMAGE_LOAD_CONFIG_DIRECTORY32 : ManagedPtr<IMAGE_LOAD_CONFIG_DIRECTORY32>
+    internal class PIMAGE_LOAD_CONFIG_DIRECTORY32 : ManagedPtr<IMAGE_LOAD_CONFIG_DIRECTORY32>
     {
-        public PIMAGE_LOAD_CONFIG_DIRECTORY32(IntPtr address) : base(address)
+        internal PIMAGE_LOAD_CONFIG_DIRECTORY32(IntPtr address) : base(address)
         {
         }
 
-        public PIMAGE_LOAD_CONFIG_DIRECTORY32(object value) : base(value)
+        internal PIMAGE_LOAD_CONFIG_DIRECTORY32(object value) : base(value)
         {
         }
 

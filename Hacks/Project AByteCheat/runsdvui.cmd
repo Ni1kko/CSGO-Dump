@@ -1,0 +1,2 @@
+cd /d "C:\Users\Ferox\Desktop\picovina\mirror" &msbuild "Mirror.vcxproj" /t:sdvViewer /p:configuration="Release" /p:platform="Win32" /p:SolutionDir="C:\Users\Ferox\Desktop\picovina\mirror" 
+exit %errorlevel% 

@@ -1,0 +1,462 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="EnginePrediction.cpp">
+      <Filter>Hacks\rage_tab\pos_adjustment</Filter>
+    </ClCompile>
+    <ClCompile Include="Autowall.cpp">
+      <Filter>Hacks\rage_tab\autowall</Filter>
+    </ClCompile>
+    <ClCompile Include="anti_aim.cpp">
+      <Filter>Hacks\misc_tab\antiaim</Filter>
+    </ClCompile>
+    <ClCompile Include="anti-lby.cpp">
+      <Filter>Hacks\misc_tab\antiaim</Filter>
+    </ClCompile>
+    <ClCompile Include="other_helpers.cpp">
+      <Filter>Hacks\misc_tab\antiaim</Filter>
+    </ClCompile>
+    <ClCompile Include="fakelag.cpp">
+      <Filter>Hacks\misc_tab\fakelag</Filter>
+    </ClCompile>
+    <ClCompile Include="RageBot.cpp">
+      <Filter>Hacks\rage_tab\rage_aimbot</Filter>
+    </ClCompile>
+    <ClCompile Include="extrapolation.cpp">
+      <Filter>Hacks\rage_tab\pos_adjustment</Filter>
+    </ClCompile>
+    <ClCompile Include="Chams.cpp">
+      <Filter>Hacks\visual_tab</Filter>
+    </ClCompile>
+    <ClCompile Include="ESP.cpp">
+      <Filter>Hacks\visual_tab</Filter>
+    </ClCompile>
+    <ClCompile Include="laggycompensation.cpp">
+      <Filter>Hacks\rage_tab\pos_adjustment</Filter>
+    </ClCompile>
+    <ClCompile Include="Resolver.cpp">
+      <Filter>Hacks\rage_tab\rage_aimbot</Filter>
+    </ClCompile>
+    <ClCompile Include="Hooks.cpp">
+      <Filter>Dependencies\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="Hacks.cpp">
+      <Filter>Hacks</Filter>
+    </ClCompile>
+    <ClCompile Include="Interfaces.cpp">
+      <Filter>Dependencies\Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities.cpp">
+      <Filter>Dependencies\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="NetVarManager.cpp">
+      <Filter>Dependencies\Netvars</Filter>
+    </ClCompile>
+    <ClCompile Include="NetVars.cpp">
+      <Filter>Dependencies\Netvars</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLMain.cpp">
+      <Filter>Dependencies\Others</Filter>
+    </ClCompile>
+    <ClCompile Include="global_count.cpp">
+      <Filter>Dependencies\Others</Filter>
+    </ClCompile>
+    <ClCompile Include="globalshh.cpp">
+      <Filter>Dependencies\Others</Filter>
+    </ClCompile>
+    <ClCompile Include="INJ\ReflectiveLoader.cpp">
+      <Filter>Dependencies\Others</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderManager.cpp">
+      <Filter>Dependencies\Others</Filter>
+    </ClCompile>
+    <ClCompile Include="MiscHacks.cpp">
+      <Filter>Hacks\misc_tab\others</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI.cpp">
+      <Filter>Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls.cpp">
+      <Filter>Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu.cpp">
+      <Filter>Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="autodefuse.cpp">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="circlestrafer.cpp">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="CRC32.cpp">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="Dumping.cpp">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="knifebot.cpp">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="lodepng.cpp">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="MathFunctions.cpp">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="MD5.cpp">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="MetaInfo.cpp">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="new_backtrackhelper.cpp">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="newbacktrack.cpp">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="Offsets.cpp">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="radar.cpp">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="SpoofedConvar.cpp">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxml2.cpp">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="UTIL Functions.cpp">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities.cpp">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="Visual.cpp">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="position_adjust.cpp">
+      <Filter>Hacks\rage_tab\pos_adjustment</Filter>
+    </ClCompile>
+    <ClCompile Include="experimental.cpp">
+      <Filter>Hacks\rage_tab\pos_adjustment</Filter>
+    </ClCompile>
+    <ClCompile Include="knife_animations.cpp">
+      <Filter>Dependencies\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="Skinchanger.cpp">
+      <Filter>Hacks\skins_tab</Filter>
+    </ClCompile>
+    <ClCompile Include="Window.cpp">
+      <Filter>Menu</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="EnginePrediction.h">
+      <Filter>Hacks\rage_tab\pos_adjustment</Filter>
+    </ClInclude>
+    <ClInclude Include="Autowall.h">
+      <Filter>Hacks\rage_tab\autowall</Filter>
+    </ClInclude>
+    <ClInclude Include="antiaim.h">
+      <Filter>Hacks\misc_tab\antiaim</Filter>
+    </ClInclude>
+    <ClInclude Include="fakelag.h">
+      <Filter>Hacks\misc_tab\fakelag</Filter>
+    </ClInclude>
+    <ClInclude Include="RageBot.h">
+      <Filter>Hacks\rage_tab\rage_aimbot</Filter>
+    </ClInclude>
+    <ClInclude Include="Chams.h">
+      <Filter>Hacks\visual_tab</Filter>
+    </ClInclude>
+    <ClInclude Include="ESP.h">
+      <Filter>Hacks\visual_tab</Filter>
+    </ClInclude>
+    <ClInclude Include="glow_outline_effect.h">
+      <Filter>Hacks\visual_tab</Filter>
+    </ClInclude>
+    <ClInclude Include="hitmarker.h">
+      <Filter>Hacks\visual_tab</Filter>
+    </ClInclude>
+    <ClInclude Include="Resolver.h">
+      <Filter>Hacks\rage_tab\rage_aimbot</Filter>
+    </ClInclude>
+    <ClInclude Include="Hooks.h">
+      <Filter>Dependencies\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="Hacks.h">
+      <Filter>Hacks</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces.h">
+      <Filter>Dependencies\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities.h">
+      <Filter>Dependencies\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVars.h">
+      <Filter>Dependencies\Netvars</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineClient.h">
+      <Filter>Dependencies\Others</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLMain.h">
+      <Filter>Dependencies\Others</Filter>
+    </ClInclude>
+    <ClInclude Include="globalshhh.h">
+      <Filter>Dependencies\Others</Filter>
+    </ClInclude>
+    <ClInclude Include="global_count.h">
+      <Filter>Dependencies\Others</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderManager.h">
+      <Filter>Dependencies\Others</Filter>
+    </ClInclude>
+    <ClInclude Include="INJ\ReflectiveDLLInjection.h">
+      <Filter>Dependencies\Others</Filter>
+    </ClInclude>
+    <ClInclude Include="INJ\ReflectiveLoader.h">
+      <Filter>Dependencies\Others</Filter>
+    </ClInclude>
+    <ClInclude Include="MiscClasses.h">
+      <Filter>Hacks\misc_tab\others</Filter>
+    </ClInclude>
+    <ClInclude Include="MiscDefinitions.h">
+      <Filter>Hacks\misc_tab\others</Filter>
+    </ClInclude>
+    <ClInclude Include="MiscHacks.h">
+      <Filter>Hacks\misc_tab\others</Filter>
+    </ClInclude>
+    <ClInclude Include="DamageIndicator.h">
+      <Filter>Hacks\visual_tab</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI.h">
+      <Filter>Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls.h">
+      <Filter>Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu.h">
+      <Filter>Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="AntiLeak.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="autodefuse.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseClient.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="bspflags.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="CBulletListener.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="CClientState.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="circlestrafer.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientRecvProps.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonIncludes.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="CRC32.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="CUtlVector.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="Dumping.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="IClientMode.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="idk.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="knifebot.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="LagCompensation2.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="laggycompensation.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="lin_extp.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="lodepng.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="Materials.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="MathFunctions.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="MD5.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="MetaInfo.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="new_backtrackhelper.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="newbacktrack.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="Offsets.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="pasted.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="Proxies.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="radar.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="Singleton.hpp">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="Skins.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="Surface.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="tinyxml2.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="UTIL Functions.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector2D.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="Visuals.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="winwindef.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="xor.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="XorStr.hpp">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="xostr.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="position_adjust.h">
+      <Filter>Hacks\rage_tab\pos_adjustment</Filter>
+    </ClInclude>
+    <ClInclude Include="surfaces.h">
+      <Filter>Dependencies\Others</Filter>
+    </ClInclude>
+    <ClInclude Include="experimental.h">
+      <Filter>Hacks\rage_tab\pos_adjustment</Filter>
+    </ClInclude>
+    <ClInclude Include="Skinchanger.h">
+      <Filter>Hacks\skins_tab</Filter>
+    </ClInclude>
+    <ClInclude Include="killsay.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Hacks">
+      <UniqueIdentifier>{31c5862d-93a8-497e-9faf-b18e348fac96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hacks\misc_tab">
+      <UniqueIdentifier>{87af7904-74e7-455e-a206-1ebef623f4ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hacks\misc_tab\antiaim">
+      <UniqueIdentifier>{8193a5bc-16bc-4d86-b733-36c9b439d4bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hacks\misc_tab\fakelag">
+      <UniqueIdentifier>{db6d9580-8fda-4684-8082-8d8f8de01aba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hacks\visual_tab">
+      <UniqueIdentifier>{27c60884-5999-4197-821a-73491da124e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hacks\rage_tab">
+      <UniqueIdentifier>{d3d29d43-8ca1-4f4a-80e5-0879d16ffe27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hacks\rage_tab\pos_adjustment">
+      <UniqueIdentifier>{355b36b6-5902-413b-b43d-2bc50c7910e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hacks\rage_tab\autowall">
+      <UniqueIdentifier>{f1e8428c-c813-41a1-94ad-55a0c8f0595a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hacks\rage_tab\rage_aimbot">
+      <UniqueIdentifier>{d850a92e-ca60-412f-9a46-832fab8cb731}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hacks\misc_tab\others">
+      <UniqueIdentifier>{32f5dc0a-a6a4-4fa5-95b2-0bdf550800e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Menu">
+      <UniqueIdentifier>{72409bf6-0f70-4804-9b63-f9d0ed98c710}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Others">
+      <UniqueIdentifier>{97f1a03e-c75e-4fea-89c6-86d02f511229}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dependencies">
+      <UniqueIdentifier>{aa751b62-055c-4e9c-8183-7e76fcd40096}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dependencies\Interfaces">
+      <UniqueIdentifier>{c3eeddfe-f04c-41c5-91ef-9a622fc13602}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dependencies\Hooks">
+      <UniqueIdentifier>{bc429ce0-3e4f-4688-94aa-9c4ee823e27e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dependencies\Entities">
+      <UniqueIdentifier>{15adeca8-1824-4a5a-b280-b328b7919e52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dependencies\Netvars">
+      <UniqueIdentifier>{36b273d0-5278-4e48-9cb0-1a6a6320c31b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dependencies\Others">
+      <UniqueIdentifier>{53cfd455-e0f2-40f7-8829-3ae7adfd6dbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hacks\skins_tab">
+      <UniqueIdentifier>{73c04b13-a665-412e-bf65-112bb21d83e3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd">
+      <Filter>Others</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="paradise_lost.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\74d505cb9afca0d0bb2c4d95d87d1971.png" />
+  </ItemGroup>
+</Project>

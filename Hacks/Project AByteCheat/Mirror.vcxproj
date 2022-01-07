@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8D83C36A-DC6F-4260-A46B-3691C9F1F7A0}</ProjectGuid>
+    <RootNamespace>TransHack-Mirror</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Cheat</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <TargetName>USER64</TargetName>
+    <OutDir>.\Cheat Build</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateMapFile>false</GenerateMapFile>
+      <MapExports>false</MapExports>
+      <AssemblyDebug>false</AssemblyDebug>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="antiaim.h" />
+    <ClInclude Include="AntiLeak.h" />
+    <ClInclude Include="autodefuse.h" />
+    <ClInclude Include="Autowall.h" />
+    <ClInclude Include="BaseClient.h" />
+    <ClInclude Include="bspflags.h" />
+    <ClInclude Include="CBulletListener.h" />
+    <ClInclude Include="CClientState.h" />
+    <ClInclude Include="Chams.h" />
+    <ClInclude Include="circlestrafer.h" />
+    <ClInclude Include="ClientRecvProps.h" />
+    <ClInclude Include="CommonIncludes.h" />
+    <ClInclude Include="Controls.h" />
+    <ClInclude Include="CRC32.h" />
+    <ClInclude Include="CUtlVector.h" />
+    <ClInclude Include="DamageIndicator.h" />
+    <ClInclude Include="DLLMain.h" />
+    <ClInclude Include="Dumping.h" />
+    <ClInclude Include="experimental.h" />
+    <ClInclude Include="killsay.h" />
+    <ClInclude Include="position_adjust.h" />
+    <ClInclude Include="EngineClient.h" />
+    <ClInclude Include="EnginePrediction.h" />
+    <ClInclude Include="Entities.h" />
+    <ClInclude Include="ESP.h" />
+    <ClInclude Include="fakelag.h" />
+    <ClInclude Include="newbacktrack.h" />
+    <ClInclude Include="new_backtrackhelper.h" />
+    <ClInclude Include="global_count.h" />
+    <ClInclude Include="glow_outline_effect.h" />
+    <ClInclude Include="GUI.h" />
+    <ClInclude Include="Hacks.h" />
+    <ClInclude Include="globalshhh.h" />
+    <ClInclude Include="MD5.h" />
+    <ClInclude Include="radar.h" />
+    <ClInclude Include="IClientMode.h" />
+    <ClInclude Include="knifebot.h" />
+    <ClInclude Include="laggycompensation.h" />
+    <ClInclude Include="lin_extp.h" />
+    <ClInclude Include="lodepng.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="SDK.h" />
+    <ClInclude Include="Singleton.hpp" />
+    <ClInclude Include="Skinchanger.h" />
+    <ClInclude Include="surfaces.h" />
+    <ClInclude Include="xor.h" />
+    <ClInclude Include="hitmarker.h" />
+    <ClInclude Include="idk.h" />
+    <ClInclude Include="LagCompensation2.h" />
+    <ClInclude Include="pasted.h" />
+    <ClInclude Include="Proxies.h" />
+    <ClInclude Include="Resolver.h" />
+    <ClInclude Include="Skins.h" />
+    <ClInclude Include="winwindef.h" />
+    <ClInclude Include="Hooks.h" />
+    <ClInclude Include="INJ\ReflectiveDLLInjection.h" />
+    <ClInclude Include="INJ\ReflectiveLoader.h" />
+    <ClInclude Include="Interfaces.h" />
+    <ClInclude Include="Materials.h" />
+    <ClInclude Include="MathFunctions.h" />
+    <ClInclude Include="Menu.h" />
+    <ClInclude Include="MetaInfo.h" />
+    <ClInclude Include="MiscClasses.h" />
+    <ClInclude Include="MiscDefinitions.h" />
+    <ClInclude Include="MiscHacks.h" />
+    <ClInclude Include="NetVars.h" />
+    <ClInclude Include="Offsets.h" />
+    <ClInclude Include="RageBot.h" />
+    <ClInclude Include="RenderManager.h" />
+    <ClInclude Include="Surface.h" />
+    <ClInclude Include="tinyxml2.h" />
+    <ClInclude Include="UTIL Functions.h" />
+    <ClInclude Include="Utilities.h" />
+    <ClInclude Include="Vector.h" />
+    <ClInclude Include="Vector2D.h" />
+    <ClInclude Include="Visuals.h" />
+    <ClInclude Include="XorStr.hpp" />
+    <ClInclude Include="xostr.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="anti-lby.cpp" />
+    <ClCompile Include="anti_aim.cpp" />
+    <ClCompile Include="autodefuse.cpp" />
+    <ClCompile Include="Autowall.cpp" />
+    <ClCompile Include="Chams.cpp" />
+    <ClCompile Include="circlestrafer.cpp" />
+    <ClCompile Include="Controls.cpp" />
+    <ClCompile Include="CRC32.cpp" />
+    <ClCompile Include="DLLMain.cpp" />
+    <ClCompile Include="Dumping.cpp" />
+    <ClCompile Include="experimental.cpp" />
+    <ClCompile Include="knife_animations.cpp" />
+    <ClCompile Include="position_adjust.cpp" />
+    <ClCompile Include="EnginePrediction.cpp" />
+    <ClCompile Include="Entities.cpp" />
+    <ClCompile Include="ESP.cpp" />
+    <ClCompile Include="extrapolation.cpp" />
+    <ClCompile Include="fakelag.cpp" />
+    <ClCompile Include="newbacktrack.cpp" />
+    <ClCompile Include="new_backtrackhelper.cpp" />
+    <ClCompile Include="globalshh.cpp" />
+    <ClCompile Include="global_count.cpp" />
+    <ClCompile Include="GUI.cpp" />
+    <ClCompile Include="Hacks.cpp" />
+    <ClCompile Include="Hooks.cpp" />
+    <ClCompile Include="INJ\ReflectiveLoader.cpp" />
+    <ClCompile Include="Interfaces.cpp" />
+    <ClCompile Include="knifebot.cpp" />
+    <ClCompile Include="laggycompensation.cpp" />
+    <ClCompile Include="lodepng.cpp" />
+    <ClCompile Include="MathFunctions.cpp" />
+    <ClCompile Include="MD5.cpp" />
+    <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="MetaInfo.cpp" />
+    <ClCompile Include="MiscHacks.cpp" />
+    <ClCompile Include="NetVarManager.cpp" />
+    <ClCompile Include="NetVars.cpp" />
+    <ClCompile Include="Offsets.cpp" />
+    <ClCompile Include="other_helpers.cpp" />
+    <ClCompile Include="radar.cpp" />
+    <ClCompile Include="RageBot.cpp" />
+    <ClCompile Include="RenderManager.cpp" />
+    <ClCompile Include="Resolver.cpp" />
+    <ClCompile Include="Skinchanger.cpp" />
+    <ClCompile Include="SpoofedConvar.cpp" />
+    <ClCompile Include="tinyxml2.cpp" />
+    <ClCompile Include="UTIL Functions.cpp" />
+    <ClCompile Include="Utilities.cpp" />
+    <ClCompile Include="Visual.cpp" />
+    <ClCompile Include="Window.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="paradise_lost.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\74d505cb9afca0d0bb2c4d95d87d1971.png" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
